@@ -1,0 +1,278 @@
+12/02/2021 05:48:39 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/02/2021 05:50:55 PM INFO: Connected by: ('127.0.0.1', 38908)
+12/02/2021 05:50:55 PM INFO: Player connected: Test
+12/02/2021 05:51:09 PM WARNING: Player disconnected: Test
+12/02/2021 05:51:26 PM INFO: Connected by: ('127.0.0.1', 38918)
+12/02/2021 05:51:26 PM INFO: Player connected: Test
+12/02/2021 05:51:44 PM INFO: Connected by: ('127.0.0.1', 38930)
+12/02/2021 05:51:44 PM INFO: Player connected: Test
+12/02/2021 05:52:10 PM INFO: Player ready: Test
+12/02/2021 05:52:16 PM INFO: Player ready: Test
+12/02/2021 05:52:30 PM INFO: Player ready: Test
+12/02/2021 05:52:35 PM INFO: Player ready: Test
+12/02/2021 05:54:43 PM WARNING: Player disconnected: Test
+12/02/2021 05:55:15 PM INFO: Connected by: ('127.0.0.1', 38958)
+12/02/2021 05:55:15 PM INFO: Player connected: asd
+12/02/2021 05:55:41 PM INFO: Connected by: ('127.0.0.1', 38964)
+12/02/2021 05:55:41 PM INFO: Player connected: dsa
+12/02/2021 05:55:45 PM INFO: Player ready: dsa
+12/02/2021 05:55:52 PM INFO: Player ready: asd
+12/07/2021 02:57:51 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/07/2021 03:00:35 PM INFO: Connected by: ('127.0.0.1', 52642)
+12/07/2021 03:00:35 PM INFO: Player connected: franco
+12/07/2021 03:00:59 PM INFO: Connected by: ('127.0.0.1', 52646)
+12/07/2021 03:00:59 PM INFO: Player connected: ciccio
+12/07/2021 03:01:01 PM INFO: Player ready: ciccio
+12/07/2021 03:01:09 PM INFO: Player ready: franco
+12/07/2021 03:01:09 PM INFO: Game start! Between: ['franco', 'ciccio']
+12/07/2021 03:01:09 PM INFO: Ok, let's start the game!
+12/07/2021 03:03:20 PM INFO: Closing the server...
+12/07/2021 03:17:58 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/07/2021 03:18:42 PM INFO: Connected by: ('127.0.0.1', 52858)
+12/07/2021 03:18:42 PM INFO: Player connected: f
+12/07/2021 03:18:56 PM INFO: Connected by: ('127.0.0.1', 52860)
+12/07/2021 03:18:56 PM INFO: Player connected: ciccio
+12/07/2021 03:19:00 PM INFO: Player ready: ciccio
+12/07/2021 03:19:10 PM INFO: Player ready: f
+12/07/2021 03:19:10 PM INFO: Game start! Between: ['f', 'ciccio']
+12/07/2021 03:19:10 PM INFO: Ok, let's start the game!
+12/07/2021 03:29:39 PM INFO: Closing the server...
+12/28/2021 07:15:00 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/28/2021 07:17:21 PM INFO: Connected by: ('127.0.0.1', 48556)
+12/28/2021 07:17:21 PM INFO: Player connected: alfio
+12/28/2021 07:17:44 PM INFO: Connected by: ('127.0.0.1', 48560)
+12/28/2021 07:17:44 PM INFO: Player connected: peppe
+12/28/2021 07:17:47 PM INFO: Player ready: peppe
+12/28/2021 07:17:55 PM INFO: Player ready: alfio
+12/28/2021 07:17:55 PM INFO: Game start! Between: ['alfio', 'peppe']
+12/28/2021 07:17:55 PM INFO: Ok, let's start the game!
+12/28/2021 07:18:07 PM INFO: Showing hand to: alfio
+12/28/2021 07:19:27 PM INFO: Showing hand to: peppe
+12/28/2021 07:21:50 PM INFO: Showing hand to: peppe
+12/28/2021 07:22:45 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:22:56 PM INFO: Showing hand to: peppe
+12/28/2021 07:24:02 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:24:08 PM INFO: Showing hand to: alfio
+12/28/2021 07:24:36 PM WARNING: Impossible discarding a card: there is no used token available
+12/28/2021 07:27:05 PM INFO: Player peppe providing hint to alfio: cards with value 1 are in positions: [3]
+12/28/2021 07:27:13 PM INFO: Showing hand to: peppe
+12/28/2021 07:32:02 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:32:02 PM INFO: Giving 1 free note token.
+12/28/2021 07:32:07 PM INFO: Showing hand to: alfio
+12/28/2021 07:33:32 PM WARNING: Impossible discarding a card: there is no used token available
+12/28/2021 07:33:42 PM INFO: Showing hand to: peppe
+12/28/2021 07:34:26 PM INFO: Showing hand to: alfio
+12/28/2021 07:34:49 PM INFO: Player peppe providing hint to alfio: cards with color yellow are in positions: [0, 2]
+12/28/2021 07:35:16 PM INFO: Player alfio providing hint to peppe: cards with color yellow are in positions: [1]
+12/28/2021 07:35:19 PM INFO: Showing hand to: peppe
+12/28/2021 07:35:28 PM INFO: Player: peppe: card 11 discarded successfully
+12/28/2021 07:35:33 PM INFO: Showing hand to: peppe
+12/28/2021 07:35:40 PM INFO: Showing hand to: alfio
+12/28/2021 07:35:45 PM INFO: Showing hand to: peppe
+12/28/2021 07:35:58 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:35:58 PM INFO: Giving 1 free note token.
+12/28/2021 07:36:33 PM INFO: Showing hand to: peppe
+12/28/2021 07:36:44 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:36:47 PM INFO: Showing hand to: alfio
+12/28/2021 07:37:28 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:37:36 PM INFO: Showing hand to: peppe
+12/28/2021 07:38:12 PM WARNING: Impossible discarding a card: there is no used token available
+12/28/2021 07:39:10 PM INFO: Player alfio providing hint to peppe: cards with value 5 are in positions: [0]
+12/28/2021 07:39:17 PM INFO: Showing hand to: alfio
+12/28/2021 07:39:48 PM INFO: Player peppe providing hint to alfio: cards with color red are in positions: [1, 2]
+12/28/2021 07:40:07 PM INFO: Player: alfio: card 20 discarded successfully
+12/28/2021 07:40:11 PM INFO: Showing hand to: alfio
+12/28/2021 07:41:12 PM INFO: Player peppe providing hint to alfio: cards with value 2 are in positions: [1]
+12/28/2021 07:41:21 PM INFO: Showing hand to: alfio
+12/28/2021 07:41:32 PM INFO: Showing hand to: peppe
+12/28/2021 07:42:00 PM INFO: Player: alfio: card 6 discarded successfully
+12/28/2021 07:42:05 PM INFO: Showing hand to: peppe
+12/28/2021 07:42:29 PM INFO: Player peppe providing hint to alfio: cards with value 1 are in positions: [3]
+12/28/2021 07:42:34 PM INFO: Showing hand to: peppe
+12/28/2021 07:42:51 PM INFO: Player: alfio: card 2 discarded successfully
+12/28/2021 07:42:57 PM INFO: Showing hand to: peppe
+12/28/2021 07:44:23 PM INFO: Showing hand to: alfio
+12/28/2021 07:44:50 PM INFO: Player: peppe: card 30 discarded successfully
+12/28/2021 07:44:54 PM INFO: Showing hand to: alfio
+12/28/2021 07:45:34 PM INFO: Player alfio providing hint to peppe: cards with value 2 are in positions: [4]
+12/28/2021 07:45:39 PM INFO: Player: peppe: card 21 discarded successfully
+12/28/2021 07:45:43 PM INFO: Showing hand to: alfio
+12/28/2021 07:46:00 PM INFO: Showing hand to: peppe
+12/28/2021 07:47:11 PM INFO: Showing hand to: alfio
+12/28/2021 07:47:23 PM INFO: Player alfio providing hint to peppe: cards with value 4 are in positions: [1, 2, 3, 4]
+12/28/2021 07:47:54 PM INFO: Player: peppe: card 43 discarded successfully
+12/28/2021 07:48:00 PM INFO: Showing hand to: alfio
+12/28/2021 07:48:40 PM INFO: Showing hand to: alfio
+12/28/2021 07:48:53 PM INFO: Player alfio providing hint to peppe: cards with color white are in positions: [1, 4]
+12/28/2021 07:49:09 PM INFO: Player: peppe: card 44 discarded successfully
+12/28/2021 07:49:13 PM INFO: Showing hand to: alfio
+12/28/2021 07:49:29 PM INFO: Player alfio providing hint to peppe: cards with value 2 are in positions: [4]
+12/28/2021 07:49:44 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:49:44 PM INFO: Giving 1 free note token.
+12/28/2021 07:49:49 PM INFO: Showing hand to: alfio
+12/28/2021 07:50:13 PM INFO: Player alfio providing hint to peppe: cards with value 1 are in positions: [4]
+12/28/2021 07:50:34 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:50:34 PM INFO: Giving 1 free note token.
+12/28/2021 07:50:38 PM INFO: Showing hand to: alfio
+12/28/2021 07:50:55 PM INFO: Showing hand to: peppe
+12/28/2021 07:51:05 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:51:10 PM INFO: Showing hand to: peppe
+12/28/2021 07:51:45 PM INFO: Player peppe providing hint to alfio: cards with value 3 are in positions: [2, 3, 4]
+12/28/2021 07:52:01 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:52:01 PM INFO: Giving 1 free note token.
+12/28/2021 07:52:06 PM INFO: Showing hand to: peppe
+12/28/2021 07:52:16 PM INFO: Showing hand to: alfio
+12/28/2021 07:52:38 PM INFO: Player peppe providing hint to alfio: cards with value 4 are in positions: [0, 1, 4]
+12/28/2021 07:52:48 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:52:48 PM INFO: Giving 1 free note token.
+12/28/2021 07:52:52 PM INFO: Showing hand to: alfio
+12/28/2021 07:53:03 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:53:03 PM INFO: white pile has been filled.
+12/28/2021 07:53:13 PM INFO: Showing hand to: alfio
+12/28/2021 07:53:36 PM INFO: Showing hand to: peppe
+12/28/2021 07:53:49 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:53:54 PM INFO: Showing hand to: peppe
+12/28/2021 07:54:27 PM INFO: Player peppe providing hint to alfio: cards with value 3 are in positions: [1, 2]
+12/28/2021 07:54:57 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:54:57 PM INFO: Giving 1 free note token.
+12/28/2021 07:55:02 PM INFO: Showing hand to: peppe
+12/28/2021 07:55:23 PM INFO: Player peppe providing hint to alfio: cards with value 4 are in positions: [0, 3]
+12/28/2021 07:55:37 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:55:37 PM INFO: Giving 1 free note token.
+12/28/2021 07:55:42 PM INFO: Showing hand to: peppe
+12/28/2021 07:55:52 PM INFO: Player peppe providing hint to alfio: cards with value 3 are in positions: [1]
+12/28/2021 07:56:05 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:56:05 PM INFO: Giving 1 free note token.
+12/28/2021 07:56:12 PM INFO: Player peppe providing hint to alfio: cards with value 5 are in positions: [3]
+12/28/2021 07:56:16 PM INFO: Showing hand to: peppe
+12/28/2021 07:56:39 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:56:39 PM INFO: Giving 1 free note token.
+12/28/2021 07:56:42 PM INFO: Showing hand to: alfio
+12/28/2021 07:57:13 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:57:13 PM INFO: green pile has been filled.
+12/28/2021 07:57:17 PM INFO: Showing hand to: peppe
+12/28/2021 07:57:28 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:57:31 PM INFO: Showing hand to: alfio
+12/28/2021 07:57:49 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 07:57:52 PM INFO: Showing hand to: peppe
+12/28/2021 07:58:07 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:58:07 PM INFO: red pile has been filled.
+12/28/2021 07:58:09 PM INFO: Showing hand to: alfio
+12/28/2021 07:58:58 PM INFO: Player peppe providing hint to alfio: cards with color red are in positions: [1, 3, 4]
+12/28/2021 07:59:00 PM INFO: Showing hand to: peppe
+12/28/2021 07:59:19 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 07:59:19 PM INFO: Giving 1 free note token.
+12/28/2021 07:59:25 PM INFO: Showing hand to: peppe
+12/28/2021 07:59:50 PM INFO: Showing hand to: alfio
+12/28/2021 08:00:11 PM INFO: Player peppe providing hint to alfio: cards with color red are in positions: [0, 2, 3]
+12/28/2021 08:00:30 PM INFO: Player: alfio: card 0 discarded successfully
+12/28/2021 08:00:36 PM INFO: Showing hand to: peppe
+12/28/2021 08:01:08 PM INFO: Player peppe providing hint to alfio: cards with color red are in positions: [0, 2]
+12/28/2021 08:01:15 PM INFO: Showing hand to: peppe
+12/28/2021 08:01:25 PM INFO: Player: alfio: card 5 discarded successfully
+12/28/2021 08:01:31 PM INFO: Showing hand to: peppe
+12/28/2021 08:02:02 PM INFO: Player peppe providing hint to alfio: cards with color red are in positions: [1]
+12/28/2021 08:02:19 PM INFO: Player: alfio: card 29 discarded successfully
+12/28/2021 08:02:24 PM INFO: Showing hand to: peppe
+12/28/2021 08:02:38 PM INFO: Player peppe providing hint to alfio: cards with color yellow are in positions: [4]
+12/28/2021 08:02:50 PM INFO: alfio: card played and correctly put on the table
+12/28/2021 08:02:50 PM INFO: Giving 1 free note token.
+12/28/2021 08:02:55 PM INFO: Showing hand to: peppe
+12/28/2021 08:03:06 PM INFO: Player peppe providing hint to alfio: cards with color blue are in positions: [4]
+12/28/2021 08:03:12 PM INFO: Player: alfio: card 23 discarded successfully
+12/28/2021 08:03:15 PM INFO: Showing hand to: alfio
+12/28/2021 08:03:32 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 08:03:32 PM INFO: yellow pile has been filled.
+12/28/2021 08:03:35 PM INFO: Showing hand to: peppe
+12/28/2021 08:04:02 PM INFO: Showing hand to: alfio
+12/28/2021 08:04:14 PM INFO: Player alfio providing hint to peppe: cards with color blue are in positions: [1, 4]
+12/28/2021 08:04:32 PM INFO: peppe: card played and correctly put on the table
+12/28/2021 08:04:32 PM INFO: blue pile has been filled.
+12/28/2021 08:04:32 PM INFO: Giving 1 free note token.
+12/28/2021 08:04:36 PM INFO: Showing hand to: peppe
+12/28/2021 08:04:59 PM INFO: Game over, people.
+12/28/2021 08:04:59 PM INFO: Please, close the server now
+12/28/2021 08:04:59 PM INFO: Score: 0; message: Booooooooooooring!
+12/28/2021 08:08:34 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/28/2021 08:08:41 PM INFO: Closing the server...
+12/28/2021 08:23:37 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/28/2021 08:24:25 PM INFO: Connected by: ('127.0.0.1', 49080)
+12/28/2021 08:24:25 PM INFO: Player connected: s288265
+12/28/2021 08:24:25 PM WARNING: Player disconnected: s288265
+12/28/2021 08:24:55 PM INFO: Connected by: ('127.0.0.1', 49084)
+12/28/2021 08:24:55 PM INFO: Player connected: s288265
+12/28/2021 08:25:54 PM INFO: Connected by: ('127.0.0.1', 49098)
+12/28/2021 08:25:54 PM INFO: Player connected: nino
+12/28/2021 08:26:07 PM INFO: Player ready: s288265
+12/28/2021 08:26:13 PM INFO: Player ready: nino
+12/28/2021 08:26:13 PM INFO: Game start! Between: ['s288265', 'nino']
+12/28/2021 08:26:13 PM INFO: Ok, let's start the game!
+12/28/2021 08:26:35 PM INFO: Closing the server...
+12/28/2021 08:29:14 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/28/2021 08:29:24 PM INFO: Connected by: ('127.0.0.1', 49120)
+12/28/2021 08:29:24 PM INFO: Player connected: alfio
+12/28/2021 08:29:39 PM WARNING: Player disconnected: alfio
+12/28/2021 08:29:41 PM INFO: Connected by: ('127.0.0.1', 49122)
+12/28/2021 08:29:41 PM INFO: Player connected: s288265
+12/28/2021 08:29:41 PM WARNING: Player disconnected: s288265
+12/28/2021 08:29:53 PM INFO: Connected by: ('127.0.0.1', 49124)
+12/28/2021 08:29:53 PM INFO: Player connected: s288265
+12/28/2021 08:30:02 PM INFO: Connected by: ('127.0.0.1', 49126)
+12/28/2021 08:30:02 PM INFO: Player connected: nino
+12/28/2021 08:30:06 PM INFO: Player ready: nino
+12/28/2021 08:30:10 PM INFO: Player ready: s288265
+12/28/2021 08:30:10 PM INFO: Game start! Between: ['s288265', 'nino']
+12/28/2021 08:30:10 PM INFO: Ok, let's start the game!
+12/28/2021 08:30:16 PM INFO: Showing hand to: nino
+12/28/2021 08:41:55 PM WARNING: Player disconnected: nino
+12/28/2021 08:42:03 PM INFO: Closing the server...
+12/29/2021 08:23:30 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/29/2021 08:23:40 PM INFO: Connected by: ('127.0.0.1', 50582)
+12/29/2021 08:23:40 PM INFO: Player connected: alfio
+12/29/2021 08:23:48 PM INFO: Connected by: ('127.0.0.1', 50584)
+12/29/2021 08:23:48 PM INFO: Player connected: peppe
+12/29/2021 08:23:51 PM INFO: Player ready: peppe
+12/29/2021 08:23:55 PM INFO: Player ready: alfio
+12/29/2021 08:23:55 PM INFO: Game start! Between: ['alfio', 'peppe']
+12/29/2021 08:23:55 PM INFO: Ok, let's start the game!
+12/29/2021 08:23:58 PM INFO: Showing hand to: alfio
+12/30/2021 01:46:02 AM WARNING: Player disconnected: peppe
+12/30/2021 01:46:06 AM WARNING: Player disconnected: alfio
+12/30/2021 01:46:14 AM INFO: Closing the server...
+12/30/2021 01:46:16 AM INFO: Hanabi server started on 127.0.0.1:1024
+12/30/2021 01:46:21 AM INFO: Connected by: ('127.0.0.1', 51228)
+12/30/2021 01:46:21 AM INFO: Player connected: alfio
+12/30/2021 01:46:25 AM INFO: Connected by: ('127.0.0.1', 51230)
+12/30/2021 01:46:25 AM INFO: Player connected: peppe
+12/30/2021 01:46:30 AM INFO: Player ready: peppe
+12/30/2021 01:46:34 AM INFO: Player ready: alfio
+12/30/2021 01:46:34 AM INFO: Game start! Between: ['alfio', 'peppe']
+12/30/2021 01:46:34 AM INFO: Ok, let's start the game!
+12/30/2021 01:46:43 AM WARNING: Player disconnected: alfio
+12/30/2021 01:46:49 AM WARNING: Player disconnected: peppe
+12/30/2021 01:46:56 AM INFO: Closing the server...
+12/30/2021 01:46:58 AM INFO: Hanabi server started on 127.0.0.1:1024
+12/30/2021 01:47:27 AM INFO: Connected by: ('127.0.0.1', 51256)
+12/30/2021 01:47:27 AM INFO: Player connected: alfio
+12/30/2021 01:47:31 AM INFO: Connected by: ('127.0.0.1', 51258)
+12/30/2021 01:47:31 AM INFO: Player connected: peppe
+12/30/2021 01:47:33 AM INFO: Player ready: peppe
+12/30/2021 01:47:39 AM INFO: Player ready: alfio
+12/30/2021 01:47:39 AM INFO: Game start! Between: ['alfio', 'peppe']
+12/30/2021 01:47:39 AM INFO: Ok, let's start the game!
+12/30/2021 01:47:45 AM WARNING: Player disconnected: alfio
+12/30/2021 01:47:49 AM WARNING: Player disconnected: peppe
+12/30/2021 01:47:53 AM INFO: Closing the server...
+12/30/2021 02:25:44 AM INFO: Hanabi server started on 127.0.0.1:1024
+12/30/2021 02:25:48 AM INFO: Connected by: ('127.0.0.1', 51762)
+12/30/2021 02:25:48 AM INFO: Player connected: alfio
+12/30/2021 02:25:51 AM INFO: Connected by: ('127.0.0.1', 51766)
+12/30/2021 02:25:51 AM INFO: Player connected: peppe
+12/30/2021 02:25:53 AM INFO: Player ready: peppe
+12/30/2021 02:25:57 AM INFO: Player ready: alfio
+12/30/2021 02:25:57 AM INFO: Game start! Between: ['alfio', 'peppe']
+12/30/2021 02:25:57 AM INFO: Ok, let's start the game!
+12/30/2021 02:26:00 AM INFO: Showing hand to: alfio
+12/30/2021 04:15:07 AM WARNING: Player disconnected: peppe
+12/30/2021 04:15:11 AM WARNING: Player disconnected: alfio
+12/30/2021 04:15:15 AM INFO: Closing the server...
