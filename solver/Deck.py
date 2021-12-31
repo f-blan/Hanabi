@@ -10,3 +10,6 @@ class Deck():
                                 [2,2,2,2,2],
                                 [1,1,1,1,1]
                                 ], dtype=np.int16) 
+
+    def remove_cards(cards):
+        pass

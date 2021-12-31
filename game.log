@@ -276,3 +276,44 @@
 12/30/2021 04:15:07 AM WARNING: Player disconnected: peppe
 12/30/2021 04:15:11 AM WARNING: Player disconnected: alfio
 12/30/2021 04:15:15 AM INFO: Closing the server...
+12/30/2021 07:43:03 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/30/2021 07:43:06 PM INFO: Connected by: ('127.0.0.1', 55922)
+12/30/2021 07:43:06 PM INFO: Player connected: alfio
+12/30/2021 07:43:11 PM INFO: Connected by: ('127.0.0.1', 55938)
+12/30/2021 07:43:11 PM INFO: Player connected: peppe
+12/30/2021 07:43:14 PM INFO: Player ready: peppe
+12/30/2021 07:43:18 PM INFO: Player ready: alfio
+12/30/2021 07:43:18 PM INFO: Game start! Between: ['alfio', 'peppe']
+12/30/2021 07:43:18 PM INFO: Ok, let's start the game!
+12/30/2021 07:43:47 PM INFO: Player alfio providing hint to peppe: cards with value 2 are in positions: [1, 2]
+12/30/2021 07:50:05 PM INFO: Player: peppe: card 16 discarded successfully
+12/30/2021 07:51:21 PM INFO: Player alfio providing hint to peppe: cards with value 2 are in positions: [1, 4]
+12/30/2021 07:51:48 PM WARNING: Player disconnected: alfio
+12/30/2021 07:51:52 PM WARNING: Player disconnected: peppe
+12/30/2021 07:51:55 PM INFO: Closing the server...
+12/30/2021 07:52:23 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/30/2021 07:52:26 PM INFO: Connected by: ('127.0.0.1', 56002)
+12/30/2021 07:52:26 PM INFO: Player connected: alfio
+12/30/2021 07:52:30 PM INFO: Connected by: ('127.0.0.1', 56004)
+12/30/2021 07:52:30 PM INFO: Player connected: peppe
+12/30/2021 07:52:32 PM INFO: Player ready: peppe
+12/30/2021 07:52:37 PM INFO: Player ready: alfio
+12/30/2021 07:52:37 PM INFO: Game start! Between: ['alfio', 'peppe']
+12/30/2021 07:52:37 PM INFO: Ok, let's start the game!
+12/30/2021 07:53:11 PM INFO: Player alfio providing hint to peppe: cards with color blue are in positions: [0]
+12/30/2021 07:54:10 PM INFO: Player: peppe: card 32 discarded successfully
+12/30/2021 07:55:37 PM WARNING: Player disconnected: peppe
+12/30/2021 07:55:40 PM WARNING: Player disconnected: alfio
+12/30/2021 07:55:43 PM INFO: Closing the server...
+12/30/2021 07:55:45 PM INFO: Hanabi server started on 127.0.0.1:1024
+12/30/2021 07:55:48 PM INFO: Connected by: ('127.0.0.1', 56056)
+12/30/2021 07:55:48 PM INFO: Player connected: alfio
+12/30/2021 07:56:02 PM INFO: Connected by: ('127.0.0.1', 56062)
+12/30/2021 07:56:02 PM INFO: Player connected: peppe
+12/30/2021 07:56:04 PM INFO: Player ready: peppe
+12/30/2021 07:56:08 PM INFO: Player ready: alfio
+12/30/2021 07:56:08 PM INFO: Game start! Between: ['alfio', 'peppe']
+12/30/2021 07:56:08 PM INFO: Ok, let's start the game!
+12/30/2021 07:56:16 PM INFO: Player alfio providing hint to peppe: cards with color blue are in positions: [0]
+12/30/2021 07:56:20 PM INFO: Showing hand to: alfio
+12/30/2021 07:56:31 PM INFO: Player: peppe: card 47 discarded successfully

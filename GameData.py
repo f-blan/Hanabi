@@ -99,7 +99,7 @@ class ServerToClientData(GameData):
         super().__init__("Game Server")
         self.action = action # debug purposes
 
-class ServerHintData(ServerToClientData):
+class ServerHData(ServerToClientData):
     '''
     The hint data that the server passes to the destination client. It needs:
     sender: string, name of the sender

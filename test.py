@@ -19,6 +19,31 @@ colorhint = np.array([
 needednums = np.array([4,3,4,3,3])
 neededcolors = np.array([0,1,2,3,4])
 
+
+colorhint[2] = needednums
+print(colorhint)
+needednums[3] = 232323
+print(colorhint)
+"""
+needed_cards = np.array([needednums,[0,1,2,3,4]], dtype=np.int16)
+#needed_cards= np.reshape(needed_cards, 10, order='F')
+print(np.transpose(needed_cards))
+cards = np.array([
+                [4,2,4,1,3],
+                [0,2,2,1,1]
+                ])
+rep = np.expand_dims(needed_cards,2)
+print(rep)
+rep=np.repeat(rep, 5, axis = 2)
+print(rep[:,1,:])
+
+print(cards == rep[:,1,:])
+print(rep == cards)
+#print(np.reshape(rep, [2,5,5]))
+#print(cards)
+print()
+"""
+"""
 a = np.argmax(numhint==1, axis = 1) #array with card values
 e = np.argmax(colorhint==1, axis = 1) #array with card colors
 f = np.array([0,1,2,3,4])
@@ -39,7 +64,7 @@ print(b)
 print(c)
 print(d)
 #print(np.any(d, axis = 1))
-
+"""
 
 
 """

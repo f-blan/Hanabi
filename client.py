@@ -135,6 +135,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if type(data) is GameData.ServerActionValid:
             dataOk = True
             print("Action valid!")
+            print(data.action)
+            print(f"card? {data.card.toString()}")
             print("Current player: " + data.player)
         if type(data) is GameData.ServerPlayerMoveOk:
             dataOk = True

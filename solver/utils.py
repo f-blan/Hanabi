@@ -13,4 +13,20 @@ def encode_color(color):
             return 4
 def encode_value(value):
     return value-1
+
+def decode_value(value):
+    return value+1
+
+def decode_color(color):
+    match color:
+        case 0:
+            return "red"
+        case 1:
+            return "yellow"
+        case 2:
+            return "green"
+        case 3:
+            return "blue"
+        case 4:
+            return "white"
         

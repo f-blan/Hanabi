@@ -17,7 +17,7 @@ class HanabiSolver():
         """improve current informations while it's another player's turn"""
         pass
 
-    def RecordMove():
+    def RecordMove(data, type, opt=None):
         """whenever a move has been confirmed, update the state"""
         pass
         
