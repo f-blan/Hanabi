@@ -1,7 +1,7 @@
-import Deck
+from .Deck import Deck
 import numpy as np
 
-class HanabiSolver():
+class HanabiSolver:
     def __init__(self):
         self.deck = Deck()
         self.fireworks = np.array([-1,-1,-1,-1,-1], dtype=np.int16) #no cards = -1, card 1 is in firework = 0 etc.
@@ -9,16 +9,18 @@ class HanabiSolver():
         self.red_tokens = 0
         self.max_b = 8
         self.max_r = 3
-    def FindMove():
+    def FindMove(self):
         """Find the next move for main player given current informations"""
         pass
     
-    def Enforce():
+    def Enforce(self):
         """improve current informations while it's another player's turn"""
         pass
 
-    def RecordMove(data, type, opt=None):
+    def RecordMove(self, data, type):
         """whenever a move has been confirmed, update the state"""
+        pass
+    def HintsToString(self, player_name):
         pass
         
     

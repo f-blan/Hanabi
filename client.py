@@ -108,7 +108,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if type(data) is GameData.ServerStartGameData:
             dataOk = True
             print("Game start!")
-            print(data.players)
             s.send(GameData.ClientPlayerReadyData(playerName).serialize())
             status = statuses[1]
         if type(data) is GameData.ServerGameStateData:
@@ -135,8 +134,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         if type(data) is GameData.ServerActionValid:
             dataOk = True
             print("Action valid!")
-            print(data.action)
-            print(f"card? {data.card.toString()}")
             print("Current player: " + data.player)
         if type(data) is GameData.ServerPlayerMoveOk:
             dataOk = True
@@ -160,7 +157,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             print(data.score)
             print(data.scoreMessage)
             stdout.flush()
-            run = False
+            #run = False
+            print("Ready for a new game!")
         if not dataOk:
             print("Unknown or unimplemented data type: " +  str(type(data)))
         print("[" + playerName + " - " + status + "]: ", end="")

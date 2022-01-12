@@ -1,0 +1,74 @@
+Connection accepted by the server. Welcome io
+[io - Lobby]: ready
+Ready: 2/2 players
+Game start!
+['io', 'cpu']
+[io - Game]: show 
+Current player: io
+Player hands: 
+Player cpu { 
+        cards: [ 
+                Card 1 - red 
+                Card 4 - white 
+                Card 1 - yellow 
+                Card 2 - yellow 
+                Card 5 - yellow 
+         ]
+}
+Table cards: 
+red: [ 
+]
+yellow: [ 
+]
+green: [ 
+]
+blue: [ 
+]
+white: [ 
+]
+Discard pile: 
+Note tokens used: 0/8
+Storm tokens used: 0/3
+[io - Game]: hint value cpu 1
+Hint type: value
+Player cpu cards with value 1 are:
+        0
+        2
+[io - Game]: Nice move!
+Current player: io
+cpu played 0
+[io - Game]: show
+Current player: io
+Player hands: 
+Player cpu { 
+        cards: [ 
+                Card 4 - white 
+                Card 1 - yellow 
+                Card 2 - yellow 
+                Card 5 - yellow 
+                Card 3 - white 
+         ]
+}
+Table cards: 
+red: [ 
+Card 1 - red 
+]
+yellow: [ 
+]
+green: [ 
+]
+blue: [ 
+]
+white: [ 
+]
+Discard pile: 
+Note tokens used: 0/8
+Storm tokens used: 0/3
+[io - Game]: hint color cpu yellow
+Hint type: color
+Player cpu cards with value yellow are:
+        1
+        2
+        3
+[io - Game]: OH NO! The Gods are unhappy with you!
+(cpu played card 2, as both hints indicated that two was yellow and 1)

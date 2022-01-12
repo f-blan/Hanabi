@@ -1,6 +1,9 @@
 import numpy as np
 from numpy.core.fromnumeric import argmax
 
+#python3 client.py 
+
+print(np.__version__)
 numhint = np.array([
     [1,0,0,0,0],
     [0,0,1,0,0],
@@ -16,14 +19,33 @@ colorhint = np.array([
     [0,1,0,0,0],
     [0,0,0,0,0],
     ])
+fireworks = np.array([4,2,4,1,1])
+colors = np.array([0,1,2,3,4])
+filter = fireworks < 4
+print(fireworks[filter])
+print(colors[filter])
+print(f"shape = {fireworks.shape}")
+
+needed_cards = np.array([fireworks+1,[0,1,2,3,4]], dtype=np.int16)
+
+print(needed_cards)
+
+#print(needed_cards[needed_cards[0] < 5])
+"""
 needednums = np.array([4,3,4,3,3])
 neededcolors = np.array([0,1,2,3,4])
 
+string = f"hi + \n{needednums}"
+
+print(string)
 
 colorhint[2] = needednums
 print(colorhint)
 needednums[3] = 232323
 print(colorhint)
+i=0
+"""
+
 """
 needed_cards = np.array([needednums,[0,1,2,3,4]], dtype=np.int16)
 #needed_cards= np.reshape(needed_cards, 10, order='F')
