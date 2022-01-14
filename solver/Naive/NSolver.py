@@ -11,19 +11,23 @@ class NSolver(HanabiSolver):
         self.main_play=-1 #for handling play or discard of a card
         self.last_play= -1 #for handling replacement after drawing
         i=0
+        self.cardsInHand = 5
+        if len(players)>3:
+            self.cardsInHand = 4
         for p in players:
             if p != player_name:
                 for po in data.players:
                     if po.name == p:
-                        nplayer = NPlayer.NPlayer( po.name, False,i, cards=po.hand)
+                        nplayer = NPlayer.NPlayer( po.name, False,i,self.cardsInHand, cards=po.hand)
                         self.players.append(nplayer)
             else:
-                nplayer = NPlayer.NPlayer(p, True,i)
+                nplayer = NPlayer.NPlayer(p, True,i, self.cardsInHand)
                 self.players.append(nplayer)
                 self.main_player = self.players[-1]
             i+=1
         
         self.current_player=0
+        
 
     def FindMove(self):
         """
@@ -127,12 +131,14 @@ class NSolver(HanabiSolver):
                         #drawn_card = p.hand[4]
                         handLength = len(p.hand)
                         drawingPlayer = p
-                if handLength ==5:
+                if handLength ==self.cardsInHand:
                     drawn_card = drawingPlayer.hand[handLength-1]
                     nplayer.handle_draw(played_id, drawn_card)
                     self.deck.remove_cards(drawn_card)
+                    #print(f"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAplayer {nplayer.name} has drawn {nplayer.cards[:, 4]}")
                 else:
                     nplayer.handle_draw(played_id)
+            
 
                 
 

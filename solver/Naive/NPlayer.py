@@ -5,32 +5,21 @@ from .. import Move
 from .. import utils
 
 class NPlayer:
-    def __init__(self, name, main, order, cards=None):
+    def __init__(self, name, main, order, cardsInHand, cards=None):
         self.name = name
         self.main = main
         self.order = order
         self.cardHandIndex = -1
-        self.ncards = 5
+        self.cardsInHand = cardsInHand
         self.cards = np.array([
-                                [-1,-1,-1,-1,-1],
-                                [-1,-1,-1,-1,-1],
+                                [-1 for i in range(0,cardsInHand)],
+                                [-1 for i in range(0,cardsInHand)]
                                 ], dtype=np.int16)
-        self.cardIds = np.array([-1,-1,-1,-1,-1])
+        self.cardIds = np.array([-1 for i in range(0,cardsInHand)])
         #0 no info given, -1 can't be target, 1 card is target 
-        self.hint_color = np.array([
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    ])
-        self.hint_value = np.array([
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    [0,0,0,0,0],
-                                    ])
+
+        self.hint_color = np.zeros((cardsInHand, 5), dtype=np.int16)
+        self.hint_value = np.zeros((cardsInHand, 5), dtype=np.int16)
         if main == False:
             i=0
             for c in cards:
@@ -88,8 +77,8 @@ class NPlayer:
         
     
     def GetSafeDiscard(self,fireworks):
-        f = np.array([0,1,2,3,4])
-
+        #f = np.array([0,1,2,3,4])
+        f = np.array([i for i in range(0, self.cardsInHand)])
         #gather info from hints
         card_values = np.argmax(self.hint_value==1, axis = 1) #1d array with card values
         card_colors = np.argmax(self.hint_color==1, axis = 1) #1d array with card colors
@@ -187,8 +176,7 @@ class NPlayer:
 
             if p.hint_value[hot_card, hot_value] != 1:
                 move = Move.Move(2)
-                if hot_value == -1:
-                    print(f"hinting {p.name} with cards {p.cards} card number {hot_card}")
+                
                 move.define_hint(p.name, "value", utils.decode_value(hot_value))
                 return move
             elif p.hint_color[hot_card, hot_color] !=1:
@@ -204,7 +192,7 @@ class NPlayer:
             #the ally has no cards: this shouldn't happen, maybe it's a bug. Anyway we just don't hint anything
             #return None
         move = Move.Move(2)
-        print(f"random hint for value {next_cards[0,0]}")
+        #print(f"random hint for value {next_cards[0,0]}")
         move.define_hint(players[next_player].name, "value", utils.decode_value(next_cards[0,0]))
         return move
     
@@ -230,22 +218,22 @@ class NPlayer:
     
     def handle_draw(self, played_id, drawnCard = None):
         #cards below the played one are moved one index above: move them and their hints accordingly
-        for i in range(played_id+1, 5):
+        for i in range(played_id+1, self.cardsInHand):
             self.hint_color[i-1, :] = self.hint_color[i, :]
             self.hint_value[i-1, :] = self.hint_value[i, :]
             self.cards[:, i-1] = self.cards[:, i]
         
         #erase hints: player has no hints on the newly drawn card
-        self.hint_value[4, :] = np.zeros(5)
-        self.hint_color[4, :] = np.zeros(5)
+        self.hint_value[self.cardsInHand-1, :] = np.zeros(5)
+        self.hint_color[self.cardsInHand-1, :] = np.zeros(5)
         
         if drawnCard == None:
             #we don't know the new card or it simply was not drawn (deck has no cards)
-            self.cards[0, 4] = -1
-            self.cards[1, 4] = -1
+            self.cards[0, self.cardsInHand-1] = -1
+            self.cards[1, self.cardsInHand-1] = -1
         else:
             #drawnCard is not none
-            self.cards[0, 4] = utils.encode_value(drawnCard.value)
-            self.cards[1, 4] = utils.encode_color(drawnCard.color)
+            self.cards[0, self.cardsInHand-1] = utils.encode_value(drawnCard.value)
+            self.cards[1, self.cardsInHand-1] = utils.encode_color(drawnCard.color)
             #self.deck.remove_cards(drawn_card)
         return

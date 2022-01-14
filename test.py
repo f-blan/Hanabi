@@ -19,6 +19,13 @@ colorhint = np.array([
     [0,1,0,0,0],
     [0,0,0,0,0],
     ])
+
+ar = np.array([[-1 for i in range(0,4)],[-1 for i in range(0,4)]])
+print(ar)
+ar2 = np.zeros((4,5), dtype=np.int16)
+print(ar2)
+
+"""
 fireworks = np.array([4,2,4,1,1])
 colors = np.array([0,1,2,3,4])
 filter = fireworks < 4
@@ -29,7 +36,7 @@ print(f"shape = {fireworks.shape}")
 needed_cards = np.array([fireworks+1,[0,1,2,3,4]], dtype=np.int16)
 
 print(needed_cards)
-
+"""
 #print(needed_cards[needed_cards[0] < 5])
 """
 needednums = np.array([4,3,4,3,3])

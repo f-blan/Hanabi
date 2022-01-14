@@ -48,8 +48,8 @@ def manage_solver():
     global count
     global sem
     while run:
-        #time.sleep(1)
-        sem.acquire()
+        time.sleep(0.5)
+        #sem.acquire()
         if run == False:
             break
         if count>0:
@@ -84,7 +84,7 @@ def manage_solver():
                 s.send(GameData.ClientHintData(playerName, move.h_player, move.h_type, move.h_value).serialize())
         
         count += 1
-        sem.release()
+        #sem.release()
     os._exit(0)
 
 
@@ -104,7 +104,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     print("eh")
     i=0
     while run:
-        sem.acquire()
+        #sem.acquire()
         
         dataOk = False
         data = s.recv(DATASIZE)
@@ -223,4 +223,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             count = 0
         print("[" + playerName + " - " + status + "]: ", end="")
         stdout.flush()
-        sem.release()
+        #sem.release()
