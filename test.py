@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.random import choice
 from numpy.core.fromnumeric import argmax
 
 #python3 client.py 
@@ -19,12 +20,80 @@ colorhint = np.array([
     [0,1,0,0,0],
     [0,0,0,0,0],
     ])
+indexing = np.array([
+                                [False,False,False,False,False],
+                                [False,False,True,False,False],
+                                [False,False,False,False,False],
+                                [False,False,False,True,True],
+                                [False,False,False,False,False],
+                                ], dtype=np.int16) 
+
+    
+deck = np.array([
+                                [3,3,3,3,3],
+                                [2,2,2,2,2],
+                                [2,2,2,2,2],
+                                [2,2,2,2,2],
+                                [1,1,1,1,1]
+                                ], dtype=np.int16) 
+
+hint_for_a_card = np.array([
+                            [-2,-2,-2,0,-2],
+                            [-2,-2,-2,0,-2],
+                            [0 ,0 ,0 ,2, 0],
+                            [-2,-2,-2,0,-2],
+                            [-2,-2,-2,0,-2],
+                            ])
+hint_for_a_card = np.array([
+                            [-1,-1,-1,+1,-1],
+                            [-1,-1,-1,+1,-1],
+                            [-1,-1,-1,+1,-1],
+                            [-1,-1,-1,+1,-1],
+                            [-1,-1,-1,+1,-1],
+                            ])
+hint_for_a_card = np.array([
+                            [ 0, 0, 0, 0, 0],
+                            [ 0, 0, 0, 0, 0],
+                            [ 0, 0, 0, 0, 0],
+                            [ 0, 0, 0, 0, 0],
+                            [ 0, 0, 0, 0, 0],
+                            ])
+
+order = 2                            
+a = np.array([0,1,2,3,4,5])
+a = np.roll(a, 0)
+b = np.array([0.5,0.25,0.75])
+#s = choice([0,1,2,3,4,], p= [1,1,0,0])
+print(np.around(b))
+
+"""
+fireworks = np.array([1,2,2,3,1])
+needed_values = fireworks +1
+needed_colors = np.array([i for i in range(0,4)])
+
+discardabilities = np.zeros((25,25), dtype= np.float32)
+a = np.zeros(5)
+discardables =np.arange(5) < 3
+x, y = indexing.nonzero()
+print(f"{deck[x,y]}")
+"""
+"""
+to_remove = np.array([
+    [1,0],
+    [0,4]
+    ])
+
+deck[to_remove[0,:],to_remove[1,:]]-=1
+
+print(deck)
+ar = np.ones([False, True, False])
+print(ar)
 
 ar = np.array([[-1 for i in range(0,4)],[-1 for i in range(0,4)]])
-print(ar)
+#print(ar)
 ar2 = np.zeros((4,5), dtype=np.int16)
-print(ar2)
-
+#print(ar2)
+"""
 """
 fireworks = np.array([4,2,4,1,1])
 colors = np.array([0,1,2,3,4])

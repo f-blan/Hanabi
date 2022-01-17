@@ -3,7 +3,6 @@ import numpy as np
 
 class HanabiSolver:
     def __init__(self):
-        self.deck = Deck()
         self.fireworks = np.array([-1,-1,-1,-1,-1], dtype=np.int16) #no cards = -1, card 1 is in firework = 0 etc.
         self.blue_tokens = 0
         self.red_tokens = 0
