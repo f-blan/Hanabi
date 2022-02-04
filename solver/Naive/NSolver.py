@@ -150,6 +150,9 @@ class NSolver(HanabiSolver):
                 break
         return self.players[player_id].HintsToString()
 
+    def DeckToString(self):
+        return "no deck info"
+
     def remove_card(self, nplayer, cardId):
         #erase the card
         """

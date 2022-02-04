@@ -1,5 +1,5 @@
 from solver.Fuzzy.FDeck import FDeck
-from .. import Move
+from solver.Move import Move
 import numpy as np
 from .. import utils
 
@@ -15,16 +15,22 @@ class FMove(Move):
         -hints are evaluated on number of cards hinted, their playability and their discardability
         -a play without maximum playability is not penalised unless we only have
     """
+    def define_play(self, card_n):
+        return super().define_play(card_n)
+    
+    def define_discard(self, card_n):
+        return super().define_discard(card_n)
 
-    def define_hint(self, player_n, type, value):
-        super().define_hint(player_n, type, value)
-        if type == "color":
-            self.type = 1
-            self.value = utils.encode_color(value)
+    def define_hint(self, player, h_type, value):
+        self.hd_player = player.order
+        self.hd_type=h_type
+        self.hd_value = value
+        if h_type == 0:
+            super().define_hint(player.name, "value", utils.decode_value(value))
         else:
-            self.type = 0
-            self.value = utils.encode_value(value)
+            super().define_hint(player.name, "color", utils.decode_color(value))
 
+    #TODO: add some minor endgame info (e.g. discards should be valued less than plays and hints)
 
     def EvaluatePlay(self, playability: float, redTokens: int):
         if playability == 1:
@@ -41,33 +47,36 @@ class FMove(Move):
             self.score = 1
         else:
             rt = redTokens*1.0
-            self.score = playability - 0.5 * (rt/2)
+            self.score = playability - 0.5 * (rt)
 
 
         return self.score
 
     def EvaluateDiscard(self, discardability: float, blueTokens: int):
-        #blue token contribution: the less blue token there are available, the more valuable is the discard
-        bt = 0.35 * (blueTokens*1.0)/8
+        if discardability == 1:
+            self.score = 0.95
+            return
+        #blue token contribution: the more blue tokens there are available, the less valuable is the discard
+        bt = (blueTokens*1.0)/8
         
         #a play with max playability will generally have a score higher than a discard with max discardability:
         #playing makes other cards playable, while if you stole a play from someone they still gained a safe discard
         #hence why *0.75. The only case where a discard is better than a play is when there are no blue tokens
 
-        self.score = (discardability + bt)*0.75 
-        return 0
+        self.score = discardability*bt 
+        return
 
     def EvaluateHint(self, hinted_player, blueTokens):
         #cards with the same value (the other cards that will be targeted by the hint)
-        same_value = hinted_player.cards[self.type, :] == self.value
+        same_value = hinted_player.cards[self.hd_type, :] == self.hd_value
 
         #filter wtr to hints already given
-        filter_mask = hinted_player.hint_tracker[self.type] == False
+        filter_mask = hinted_player.hint_tracker[self.hd_type] == False
 
 
         same_value = np.logical_and(same_value, filter_mask)
 
-        #indices of cards benefitting from the hint
+        #indices of cards benefiting from the hint
         same_value = same_value.nonzero()
 
         #for each card, compute how valuable the knowledge given by the hint is
@@ -75,6 +84,29 @@ class FMove(Move):
         tot_gain = np.sum(gain)
 
         #blue token contribution, the least tokens are available, the least score gets the hint
-        bt = 0.35 * (blueTokens*1.0)/8
-        self.score = gain - bt
+        bt = 0#0.35 * (blueTokens*1.0)/8
+        if blueTokens == 8:
+            bt = 0.35
+        self.score = tot_gain - bt
         return self.score
+
+    def ToKey(self):
+        string = ""
+        if self.type == 0:
+            string+=f"d{self.card_n}"
+        elif self.type ==1:
+            string+=f"p{self.card_n}"
+        else:
+            string+=f"h{self.hd_player}{self.hd_type}{self.hd_value}"
+        return string
+        
+    def ToString(self):
+        if self.type == 0:
+            return f"Discard move of {self.card_n} with score {self.score}"
+        if self.type == 1:
+            return f"Play move of {self.card_n} with score {self.score}"
+        else:
+            if self.hd_type==1:
+                return f"Hint move of color {self.h_value} to player {self.h_player} with score {self.score}" 
+            else:
+                return f"Hint move of value {self.h_value} to player {self.h_player} with score {self.score}"

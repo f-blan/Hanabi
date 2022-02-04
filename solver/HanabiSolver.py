@@ -16,10 +16,12 @@ class HanabiSolver:
         """improve current informations while it's another player's turn"""
         pass
 
-    def RecordMove(self, data, type):
+    def RecordMove(self, data, mtype):
         """whenever a move has been confirmed, update the state"""
         pass
     def HintsToString(self, player_name):
+        pass
+    def DeckToString(self):
         pass
         
     

@@ -11,7 +11,10 @@ import time
 from solver.Move import Move
 from solver.HanabiSolver import HanabiSolver
 from solver.Naive.NSolver import NSolver
+from solver.Fuzzy.FSolver import FSolver
+from solver.MonteCarlo.MCSolver import MCSolver
 from threading import Semaphore
+
 
 if len(argv) < 4:
     print("You need the player name to start the game.")
@@ -19,13 +22,13 @@ if len(argv) < 4:
     playerName = "s288265" # For debug
     ip = HOST
     port = PORT + 1
-    solver_name = "NSolver"
+    solver_name = "MCSolver"
     solver = {}
 else:
     playerName = argv[3]
     ip = argv[1]
     port = int(argv[2])
-    solver_name = "NSolver"
+    solver_name = "MCSolver"
     solver = {}
 
 run = True
@@ -48,7 +51,7 @@ def manage_solver():
     global count
     global sem
     while run:
-        time.sleep(0.5)
+        time.sleep(0.1)
         #sem.acquire()
         if run == False:
             break
@@ -71,6 +74,7 @@ def manage_solver():
             s.send(GameData.ClientGetGameStateRequest(playerName).serialize())
         elif gameStatus == "MyTurn":
             print("finding move")
+            time.sleep(0.2)
             move = solver.FindMove()
         
             if move.type == 0:
@@ -129,6 +133,25 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             count = 0
         if type(data) is GameData.ServerGameStateData:
             dataOk = True
+            if gameStatus == "Start":
+                #initialize solver
+                if solver_name == "NSolver":
+                    
+                    solver = NSolver(data, players,playerName)
+                    print(f"using naive solver {solver}")
+                elif solver_name == "FSolver":
+                    solver = FSolver(data, players,playerName)
+                    print(f"using fuzzy solver {solver}")
+                elif solver_name == "MCSolver":
+                    solver = MCSolver(data, players,playerName)
+                    print(f"using MonteCarlo solver {solver}")
+                else:
+                    
+                    solver = NSolver(data, players,playerName)
+                    print(f"using naive solver {solver}")
+            elif gameStatus == "Update":
+                
+                solver.RecordMove(data, "draw")
             print("Current player: " + data.currentPlayer)
             print("Player hands: ")
             for p in data.players:
@@ -151,20 +174,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 print("\t" + c.toClientString())            
             print("Note tokens used: " + str(data.usedNoteTokens) + "/8")
             print("Storm tokens used: " + str(data.usedStormTokens) + "/3")
-            if gameStatus == "Start":
-                #initialize solver
-                if solver_name == "NSolver":
-                    
-                    solver = NSolver(data, players,playerName)
-                    print(f"using naive solver {solver}")
-                else:
-                    
-                    solver = NSolver(data, players,playerName)
-                    print(f"using naive solver {solver}")
-            elif gameStatus == "Update":
-                
-                solver.RecordMove(data, "draw")
-
+            
+            print(solver.DeckToString())
             #change state to "MyTurn" or "OthersTurn"
             if data.currentPlayer == playerName:
                 gameStatus = gameStatuses[4]

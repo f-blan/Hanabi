@@ -36,4 +36,9 @@ def decode_color(color):
         return "white"
     else:
         print(f"color corresponding to {color} was not found")
+def decode_hint_value(value):
+    if value == 0:
+        return "value"
+    else:
+        return "color"
         
