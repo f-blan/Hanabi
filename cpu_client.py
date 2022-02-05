@@ -30,6 +30,8 @@ else:
     port = int(argv[2])
     solver_name = "MCSolver"
     solver = {}
+if len(argv) == 5:
+    solver_name = argv[4]
 
 run = True
 
@@ -91,7 +93,31 @@ def manage_solver():
         #sem.release()
     os._exit(0)
 
+def print_state(solver, data):
+    print("Current player: " + data.currentPlayer)
+    print("Player hands: ")
+    for p in data.players:
+        print(p.toClientString())
+        if gameStatus != "Start":
+            print(solver.HintsToString(p.name))
+            
+    if gameStatus != "Start":
+        print(f"hints for {playerName}:")
+        print(solver.HintsToString(playerName))
 
+    print("Table cards: ")
+    for pos in data.tableCards:
+        print(pos + ": [ ")
+        for c in data.tableCards[pos]:
+            print(c.toClientString() + " ")
+        print("]")
+    print("Discard pile: ")
+    for c in data.discardPile:
+        print("\t" + c.toClientString())            
+    print("Note tokens used: " + str(data.usedNoteTokens) + "/8")
+    print("Storm tokens used: " + str(data.usedStormTokens) + "/3")
+            
+    print(solver.DeckToString())
     
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -146,36 +172,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                     solver = MCSolver(data, players,playerName)
                     print(f"using MonteCarlo solver {solver}")
                 else:
-                    
                     solver = NSolver(data, players,playerName)
                     print(f"using naive solver {solver}")
             elif gameStatus == "Update":
                 
                 solver.RecordMove(data, "draw")
-            print("Current player: " + data.currentPlayer)
-            print("Player hands: ")
-            for p in data.players:
-                print(p.toClientString())
-                if gameStatus != "Start":
-                    print(solver.HintsToString(p.name))
             
-            if gameStatus != "Start":
-                print(f"hints for {playerName}:")
-                print(solver.HintsToString(playerName))
-
-            print("Table cards: ")
-            for pos in data.tableCards:
-                print(pos + ": [ ")
-                for c in data.tableCards[pos]:
-                    print(c.toClientString() + " ")
-                print("]")
-            print("Discard pile: ")
-            for c in data.discardPile:
-                print("\t" + c.toClientString())            
-            print("Note tokens used: " + str(data.usedNoteTokens) + "/8")
-            print("Storm tokens used: " + str(data.usedStormTokens) + "/3")
-            
-            print(solver.DeckToString())
+            print_state(solver,data)
             #change state to "MyTurn" or "OthersTurn"
             if data.currentPlayer == playerName:
                 gameStatus = gameStatuses[4]

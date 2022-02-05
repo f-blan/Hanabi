@@ -340,6 +340,8 @@ class FDeck(Deck):
 
     def discardability_fn(self, n_cards_in_game):
         if type(n_cards_in_game) == np.ndarray:
+            for d in n_cards_in_game:
+                assert d>0 
             return np.power(1- np.reciprocal(n_cards_in_game), 2)
         elif type(n_cards_in_game) == int:
             assert n_cards_in_game > 0

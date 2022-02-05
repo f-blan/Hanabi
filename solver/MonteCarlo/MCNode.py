@@ -14,7 +14,7 @@ MAX_DEPTH = 10
 MC_ITERATIONS = 1
 D_FACTOR = 0.9 #discount factor
 VERBOSE = False
-PRINT_DEBUG = False
+PRINT_DEBUG = True
 
 class MCNode():
     def __init__(self, fireworks: np.ndarray, blue_tokens: int, red_tokens: int, players: list(), 
@@ -121,6 +121,7 @@ class MCNode():
                 self.deck.RemoveCardsFromGame(move.used_card)
                 card = move.used_card
                 if self.curr_player_order == self.main_player_order:
+                    assert self.players[self.main_player_order].playabilities[move.cardHandIndex] >=1
                     self.deck.RemoveCards(move.used_card)
 
             else:
@@ -129,7 +130,7 @@ class MCNode():
                 #(i.e. all ones are playable, we know we have a one but don't know the color),
                 #the node is set as terminal since the game state is too uncertain from now on  
                 hint = curr_player.hints[:,:, move.cardHandIndex]
-                
+                assert self.players[self.main_player_order].playabilities[move.cardHandIndex] >=1
                 kn = hint >=2
                 if np.any(kn):
                     #we take into account this play because we have perfect knowledge: understand what's the card

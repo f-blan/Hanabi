@@ -134,7 +134,7 @@ class NSolver(HanabiSolver):
                 if handLength ==self.cardsInHand:
                     drawn_card = drawingPlayer.hand[handLength-1]
                     nplayer.handle_draw(played_id, drawn_card)
-                    self.deck.remove_cards(drawn_card)
+                    #self.deck.remove_cards(drawn_card)
                     #print(f"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAplayer {nplayer.name} has drawn {nplayer.cards[:, 4]}")
                 else:
                     nplayer.handle_draw(played_id)
