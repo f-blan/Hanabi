@@ -3,7 +3,7 @@ from . import FPlayer
 import numpy as np
 from .. import utils
 
-DECK_VERBOSE = True
+DECK_VERBOSE = False
 
 class FDeck(Deck):
     def __init__(self, main_player: FPlayer, n_players: int):
@@ -204,7 +204,7 @@ class FDeck(Deck):
     def RemoveCards(self, to_remove: np.ndarray):
         #a set of cards were removed from the deck (drawn) and we know them. update 
         self.deck[to_remove[0,:],to_remove[1,:]]-=1
-        self.mask = self.deck >= 0
+        self.mask = self.deck > 0
         self.n_cards_in_deck -= to_remove.shape[1]
 
     def RemoveCardsFromGame(self, to_remove: np.ndarray):
@@ -335,13 +335,14 @@ class FDeck(Deck):
                         f"Deck + agent values:\n"
                         f"playability: {self.playability_ad} discardability: {self.discardability_ad}")
         else:
-            string = ""
+            string = f"Deck (cards: {self.n_cards_in_deck})\n{self.deck}\ncards in game (cards: {self.n_cards_in_game}\n{self.cards_in_game}"
         return string
 
     def discardability_fn(self, n_cards_in_game):
         if type(n_cards_in_game) == np.ndarray:
             return np.power(1- np.reciprocal(n_cards_in_game), 2)
         elif type(n_cards_in_game) == int:
+            assert n_cards_in_game > 0
             return np.power(1-(1/n_cards_in_game))
 
     def update_filtered_deck(self, main_player: FPlayer):

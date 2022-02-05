@@ -14,6 +14,7 @@ MAX_DEPTH = 10
 MC_ITERATIONS = 1
 D_FACTOR = 0.9 #discount factor
 VERBOSE = False
+PRINT_DEBUG = False
 
 class MCNode():
     def __init__(self, fireworks: np.ndarray, blue_tokens: int, red_tokens: int, players: list(), 
@@ -30,20 +31,25 @@ class MCNode():
         self.MainDeck = MainDeck
         self.top_card_index = top_card_index #the index of the card at the top of the deck
         self.move = move
-
+        self.depth = depth
         self.is_root = is_root
+        self.parent = parent
+
+        if PRINT_DEBUG:
+            print("--------------NODE GENERATED-----------------")
+            print(f"node with key {self.ToKey()} has been generated, To String is:")
         if move != None:
             #we initialize also the move if specified
             self.apply_move(move)
-            self.deck.update_expected_values(self.fireworks,self.players[self.main_player_order])
-            for p in self.players:
-                if p.order == self.curr_player_order or p.order == self.main_player_order:
-                    p.playabilities, p.discardabilities = self.deck.evaluate_unknown_cards(p.n_cards, self.fireworks,p.hints, p.hard_unknowns)
-                else:
-                    p.playabilities, p.discardabilities = self.deck.evaluate_known_cards(p.cards,self.fireworks,p.hard_unknowns)
+        
+        self.deck.update_expected_values(self.fireworks,self.players[self.main_player_order])
+        for p in self.players:
+            if p.order == self.curr_player_order or p.order == self.main_player_order:
+                p.playabilities, p.discardabilities = self.deck.evaluate_unknown_cards(p.n_cards, self.fireworks,p.hints, p.hard_unknowns)
+            else:
+                p.playabilities, p.discardabilities = self.deck.evaluate_known_cards(p.cards,self.fireworks,p.hard_unknowns,p.n_cards)
         
         #MC parameters
-        self.depth = depth
         self.n_simulations = 1
         self.score = self.MC_simulate()
 
@@ -54,19 +60,18 @@ class MCNode():
         self.children = list()
         self.childrenKeys = {}
         
-        self.parent = parent
+        
         self.expanded = False
         self.terminal = False 
 
         #TODO: fix endgame check (DONE)
-        if self.red_tokens >= 3 or (self.deck.endgame and self.deck.turns_until_end <= 0):
+        if self.red_tokens >= 3 or (self.deck.endgame and self.deck.turns_until_end < 0):
             self.terminal = True
 
         #self.max_score = 8+3+len(players)*2*players[0].cardsInHand+25*4
-        print("--------------NODE GENERATED-----------------")
-        print(f"node with key {self.ToKey()} has been generated, To String is:")
-        print(self.ToString())
-        print("--------------END GENERATION-----------------")
+        if PRINT_DEBUG:
+            print(self.ToString())
+            print("--------------END GENERATION-----------------")
 
     def apply_move(self, move: MCMove):
         """
@@ -76,7 +81,7 @@ class MCNode():
         assert next_player_order!=self.curr_player_order
         curr_player = self.players[self.curr_player_order]
         if self.move != None:
-            print(f"curr_player_order: {self.curr_player_order} real: {self.move.playerOrder} next: {next_player_order}")
+            #print(f"curr_player_order: {self.curr_player_order} real: {self.move.playerOrder} next: {next_player_order}")
             assert self.curr_player_order == self.move.playerOrder
         self.curr_player_order = next_player_order
         
@@ -155,7 +160,7 @@ class MCNode():
                 self.fireworks[card[1]]+=1
                 if card[0] == 4:
                     self.blue_tokens -= 1
-                print(self.fireworks)
+                #print(self.fireworks)
         elif move.type == 2:
             #hint
             #we accept hints on cards we don't know, a player will gain a base knowledge score when that happens
@@ -209,6 +214,10 @@ class MCNode():
     def MC_expand(self):
         mcplayer = self.players[self.curr_player_order]
 
+        if PRINT_DEBUG:
+            print("----------EXPANDING---------")
+            print(self.ToKey())
+
         moves = mcplayer.GetMoves( self.players, self.fireworks, self.deck, self.red_tokens, self.blue_tokens)
 
         for i in range(0, min(MAX_CHILDREN, len(moves))):
@@ -240,24 +249,30 @@ class MCNode():
             node = tmpnode.GetBestNodeUTC()
             if node == None:
                 tmpnode.terminal = True 
+                if tmpnode.is_root:
+                    return tmpnode
                 tmpnode = tmpnode.parent
             else:
                 tmpnode = node
         return tmpnode
 
     def FindMove(self, iterations = MC_ITERATIONS):
-        print("-----FINDING MOVE-----")
-        print(f"root is {self.ToKey()}")
+        if PRINT_DEBUG:
+            print("-----FINDING MOVE-----")
+            print(f"root is {self.ToKey()}")
         assert self.curr_player_order == self.main_player_order
         for i in range(0, iterations):
             node = self.MC_select()
             #print(f"Selected: {node.ToString()}")
+            if node == None or node.terminal:
+                print("You're asking a terminal node to find a move")
+                break
             node.MC_expand()
-        
 
         bestNode=self.GetBestNodeAVGScore()
-        print(f"Best move found is {bestNode.ToString()}")
-        print("---------END FIND--------")
+        if PRINT_DEBUG:
+            print(f"Best move found is {bestNode.ToString()}")
+            print("---------END FIND--------")
         return bestNode.move
         
 
@@ -266,6 +281,8 @@ class MCNode():
         pass
     
     def GetBestNodeUTC(self):
+        if self.terminal:
+            return None
         node = None 
         maxscore= -100
         for i in range(0, len(self.children)):
@@ -279,11 +296,14 @@ class MCNode():
         
         return node 
     def GetBestNodeAVGScore(self):
+        if self.terminal:
+            return None
         node = None 
         maxscore= -100
         for i in range(0, len(self.children)):
             child = self.children[i]
-            print(f"{child.ToString()}")
+            if PRINT_DEBUG:
+                print(f"{child.ToString()}")
             c_score = child.children_scores/child.n_simulations
             if c_score > maxscore:
                 maxscore = c_score

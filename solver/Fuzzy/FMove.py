@@ -97,7 +97,7 @@ class FMove(Move):
         elif self.type ==1:
             string+=f"p{self.card_n}"
         else:
-            string+=f"h{self.hd_player}{self.hd_type}{self.hd_value}"
+            string+=f"h_p{self.hd_player}t{self.hd_type}v{self.hd_value}"
         return string
         
     def ToString(self):

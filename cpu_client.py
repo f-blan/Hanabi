@@ -74,7 +74,7 @@ def manage_solver():
             s.send(GameData.ClientGetGameStateRequest(playerName).serialize())
         elif gameStatus == "MyTurn":
             print("finding move")
-            time.sleep(0.2)
+            #time.sleep(0.3)
             move = solver.FindMove()
         
             if move.type == 0:

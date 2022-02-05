@@ -1,7 +1,11 @@
 #from markupsafe import re
+from torch import rand
 from solver.Fuzzy.FDeck import FDeck
 #from solver.MonteCarlo.MCPlayer import MCPlayer
+from numpy.random import randint
 import numpy as np
+
+
 
 #from solver.MonteCarlo.MCMove import MCMove
 
@@ -10,8 +14,13 @@ class NodeDeck(FDeck):
         super().__init__(None, n_players)
         self.turns_until_end = -1
         self.endgame = False
-        self.deck = np.array(self.deck, dtype=np.float32)
-        self.cards_in_game= np.array(self.cards_in_game, dtype=np.float32)
+
+        #data structure to keep track of random decisions on deck (ex. when removing a random card we track it here)
+        self.randomMask = np.zeros((5,5), dtype=np.int16)
+        #data structure to keep track of which cards can be in our main play
+        self.hintMask = np.zeros((5,5)) == 0
+        #self.deck = np.array(self.deck, dtype=np.float32)
+        #self.cards_in_game= np.array(self.cards_in_game, dtype=np.float32)
 
     def RemoveCards(self, to_remove: np.ndarray):
         #print("----------__REMOVAL------------------")
@@ -34,17 +43,34 @@ class NodeDeck(FDeck):
     def RemoveHintedCard(self,  hint: np.ndarray):
         cont = True
         #we may know something about the card we need to remove
-        m = hint==2
+        m = hint>=2
 
         if np.any(m) and cont:
             #perfect knowledge
             x,y = m.nonzero()
+            x=x[0]
+            y=y[0]
+            if self.deck[x,y] < 1:
+                #we previously reoved this card for randomness, remove another one
+                #some old debug prints
+                print("---PRE EXCEPTION---")
+                print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
+                    
+                assert self.randomMask[x,y] >= 1
+                targets = np.logical_and(self.deck>=1, self.randomMask<=-1)
+                assert np.any(targets)
+                xr,yr = targets.nonzero()
+
+                index = randint(0, xr.shape[0])
+                x = xr[index]
+                y = yr[index]
+                self.randomMask[x,y] +=2
 
             self.cards_in_game[x,y] -= 1
             self.deck[x,y] -= 1
             cont = False
 
-        
+        #partial/no knowledge: remove one of the cards this card can be (randomly)
         m = hint > 0
         if np.any(m) and cont:
             #partial knowledge
@@ -53,11 +79,23 @@ class NodeDeck(FDeck):
             mask_filter = self.mask[x, y]
             x = x[mask_filter]
             y = y[mask_filter]
+            
+            self.randomMask[x,y]-=1
+            if x.shape[0] == 0:
+            
+                print("---PRE EXCEPTION---")
+                print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n {self.randomMask}")
 
-            to_remove = 1/x.shape[0]
+            index = randint(0, x.shape[0])
+            x = x[index]
+            y = y[index]
+            self.randomMask[x,y]+=2
+        
 
-            self.deck[x,y] -= to_remove
-            self.cards_in_game[x,y] -= to_remove
+            #to_remove = 1/x.shape[0]
+
+            self.deck[x,y] -= 1
+            self.cards_in_game[x,y] -= 1
             cont = False
         
         m = hint < 0
@@ -69,26 +107,54 @@ class NodeDeck(FDeck):
             mask_filter = self.mask[x, y]
             x = x[mask_filter]
             y = y[mask_filter]
+            
+            self.randomMask[x,y]-=1
 
-            to_remove = 1/x.shape[0]
+            if x.shape[0] == 0:
+                print("---PRE EXCEPTION---")
+                print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
 
-            self.deck[x,y] -= to_remove
-            self.cards_in_game[x,y] -= to_remove
+            index = randint(0, x.shape[0])
+            x = x[index]
+            y = y[index]
+            
+            self.randomMask[x,y]+=2
+
+            #to_remove = 1/x.shape[0]
+
+            self.deck[x,y] -= 1
+            self.cards_in_game[x,y] -= 1
             cont = False
         
         if cont:
             #we know nothing of the card
             x,y = self.mask.nonzero()
+            self.randomMask[x,y]-=1
+            if x.shape[0] == 0:
+                print("---PRE EXCEPTION---")
+                print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
+
+            index = randint(0, x.shape[0])
+            x = x[index]
+            y = y[index]
             
-            to_remove = 1/x.shape[0]
+            self.randomMask[x,y]+=2
+
+            #to_remove = 1/x.shape[0]
             
-            self.deck[x,y] -= to_remove
-            self.cards_in_game[x,y] -= to_remove
+            self.deck[x,y] -= 1
+            self.cards_in_game[x,y] -= 1
             cont = False
         
+
         self.mask = self.deck > 0
+        #self.deck = self.clean_matrix(self.deck)
+        #self.cards_in_game = self.clean_matrix(self.cards_in_game)
+
+        
         self.n_cards_in_deck-=1
         self.n_cards_in_game-=1
+
 
 
     def update_expected_values(self, fireworks: np.ndarray,  main_player):
@@ -148,9 +214,11 @@ class NodeDeck(FDeck):
 
 
     
-    def evaluate_known_cards(self, to_evaluate: np.ndarray, fireworks: np.ndarray, hard_unknowns: np.ndarray):
+    def evaluate_known_cards(self, to_evaluate: np.ndarray, fireworks: np.ndarray, hard_unknowns: np.ndarray, n_cards:int):
         #we either know exactly these cards or they are hard unknowns
         regular_indexes = hard_unknowns == False
+        arange = np.array([i for i in range(0, len(hard_unknowns))]) < n_cards
+        regular_indexes = np.logical_and(arange,regular_indexes)
         
         ret_p = np.zeros((to_evaluate.shape[1]),dtype=np.float32)
         ret_d = np.zeros((to_evaluate.shape[1]), dtype=np.float32)
@@ -168,11 +236,13 @@ class NodeDeck(FDeck):
 
     def evaluate_unknown_cards(self, n_cards: int, fireworks: np.ndarray, hints: np.ndarray, hard_unknowns):
         #called for cards that should be evaluated only through hints
-        hard_unknowns=hard_unknowns[0:n_cards]
-        hints = hints[0:n_cards]
+        #hard_unknowns=hard_unknowns[0:n_cards]
+        #hints = hints[0:n_cards]
         regular_indexes = hard_unknowns == False
-        ret_p = np.zeros((n_cards), dtype=np.float32)
-        ret_d = np.zeros((n_cards), dtype=np.float32)
+        arange = np.array([i for i in range(0, len(hard_unknowns))]) < n_cards
+        regular_indexes = np.logical_and(arange,regular_indexes)
+        ret_p = np.zeros((len(regular_indexes)), dtype=np.float32)
+        ret_d = np.zeros((len(regular_indexes)), dtype=np.float32)
         
 
         ret_p[regular_indexes], ret_d[regular_indexes] = super().evaluate_unknown_cards(ret_p[regular_indexes].shape[0], fireworks, 
@@ -243,6 +313,31 @@ class NodeDeck(FDeck):
                 x = x[mask_filter]
                 y = y[mask_filter]
 
+                if x.shape[0] == 0:
+                    #this happens when partial knowledge narrows the possibility to one or more card, but those cards was
+                    #removed through randomicity: remove one of the cards that wasn't removed due to randomicity
+                    #instead.
+                    #some old debug prints
+                    print("---PRE EXCEPTION---")
+                    print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nplayer h_tracker:\n{main_player.hint_tracker}\ni:{i}\nrandomMask:\n{self.randomMask}")
+                    targets = np.logical_and(self.deck>=1, self.randomMask <= -1)
+                    assert np.any(targets)
+                    x,y = targets.nonzero()
+
+                    #adjust deck, cards in game and mask
+                    self.deck[x,y] -=1
+                    self.cards_in_game[x,y]-=1
+                    xr, yr = kn.nonzero()
+                    xr = xr[0]
+                    yr = yr[0]
+
+                    self.deck[xr,yr] += 1
+                    self.cards_in_game[xr,yr] += 1
+                    filtered_deck[xr,yr] = 0
+                    self.n_cards_in_filtered_deck-=1
+                    
+                    continue 
+
                 #you are removing one card in total: distribute it 
                 to_remove = 1/x.shape[0]
                 filtered_deck[x,y] -= to_remove
@@ -260,6 +355,26 @@ class NodeDeck(FDeck):
                 x = x[mask_filter]
                 y = y[mask_filter]
 
+                if x.shape[0] == 0:
+                    #some old debug prints
+                    print("---PRE EXCEPTION---")
+                    print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nplayer h_tracker:\n{main_player.hint_tracker}\ni:{i}\nrandomMask:\n{self.randomMask}")
+                    targets = np.logical_and(self.deck>=1, self.randomMask <= -1)
+                    assert np.any(targets)
+                    x,y = targets.nonzero()
+
+                    #adjust deck, cards in game and mask
+                    self.deck[x,y] -=1
+                    self.cards_in_game[x,y]-=1
+                    xr, yr = kn.nonzero()
+                    xr = xr[0]
+                    yr = yr[0]
+
+                    self.deck[xr,yr] += 1
+                    self.cards_in_game[xr,yr] += 1
+                    filtered_deck[xr,yr] = 0
+                    self.n_cards_in_filtered_deck-=1
+                    continue
 
                 to_remove = 1/x.shape[0]
                 filtered_deck[x,y] -= to_remove
@@ -268,6 +383,27 @@ class NodeDeck(FDeck):
             #if we got here we know nothing of the card, just remove a total of 1 card from all the possible cards
             x,y = self.mask.nonzero()
             
+            if x.shape[0] == 0:
+                #some old debug prints
+                print("---PRE EXCEPTION---")
+                print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nplayer h_tracker:\n{main_player.hint_tracker}\ni:{i}\nrandomMask:\n{self.randomMask}")
+                targets = np.logical_and(self.deck>=1, self.randomMask <= -1)
+                assert np.any(targets)
+                x,y = targets.nonzero()
+
+                #adjust deck, cards in game and mask
+                self.deck[x,y] -=1
+                self.cards_in_game[x,y]-=1
+                xr, yr = kn.nonzero()
+                xr = xr[0]
+                yr = yr[0]
+
+                self.deck[xr,yr] += 1
+                self.cards_in_game[xr,yr] += 1
+                filtered_deck[xr,yr] = 0
+                self.n_cards_in_filtered_deck-=1
+                continue
+
             to_remove = 1/x.shape[0]
 
             filtered_deck[x,y] -= to_remove

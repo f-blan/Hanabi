@@ -76,6 +76,16 @@ class FPlayer:
             if i in positions:
                 self.hints[:,:,i] += p_mask
                 self.hint_tracker[type, i] = True
+
+                #fix:
+                hint = self.hints[:,:,i]
+                check = hint >= 2
+                if np.any(check):
+                    #check there's only one, if not set all positives to 1
+                    x,y = check.nonzero()
+                    if x.shape[0] >1:
+                        hint[x,y] = 1
+                        self.hints[:,:,i] = hint
             else:
                 self.hints[:,:,i] += n_mask
     
@@ -130,7 +140,7 @@ class FPlayer:
                 #hintlist.append(str)
             elif self.hint_tracker[1, i] == True:
                 val, col = (hint >0).nonzero()
-                string += f"value: unknown, color : {utils.decode_color(col[0])}"
+                string += f"value: unknown, color : {utils.decode_color(col[0])}\n"
                 #hintlist.append(str)
             else:
                 string += f"value: unknown, color : unknown\n"

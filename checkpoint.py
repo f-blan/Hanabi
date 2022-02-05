@@ -58,9 +58,6 @@ class MCSolver(HanabiSolver):
             Idea: we're giving the root a certain amount of iterations to find the best
             move. Move evaluation is left to the MCTS algorithm
         """
-        #change in implementation, we generate our root only here for simplicity
-        self.root = self.root = MCNode(self.fireworks,self.blue_tokens,self.red_tokens,self.players,self.deck.ndeck, self.current_player,
-                            self.main_player.order,self.deck,self.deck.last_unknown_index,True)
         best_move = self.root.FindMove()
         return best_move
     
@@ -76,7 +73,7 @@ class MCSolver(HanabiSolver):
             mcplayer = self.get_player(data.lastPlayer)
             #self.lastMove = MCMove(0, mcplayer.order, True)
 
-            mcplayer.handle_remove(data.cardHandIndex)
+            #mcplayer.handle_remove(data.cardHandIndex)
             self.blue_tokens -=1
             playedCard = np.array([[utils.encode_value(data.card.value)], [utils.encode_color(data.card.color)]])
             self.deck.RemoveCardsFromGame(playedCard)
@@ -89,7 +86,7 @@ class MCSolver(HanabiSolver):
             mcplayer = self.get_player(data.lastPlayer)
             #self.lastMove = MCMove(1, mcplayer.order)
 
-            mcplayer.handle_remove(data.cardHandIndex)
+            #mcplayer.handle_remove(data.cardHandIndex)
             if data.card.value == 5 and self.blue_tokens > 0:
                 self.blue_tokens -=1
             self.fireworks[utils.encode_color(data.card.color)]+=1
@@ -107,20 +104,15 @@ class MCSolver(HanabiSolver):
             self.lastMove = MCMove(2, mcplayer.order,True,drawHappened=False)
             if data.type == "color":
                 self.lastMove.define_hint(destination, 1, utils.encode_color(data.value))
-                hinted_val = utils.encode_color(data.value)
-                type = 1
             else:
                 self.lastMove.define_hint(destination,0, utils.encode_value(data.value))
-                hinted_val = utils.encode_value(data.value)
-                type = 0
-            self.blue_tokens += 1
+            
             self.lastMove.finalize_hint(destination.order, positions=data.positions)
-            destination.handle_hint(type,hinted_val,data.positions,known=True)
         elif mtype == "thunder":
             mcplayer = self.get_player(data.lastPlayer)
             #self.lastMove = MCMove(1, mcplayer.order)
 
-            mcplayer.handle_remove(data.cardHandIndex)
+            #mcplayer.handle_remove(data.cardHandIndex)
             self.red_tokens += 1
             playedCard = np.array([[utils.encode_value(data.card.value)], [utils.encode_color(data.card.color)]])
             self.deck.RemoveCardsFromGame(playedCard)
@@ -132,13 +124,7 @@ class MCSolver(HanabiSolver):
         elif mtype == "draw":
             
             mcplayer = self.get_player(data.currentPlayer, -1)
-            self.current_player = self.get_player(data.currentPlayer).order
-            if self.lastMove.type == 2:
-                #if last move was hint, no need to do anything
-                return 
-            drawn_card=None
-            if mcplayer.main == False and self.lastMove.drawHappened:
-                #fetch the card
+            if self.lastMove.drawHappened and mcplayer.main == False:
                 for p in data.players:
                     if p.name == mcplayer.name:
                         drawingPlayer = p
@@ -154,41 +140,36 @@ class MCSolver(HanabiSolver):
                     self.lastMove.finalize_discard(drawn_card)
                 elif self.lastMove.type == 1:
                     self.lastMove.finalize_play(drawn_card)
-                mcplayer.handle_draw(self.lastMove.cardHandIndex,self.lastMove.drawHappened,self.deck.last_unknown_index,drawn_card,False,True)
-            elif self.lastMove.drawHappened and mcplayer.main:
-                #handle a draw of a card we don't know
-                mcplayer.handle_draw(self.lastMove.cardHandIndex,self.lastMove.drawHappened,self.deck.last_unknown_index,None,False,False)
+            elif self.lastMove.drawHappened:
                 self.deck.last_unknown_index-=1
-            elif self.lastMove.drawHappened == False:
-                #endgame case, just adjust the cards in the player's hands (to stay consistent with server data)
-                mcplayer.handle_draw(self.lastMove.cardHandIndex,self.lastMove.drawHappened,self.deck.last_unknown_index,None,False,False)
 
+            if self.root.has_child(self.lastMove):
+                #To be implemented, for now i don't keep the previously computed tree among different moves
+                return 
             print(f"last move was: {self.lastMove.ToString()}")
             if self.lastMove.drawHappened:
                 print(f"drawn card was: {self.lastMove.drawn_card}")
-
-            #mcplayer.handle_draw(self.lastMove.cardHandIndex, self.lastMove.drawHappened, self.deck.last_unknown_index,drawn_card,False,not(mcplayer.main))
-            #r = self.root
-            #newRoot = MCNode(r.fireworks,r.blue_tokens,r.red_tokens,r.players,self.deck.ndeck,r.curr_player_order,r.main_player_order,r.MainDeck,self.deck.last_unknown_index,True,move=self.lastMove)
+            r = self.root
+            newRoot = MCNode(r.fireworks,r.blue_tokens,r.red_tokens,r.players,self.deck.ndeck,r.curr_player_order,r.main_player_order,r.MainDeck,self.deck.last_unknown_index,True,move=self.lastMove)
             #newRoot = MCNode(r.fireworks,r.blue_tokens,r.red_tokens,r.players,r.deck,r.curr_player_order, r.main_player,self.deck,True,move=self.lastMove)
-            #self.root = newRoot
+            self.root = newRoot
 
     def HintsToString(self, player_name):
         player_id = -1
-        for p in self.players:
+        for p in self.root.players:
             if p.name == player_name:
                 player_id = p.order
                 break
-        return self.players[player_id].HintsToString()
+        return self.root.players[player_id].HintsToString()
     
     def DeckToString(self):
         return self.deck.DeckToString()
 
     def get_player(self, name, pos = 0):
-        for p in self.players:
+        for p in self.root.players:
             if p.name == name:
                 order = (p.order+pos+len(self.players))%len(self.players)
-                return self.players[p.order + pos]
+                return self.root.players[p.order + pos]
     
 
     

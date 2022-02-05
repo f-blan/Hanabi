@@ -23,7 +23,7 @@ class MCDeck():
         self.ndeck.update_expected_values(fireworks, main_player)
     
     def evaluate_known_cards(self, fireworks,to_evaluate,hard_unknowns):
-        return self.ndeck.evaluate_known_cards(to_evaluate,fireworks,hard_unknowns)
+        return self.ndeck.evaluate_known_cards(to_evaluate,fireworks,hard_unknowns, 0)
     
     def evaluate_unknown_cards(self,n_cards, fireworks, hints, hard_unknowns):
         return self.ndeck.evaluate_unknown_cards(n_cards,fireworks, hints, hard_unknowns)

@@ -22,27 +22,8 @@ class MCPlayer(FPlayer):
         self.base_knowledge = 0
 
     def handle_draw(self, playedId: int, draw_happened: bool,top_card_index:int, drawnCard:np.ndarray,endgame: bool,known_draw: bool,hardUnknown = False):
-        #cards below the played one are moved one index above: move them and their hints accordingly
-        for i in range(playedId+1, self.cardsInHand):
-            self.hints[:,:,i-1] = self.hints[:,:,i]
-            self.cards[:, i-1] = self.cards[:, i]
-            self.hint_tracker[:,i-1] = self.hint_tracker[:,i]
-            self.playabilities[i-1] = self.playabilities[i]
-            self.discardabilities[i-1] = self.discardabilities[i]
-            self.hard_unknowns[i-1] = self.hard_unknowns[i]
-            self.card_id_unknown[i-1] = self.card_id_unknown[i]
-        
-        #erase hints: player has no hints on the newly drawn card
-        self.hints[:,:, self.cardsInHand-1] = np.zeros((5,5), dtype=np.int16)
-        self.hint_tracker[0, self.cardsInHand-1] = False
-        self.hint_tracker[1, self.cardsInHand-1] = False
-        self.playabilities[self.cardsInHand-1] = 0
-        self.discardabilities[self.cardsInHand-1] = 0
         
         #TODO: differentiate better when card is just unknown or it wasn't drawn (DONE)
-
-
-
         if draw_happened == False:
             #we don't know the new card or it simply was not drawn (deck has no cards)
             self.n_cards-=1
@@ -61,7 +42,7 @@ class MCPlayer(FPlayer):
             self.card_id_unknown[self.cardsInHand-1] = top_card_index
         else:
             #drawnCard is not none
-            print(self.order)
+            #print(self.order)
             self.cards[0, self.cardsInHand-1] = drawnCard[0]
             self.cards[1, self.cardsInHand-1] = drawnCard[1]
             self.hard_unknowns[self.cardsInHand-1] =False 
@@ -75,7 +56,23 @@ class MCPlayer(FPlayer):
         if known == False:
             self.base_knowledge -= 2
             self.base_knowledge = max(0, self.base_knowledge)
-        return super().handle_remove(cardHandIndex)
+
+        #cards below the played one are moved one index above: move them and their hints accordingly
+        for i in range(cardHandIndex+1, self.cardsInHand):
+            self.hints[:,:,i-1] = self.hints[:,:,i]
+            self.cards[:, i-1] = self.cards[:, i]
+            self.hint_tracker[:,i-1] = self.hint_tracker[:,i]
+            self.playabilities[i-1] = self.playabilities[i]
+            self.discardabilities[i-1] = self.discardabilities[i]
+            self.hard_unknowns[i-1] = self.hard_unknowns[i]
+            self.card_id_unknown[i-1] = self.card_id_unknown[i]
+        
+        #erase hints: player has no hints on the newly drawn card
+        self.hints[:,:, self.cardsInHand-1] = np.zeros((5,5), dtype=np.int16)
+        self.hint_tracker[0, self.cardsInHand-1] = False
+        self.hint_tracker[1, self.cardsInHand-1] = False
+        self.playabilities[self.cardsInHand-1] = 0
+        self.discardabilities[self.cardsInHand-1] = 0
 
     def handle_hint(self, type: int, value: int, positions: list(), known = True):
         if known == False:
@@ -126,12 +123,19 @@ class MCPlayer(FPlayer):
 
             if blueTokens > 0:
                 #we can discard only if there are some blue tokens used
-                used_card = np.array([[self.cards[0,i]], [self.cards[1,i]]])
-                curmove = MCMove(0,self.order, self.main == False,cardHandIndex=i, used_card=used_card)
-                curmove.define_discard(i)
+                if self.main == False:
+                    used_card = np.array([[self.cards[0,i]], [self.cards[1,i]]])
+                    curmove = MCMove(0,self.order, True,cardHandIndex=i, used_card=used_card)
+                    curmove.define_discard(i)
 
-                curmove.EvaluateDiscard(self.discardabilities[i], blueTokens)
-                moves.add(curmove)
+                    curmove.EvaluateDiscard(self.discardabilities[i], blueTokens)
+                    moves.add(curmove)
+                else:
+                    curmove = MCMove(0,self.order,False, cardHandIndex=i)
+                    curmove.define_discard(i)
+
+                    curmove.EvaluateDiscard(self.discardabilities[i], blueTokens)
+                    moves.add(curmove)
         
         if blueTokens == 8:
             return moves
@@ -171,8 +175,11 @@ class MCPlayer(FPlayer):
                 continue
 
             #filter out hard unknowns
-            playabilities = p.playabilities[p.hard_unknowns == False]
-            discardabilities = p.discardabilities[p.hard_unknowns == False]
+            mask = p.hard_unknowns==False
+            if p.n_cards != p.cardsInHand:
+                mask[-1] = False
+            playabilities = p.playabilities[mask]
+            discardabilities = p.discardabilities[mask]
 
             #sorted indexes of known cards
             max_play_i = np.argsort((-playabilities[0:p.n_cards]))
@@ -183,6 +190,7 @@ class MCPlayer(FPlayer):
             
             #dictionary to avoid giving two equivalent hints
             uq = {}
+            print(f"{p.cards}")
             for j in range(0, hints_per_player[i]):
                 
                 if p_i >= len(max_play_i) and d_i >= len(max_disc_i):
@@ -193,9 +201,18 @@ class MCPlayer(FPlayer):
                 elif d_i >= len(max_disc_i):
                     probs = np.array([1,0])
                 else:
+                    
                     max_p = p.playabilities[max_play_i[p_i]] + 0.0001
                     max_d = p.discardabilities[max_disc_i[d_i]] + 0.0001
+                    if p.playabilities[max_play_i[p_i]]<0 or p.playabilities[max_play_i[p_i]]>1:
+                        print("---------PRE EXCEPTION---------")
+                        print(f"deck:\n{deck.deck}\nhint:\n{p.hints[:,:,max_play_i[p_i]]}\nmask:\n{deck.mask}\nplayer h_tracker:\n{p.hint_tracker}\n")
+                        print(f"playabilities:\n{p.playabilities}\nindex:{max_play_i[p_i]}")
                     #print(f"p_i: {p_i} max_p: {max_p} d_i: {d_i} max_d: {max_d}")
+                    if p.discardabilities[max_disc_i[d_i]]<0 or p.discardabilities[max_disc_i[d_i]]>1:
+                        print("---------PRE EXCEPTION---------")
+                        print(f"deck:\n{deck.deck}\nhint:\n{p.hints[:,:,max_disc_i[d_i]]}\nmask:\n{deck.mask}\nplayer h_tracker:\n{p.hint_tracker}\n")
+                        print(f"discardabilities:\n{p.discardabilities}\nindex:{max_disc_i[d_i]}")
                     probs = np.array([max_p, max_d], dtype=np.float16)
                     #probs = np.array([0.5, 0.5])
                 #print(probs)
