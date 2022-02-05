@@ -9,9 +9,9 @@ from sortedcontainers import SortedList
 
 import math 
 
-MAX_CHILDREN = 1
+MAX_CHILDREN = 3
 MAX_DEPTH = 10
-MC_ITERATIONS = 1
+MC_ITERATIONS = 10
 D_FACTOR = 0.9 #discount factor
 VERBOSE = False
 PRINT_DEBUG = True
@@ -93,7 +93,7 @@ class MCNode():
                 #we know the card that was played
                 self.deck.RemoveCardsFromGame(move.used_card)
                 card = move.used_card
-                if self.curr_player_order == self.main_player_order:
+                if move.playerOrder == self.main_player_order:
                     self.deck.RemoveCards(move.used_card)
             else:
                 #we don't know the card, but we may use the hints to remove certain cards
@@ -104,7 +104,7 @@ class MCNode():
                     known = False
                     self.deck.RemoveHardUnknownFromGame()
                     self.deck.RemoveHardUnkown()
-            if move.known_draw and move.drawHappened and self.curr_player_order!=self.main_player_order:
+            if move.known_draw and move.drawHappened and move.playerOrder!=self.main_player_order:
                     self.deck.RemoveCards(move.drawn_card)
             #update player state
             curr_player.handle_remove(move.cardHandIndex, known)
@@ -120,8 +120,8 @@ class MCNode():
                 #print(move.used_card)
                 self.deck.RemoveCardsFromGame(move.used_card)
                 card = move.used_card
-                if self.curr_player_order == self.main_player_order:
-                    assert self.players[self.main_player_order].playabilities[move.cardHandIndex] >=1
+                if move.playerOrder == self.main_player_order:
+                    #assert self.players[self.main_player_order].playabilities[move.cardHandIndex] >=1
                     self.deck.RemoveCards(move.used_card)
 
             else:
@@ -147,7 +147,7 @@ class MCNode():
                     self.deck.RemoveCards(card)
                     self.terminal = True
             
-            if move.known_draw and move.drawHappened and self.curr_player_order!=self.main_player_order:
+            if move.known_draw and move.drawHappened and move.playerOrder!=self.main_player_order:
                 self.deck.RemoveCards(move.drawn_card)
 
 

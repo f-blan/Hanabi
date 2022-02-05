@@ -26,6 +26,11 @@ class NodeDeck(FDeck):
         #print("----------__REMOVAL------------------")
         #print(self.deck)
         super().RemoveCards(to_remove)
+        if np.any(self.deck<0):
+            print("------PRE EXCEPTION----")
+            print(f"deck:\n{self.deck}\ncards in game:\n{self.cards_in_game}\nto_remove:\n{to_remove}")
+        
+        assert np.any(self.deck<0)==False
         #print(self.deck)
         #print("------END REMOVAL------")
     
@@ -151,7 +156,12 @@ class NodeDeck(FDeck):
         #self.deck = self.clean_matrix(self.deck)
         #self.cards_in_game = self.clean_matrix(self.cards_in_game)
 
+        if np.any(self.deck<0):
+            print("------PRE EXCEPTION----")
+            print(f"deck:\n{self.deck}\ncards in game:\n{self.cards_in_game}\nhint:\n{hint}")
         
+        assert np.any(self.deck<0)==False
+
         self.n_cards_in_deck-=1
         self.n_cards_in_game-=1
 

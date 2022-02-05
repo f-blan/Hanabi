@@ -236,6 +236,11 @@ class FDeck(Deck):
 
         #fetch number of cards in game that are equal to the one we want to evaluate
         discardabilities[non_discardables] = self.cards_in_game[to_evaluate[0, non_discardables], to_evaluate[1, non_discardables]]
+        
+        if np.any(discardabilities[non_discardables]<=0):
+            print("----------PRE EXCEPTION---------")
+            print(f"deck:\n{self.deck}\ncards in game:\n{self.cards_in_game}\nto evaluate:\n{to_evaluate}")
+        
         #discardability is 0 if the card is the only one in game nad proportional to the number of other equal cards present
         #formula is subject to change
         discardabilities[non_discardables] = self.discardability_fn(discardabilities[non_discardables])
