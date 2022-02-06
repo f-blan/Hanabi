@@ -9,6 +9,13 @@ from .. import utils
 
 class FSolver(HanabiSolver):
     def __init__(self, data, players: list, player_name: str):
+
+        """
+            Initialize the internal game state:
+            -Players
+            -Deck
+            -statistics on the deck and player cards
+        """
         super().__init__()
         self.players= list()
         i=0
@@ -57,13 +64,16 @@ class FSolver(HanabiSolver):
         return moves[0]
     
     def Enforce(self):
+        """
+            scrapped idea
+        """
         pass
 
     def RecordMove(self,data, mtype):
-        #get the player that performed the action
-        #nplayer = nplayer[0]
-        #player_index = (nplayer.order + len(self.players) -1)%len(self.players)
-        #nplayer = self.players[player_index]
+        """
+            Function to update the internal game state after the server has sent us data.
+            We also recompute statistics on the deck here
+        """
 
         main_recompute = False
         others_recompute = False
@@ -172,6 +182,7 @@ class FSolver(HanabiSolver):
         return self.deck.DeckToString()
 
     def get_player(self, name, pos = 0):
+        """auxiliary function, gets the player as a function of the name"""
         for p in self.players:
             if p.name == name:
                 order = (p.order+pos+len(self.players))%len(self.players)

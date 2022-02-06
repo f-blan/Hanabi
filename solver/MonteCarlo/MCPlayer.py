@@ -12,6 +12,14 @@ from solver.MonteCarlo.NodeDeck import NodeDeck
 #from solver.MonteCarlo.MCPlayer import MCPlayer
 
 class MCPlayer(FPlayer):
+
+    """
+        Extension of the FPlayer class that keeps track of the hard unknown card on the player's hand
+        (i.e. when we're deep in the MCTS and this player has drawn a card we didn't see in the server game state)
+
+        Some functions are overridden to be compatible with the MCSolver and MCNode classes for managing the game
+        state
+    """
     def __init__(self, name, main, order, cardsInHand, cards=None):
         super().__init__(name, main, order,cardsInHand, cards)
 
@@ -22,7 +30,9 @@ class MCPlayer(FPlayer):
         self.base_knowledge = 0
 
     def handle_draw(self, playedId: int, draw_happened: bool,top_card_index:int, drawnCard:np.ndarray,endgame: bool,known_draw: bool,hardUnknown = False):
-        
+        """
+            Overridden function for compatibility, See FPlayer
+        """
         #TODO: differentiate better when card is just unknown or it wasn't drawn (DONE)
         if draw_happened == False:
             #we don't know the new card or it simply was not drawn (deck has no cards)
@@ -52,6 +62,13 @@ class MCPlayer(FPlayer):
 
 
     def handle_remove(self, cardHandIndex: int, known = True):
+        """
+            Overridden function for compatibility, See FPlayer.
+
+            The MCPlayer stores a base knowledge scores that is meant to represent how much the player
+            at this node knows about cards we (as the agent) don't know anything about. If an "unknown"
+            card is removed from the hand, this base knowledge score is decreased
+        """
         #removing a card means we are losing some knowledge about our cards
         if known == False:
             self.base_knowledge -= 2
@@ -75,6 +92,9 @@ class MCPlayer(FPlayer):
         self.discardabilities[self.cardsInHand-1] = 0
 
     def handle_hint(self, type: int, value: int, positions: list(), known = True):
+        """
+            Overridden function for compatibility, See FPlayer
+        """
         if known == False:
             self.base_knowledge+=2
             if self.main:
@@ -90,6 +110,9 @@ class MCPlayer(FPlayer):
             return ret 
     
     def set_expected_values(self, playabilities: np.ndarray, discardabilities: np.ndarray):
+        """
+            Sets playability and discardability values for the player's card
+        """
         #cut the ranges in the case something went wrong with evaluation
         high_indexes = playabilities > 1
         playabilities[high_indexes] = 1
@@ -104,12 +127,30 @@ class MCPlayer(FPlayer):
         self.discardabilities = discardabilities
 
     def get_score(self, deck: NodeDeck):
+        """
+            Used in MCNode.MC_Simulate. This function returns a score representing how much this player
+            knows about their cards
+        """
         dhu=deck.discardability_rc
         phu=deck.playability_rc
         return self.base_knowledge*(phu+0.2*dhu) + 1.2*np.sum(self.hint_tracker[0,:]*(self.playabilities+0.2*self.discardabilities)) \
                     + np.sum(self.hint_tracker[1,:]*(self.playabilities+0.2*self.discardabilities))
 
     def GetMoves(self, players: list(), fireworks: np.ndarray, deck: NodeDeck, redTokens: int, blueTokens: int):
+        """
+            Overridden function for compatibility, See FPlayer.
+
+            Compared to the FPlayer version, this function does not add the following moves to the list:
+                -unsafe play performed by the agent
+                -play of a hard unknown card
+                -detailed hints (of given type and value) to the agent
+            Additionally the following moves are considered:
+                -discard of an hard unknown card
+                -discard of a partially known card by the agent
+                -hint to a partially known card owned by the agent 
+                -hint to a hard unknown card 
+        """
+        
         #Very similar to GetMoves of FPlayer, but takes into account hard unknowns and hints on hard unknown cards
         moves = SortedList(key= lambda x: -x.score)
         max_hints = HINTS_COMPUTED
@@ -278,6 +319,9 @@ class MCPlayer(FPlayer):
         return moves
 
     def hint_define(self, card_i: np.ndarray, i: int,j: int, player, blueTokens: int,htype:int, uq, deck: NodeDeck):
+        """
+            Overridden function for compatibility, See FPlayer
+        """
         ret_j = j
         ret_move = None
         

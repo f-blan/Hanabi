@@ -11,6 +11,10 @@ from .. import utils
 
 
 class MCSolver(HanabiSolver):
+    """
+        Wrapper class that contains a copy of the game state and interacts with the client
+        to keep the game state updated and to find the move to play
+    """
     def __init__(self, data, players: list, player_name: str):
         super().__init__()
         self.players= list()
@@ -72,6 +76,9 @@ class MCSolver(HanabiSolver):
         self.root.Enforce()
     
     def RecordMove(self, data, mtype):
+        """
+            Function to update the internal game state after the server has sent us data.
+        """
         if mtype == "discard":
             mcplayer = self.get_player(data.lastPlayer)
             #self.lastMove = MCMove(0, mcplayer.order, True)
@@ -185,6 +192,9 @@ class MCSolver(HanabiSolver):
         return self.deck.DeckToString()
 
     def get_player(self, name, pos = 0):
+        """
+            Auxiliary function
+        """
         for p in self.players:
             if p.name == name:
                 order = (p.order+pos+len(self.players))%len(self.players)

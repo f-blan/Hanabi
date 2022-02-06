@@ -48,6 +48,9 @@ class FPlayer:
                 i+=1
 
     def handle_remove(self, cardHandIndex: int):
+        """
+            Old implementation, remove card at given index
+        """
         self.cardHandIndex = cardHandIndex
         
         self.cards[0, cardHandIndex] = -1
@@ -62,6 +65,11 @@ class FPlayer:
 
     
     def handle_hint(self, type:int, value:int, positions:list()):
+        """
+            A hint has been received, update all related structures:
+            an hint is stored internally of a 5x5 matrix, the idea is to store both positive and negative hints
+            (i.e. when a hint was received cards that were not pointed at can't be of the hinted value)
+        """
         p_mask = np.zeros((5,5),dtype=np.int16)-5
         n_mask = np.zeros((5,5),dtype=np.int16)
         if type == 0:
@@ -77,7 +85,7 @@ class FPlayer:
                 self.hints[:,:,i] += p_mask
                 self.hint_tracker[type, i] = True
 
-                #fix:
+                #later fix when several same hints are given:
                 hint = self.hints[:,:,i]
                 check = hint >= 2
                 if np.any(check):
@@ -90,6 +98,11 @@ class FPlayer:
                 self.hints[:,:,i] += n_mask
     
     def handle_draw(self, playedId: int, draw_happened: bool, drawnCard=None):
+        """
+            Called after every play/discard (after additional show request) to make internal state coherent with server state:
+            move down cards and other related structures by one position and optionally store the optionally drawn card
+            if it is known 
+        """
         #cards below the played one are moved one index above: move them and their hints accordingly
         for i in range(playedId+1, self.cardsInHand):
             self.hints[:,:,i-1] = self.hints[:,:,i]
@@ -152,7 +165,19 @@ class FPlayer:
         return string
 
     def GetMoves(self, players: list(), fireworks: np.ndarray, deck: FDeck, redTokens: int, blueTokens: int):
-        #TODO: add bias in playing lower cards 
+        """
+            Function to approximately get the meaningful moves the player can do and return them into a sorted list.
+            First all plays and discards are evaluated and added to the list based on playability/discardability.
+            Then a certain number of hints is computed for each player (more to player closer to us):
+                their cards are sorted according both to playability and discardability; each time we consider
+                if hinting the most playable or discardable card; when a card is selected we add to the list both
+                the hint related to the value and the hint related to the color of the card (if these hints were not
+                already given in previous moves or in the current GetMoves call); finally the hint is evaluated taking
+                into account other possible hinted cards and added to the List
+            In this solver, only the move with the highest score is selected to be played
+        """
+
+        #TODO: add bias in playing lower cards (scrapped, this would require knowledge on the card value and i want to avoid it)
         moves = SortedList(key= lambda x: -x.score)
         max_hints = HINTS_COMPUTED
 
@@ -209,7 +234,7 @@ class FPlayer:
                     max_p = p.playabilities[max_play_i[p_i]] + 0.0001
                     max_d = p.discardabilities[max_disc_i[d_i]] + 0.0001
                     #print(f"p_i: {p_i} max_p: {max_p} d_i: {d_i} max_d: {max_d}")
-                    probs = np.array([max_p, max_d], dtype=np.float16)
+                    probs = np.array([max_p*0.6, max_d*0.4], dtype=np.float16)
                     #probs = np.array([0.5, 0.5])
                 #print(probs)
                 #choose between hinting a playable or a discardable card
@@ -252,6 +277,10 @@ class FPlayer:
 
 
     def hint_define(self, card_i: np.ndarray, i: int,j: int, player, blueTokens: int,htype:int, uq):
+        """
+            Auxiliary function to GetMoves
+        """
+        
         ret_j = j
         ret_move = None
         

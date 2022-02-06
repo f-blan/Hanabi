@@ -9,11 +9,12 @@ class FMove(Move):
         self.score = 0
 
     """
-        Criteria for move evaluation:
-        -a move that grants a blue token has default +0.25. -0.25 if it uses a blue token
-        -a play that can be done only by the current player has 1.2 multiplier
-        -hints are evaluated on number of cards hinted, their playability and their discardability
-        -a play without maximum playability is not penalised unless we only have
+        CRITERIA FOR MOVE EVALUATION:
+        -all evaluations take into account the playability and discardability of the cards
+        -safe plays are always the best thing to do
+        -unsafe plays are discouraged based on the number red tokens
+        -discards take into account how many blue tokens are available
+        -hints take into account how valuable are the hinted cards in terms of playability and discardability
     """
     def define_play(self, card_n):
         return super().define_play(card_n)
@@ -61,9 +62,9 @@ class FMove(Move):
         
         #a play with max playability will generally have a score higher than a discard with max discardability:
         #playing makes other cards playable, while if you stole a play from someone they still gained a safe discard
-        #hence why *0.75. The only case where a discard is better than a play is when there are no blue tokens
+        #hence why *0.95. The only case where a discard is better than a play is when there are no blue tokens
 
-        self.score = max(discardability*bt, 0.90) 
+        self.score = max(discardability*bt, 0.95) 
         return
 
     def EvaluateHint(self, hinted_player, blueTokens):
@@ -80,7 +81,7 @@ class FMove(Move):
         same_value = same_value.nonzero()
 
         #for each card, compute how valuable the knowledge given by the hint is
-        gain = (hinted_player.playabilities[same_value]+ hinted_player.discardabilities[same_value])*0.5
+        gain = (hinted_player.playabilities[same_value]*0.6+ 0.4*hinted_player.discardabilities[same_value])*0.5
         tot_gain = np.sum(gain)
 
         #blue token contribution, the least tokens are available, the least score gets the hint

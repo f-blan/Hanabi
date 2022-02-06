@@ -12,15 +12,22 @@ import math
 MAX_CHILDREN = 5
 MAX_DEPTH = 10
 MC_ITERATIONS = 30
-D_FACTOR = 0.99 #discount factor
+D_FACTOR = 0.99 #discount factor for node evaluation
 VERBOSE = False
 PRINT_DEBUG = -1
 FIREWORK_MULTIPLIER = 10
 
 class MCNode():
+    """
+        This class represents a node of the MCTS. It contains a copy of the game state as a function of the server
+        game state and all the moves performed to reach this node
+    """
+
     def __init__(self, fireworks: np.ndarray, blue_tokens: int, red_tokens: int, players: list(), 
                 deck: NodeDeck, curr_player: int, main_player: int, MainDeck: MCDeck, top_card_index: int,is_root,  move = None, opt = None, depth = 0, parent= None):
         
+        
+
         #Game State: copy of normal game state of parent
         self.fireworks = np.copy(fireworks)
         self.blue_tokens = blue_tokens
@@ -49,7 +56,8 @@ class MCNode():
             #we initialize also the move if specified
             ok = self.apply_move(move)
         
-        if ok:        
+        if ok:
+            #ok is to handle incorrect/uncertain nodes (i.e. when the agent performed an unknown card but with max playability)      
             self.deck.update_expected_values(self.fireworks,self.players[self.main_player_order])
             for p in self.players:
                 if p.order == self.curr_player_order or p.order == self.main_player_order:
@@ -91,6 +99,19 @@ class MCNode():
     def apply_move(self, move: MCMove):
         """
             Initialization function: apply one move to get to the actual game state for this node
+            Type of moves that can get to this function (and therefore, nodes that can appear in the MCTS):
+                -Discard of a known card
+                -Discard of a partially known card (through hints by the server) by the agent
+                -Discard of an "hard unknown" card
+                -Play of a fully known card by a player (not by the agent)
+                -Play of a fully known card by the agent (through hints)
+                -Play of a partially known card by the agent but with maximum playability 
+                    (this implies we don't know what the fireworks will be exactly, so this node won't 
+                    be expanded further)
+                -Play of partially known card by a player (we know the card as the agent, but the player doesn't). 
+                -Hint to a player of which we can derive the result
+                -Hint to the agent (we can't derive the exact result)
+                -Hint to anyone of which we can't derive the result (i.e. hints on hard unknown cards)
         """
         next_player_order = (self.curr_player_order+1+len(self.players))%len(self.players)
         assert next_player_order!=self.curr_player_order
@@ -128,7 +149,7 @@ class MCNode():
             self.blue_tokens-=1
         elif move.type == 1:
             #play
-            #Note: we never play an unknown card as it changes the game too drastically
+            #Note: the agent never plays an unknown card as it changes the game too drastically
 
             if  move.known:
                 #print(move.ToString())
@@ -192,6 +213,21 @@ class MCNode():
                      
 
     def MC_simulate(self):
+        """
+            Ad hoc MCTS Simulation function. Instead of random playout, this fast and easy function is applied 
+            (altough it's definitely less accurate than playouts with a set policy).
+
+            This gives to the current node a base score, which is evaluated, in ascending order of relevance, 
+            as a function of:
+                -the red tokens available
+                -the blue tokens available
+                -how much each player knows about their cards and how relevant they are (i.e. playability/discardability)
+                -how close this node is to the end of the game
+                -the current state of the fireworks
+            
+            this means that deeper nodes in the MCTS will generally have a higher score, so to balance exploration and
+            exploitation a discount factor p^depth is multiplied to the score
+        """
         #the basic unit of score is knowledge of 1 value (color or number) for 1 card and it's equal to 1
 
         #red token contribution: score is 0 with 3 red tokens, 
@@ -208,6 +244,7 @@ class MCNode():
         bt_contrib = 0.95*(8-self.blue_tokens)
         #also we take into account if we're in end_game
         if self.deck.n_cards_in_filtered_deck<=0:
+            #endgame! We have no time for hints
             bt_contrib = bt_contrib*0.25*(len(self.players)- self.curr_player_order)/len(self.players)
 
         
@@ -236,6 +273,19 @@ class MCNode():
         return self.score
 
     def MC_expand(self):
+        """
+            MCTS Expansion function. Applied on a node that went through selection.
+
+            For the current player of this node, we select the top MAX_CHILDREN moves that they can find
+            according to their knowledge (and estimated cards and values for the deck and agent). We then
+            create a child node for each of them, which will go through simulation and back propagation.
+
+            To bias the MCTS to consider safe play moves, a node that can perform one or more safe plays
+            will only generate children related to those plays
+
+            Additionally a node whose children are all considered as terminal (i.e. game is over or too uncertain)
+            is set as terminal as well
+        """
         mcplayer = self.players[self.curr_player_order]
 
         if PRINT_DEBUG>=1:
@@ -270,6 +320,10 @@ class MCNode():
 
 
     def MC_backprop(self):
+        """
+            MCTS back propagation fucntion: whenever a node is generated and simulated, this is called.
+            All of its ancestors are notified of its score and the n_simulations (used in UTC) parameter is increased
+        """
         tmpnode = self.parent
         while tmpnode.is_root == False:
             tmpnode.children_scores += self.score
@@ -280,6 +334,12 @@ class MCNode():
         
 
     def MC_select(self):
+        """
+            MCTS selection function. 
+
+            One node is selected at each depth according to UTC. Nodes set to terminal are excluded from the selection
+            process
+        """
         tmpnode = self
         while tmpnode.expanded ==True:
             node = tmpnode.GetBestNodeUTC()
@@ -293,6 +353,9 @@ class MCNode():
         return tmpnode
 
     def FindMove(self, iterations = MC_ITERATIONS):
+        """
+            Functions that uses the MCTS structure to find the best move
+        """
         if PRINT_DEBUG>=0:
             print("-----FINDING MOVE-----")
             print(f"root is {self.ToKey()}")
@@ -314,6 +377,11 @@ class MCNode():
 
 
     def Enforce(self):
+        """
+            Scrapped idea: when it's not our turn we keep performing MCTS iterations on the current node.
+            However keeping the root node of the Solver coherent with the game state after each move of each
+            player can be too time consuming and we may end up with an uncoherent state
+        """
         pass
     
     def GetBestNodeUTC(self):

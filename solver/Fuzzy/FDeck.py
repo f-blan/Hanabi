@@ -39,6 +39,13 @@ class FDeck(Deck):
         self.death_line = np.zeros(5, dtype=np.int16) + 5
 
     def update_expected_values(self, fireworks: np.ndarray):
+        """
+            This function is called to update statistics about the deck:
+            -filtered deck: an estimate of what the deck is like without the cards of the agent (unused in this solver)
+            -playability/discardability ah: average playability/discardability of the cards in the deck and in the
+                hand of the agent
+            -playability/discardability rc: average playability/discardability of the cards in the filtered deck (unused in this solver) 
+        """
         needed_values = fireworks +1
         needed_colors = np.array([i for i in range(0,5)])
 
@@ -201,6 +208,11 @@ class FDeck(Deck):
         self.discardability_rc = tot_discardability/self.n_cards_in_filtered_deck
 
     def update_death_line(self, fireworks: np.ndarray):
+        """
+            update an auxiliary structure that helps to understand if a card is unplayable (so fully discardable) 
+            in the current game state
+        """
+
         self.death_line = np.zeros(5,dtype=np.int16) + 5
         mask = self.cards_in_game<=0
         #for each color
@@ -212,17 +224,31 @@ class FDeck(Deck):
 
 
     def RemoveCards(self, to_remove: np.ndarray):
+        """
+            A card has left the deck and/or the hand of the agent. Update the related data structure
+        """
         #a set of cards were removed from the deck (drawn) and we know them. update 
         self.deck[to_remove[0,:],to_remove[1,:]]-=1
         self.mask = self.deck > 0
         self.n_cards_in_deck -= to_remove.shape[1]
 
     def RemoveCardsFromGame(self, to_remove: np.ndarray):
+        """
+            A card has been played/discarded. Update the internal logic
+        """
         self.cards_in_game[to_remove[0,:],to_remove[1,:]]-=1
         self.n_cards_in_game -= to_remove.shape[1]
     
 
     def evaluate_known_cards(self, to_evaluate: np.ndarray, fireworks: np.ndarray):
+        """
+            Evaluate playability and discardability of cards we can see (i.e. the hands of other players).
+            Playability is 1 if the card can be played in the current game state, 0 otherwise
+            Discardability ranges from 0 to 1: It is 0 if the card can still be played in the future and there
+                are no other cards of the same type in the game; it is 1 if the card will never be playable;
+                it is in (0,1) if the card is playable but there are other cards of the same type still in the 
+                game
+        """
         card_colors = to_evaluate[1, :]
         relevant_needed_nums = fireworks[card_colors] + 1 
         relevant_death_line = self.death_line[card_colors]
@@ -260,6 +286,11 @@ class FDeck(Deck):
         return playabilities, discardabilities
 
     def evaluate_unknown_cards(self, n_cards: int, fireworks: np.ndarray, hints: np.ndarray):
+        """
+            Function to evaluate cards that we only know partially (through hints, i.e. the hand of the agent).
+            Both playability and discardability are computed as the average playability/discardability of
+            all the possible cards the evaluated card can be
+        """
         needed_nums = fireworks + 1 
         needed_colors = np.arange(5)
 
@@ -354,6 +385,9 @@ class FDeck(Deck):
         return string
 
     def discardability_fn(self, n_cards_in_game):
+        """
+            Function to compute how discardable a given playable card is
+        """
         if type(n_cards_in_game) == np.ndarray:
             for d in n_cards_in_game:
                 assert d>0 
@@ -363,6 +397,9 @@ class FDeck(Deck):
             return np.power(1-(1/n_cards_in_game))
 
     def update_filtered_deck(self, main_player: FPlayer):
+        """
+            Unused in this solver. Performed in update_expected values
+        """
         #get filtered deck (an estimate of the cards in the deck computed with agent's hints)
         filtered_deck = np.array(self.deck, dtype=np.float32)
         self.n_cards_in_filtered_deck = self.n_cards_in_deck

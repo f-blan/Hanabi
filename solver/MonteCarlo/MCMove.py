@@ -6,6 +6,13 @@ import numpy as np
 from solver.MonteCarlo.NodeDeck import NodeDeck
 
 class MCMove(FMove):
+    """
+        Extension of FMove that takes into account and evaluates hints to the agent (so hints of which we don't know
+        the result of) and also hints to "hard unknown" cards (i.e. cards that we didn't see in the server state but
+        that need to be considered in deeper nodes of the MCTS). Some additional informations are added wrt FMove also
+        to help constructing the related child node in the MCTS
+    """
+
     def __init__(self, type, playerOrder,known,cardHandIndex = -1, used_card = None, drawHappened= True, thunder = False):
         super().__init__(type)
         self.thunder = thunder
@@ -58,13 +65,13 @@ class MCMove(FMove):
             tot_gain = (deck.discardability_rc + deck.playability_rc)*0.5
         elif known == 1:
             #evaluate an hint on a card in the hands of the agent that is not an hard unknown
-            #we hint for the most playable card that was not already hinted
+            #assume we hint for the most playable card that was not already hinted
             filter_mask = np.logical_and(hinted_player.hint_tracker[0], hinted_player.hint_tracker[1])==False
             max_index = np.argmax(hinted_player.playabilities)
             tot_gain= (hinted_player.playabilities[max_index]+ hinted_player.discardabilities[max_index])*0.5 
         else:
             #we called this function assuming we know the cards of the player (to a certain extent)
-            #filter out hard unknowns for the computations
+            #filter out hard unknowns for the computations (equivalent to FMove's evaluation)
             known_cards = hinted_player.cards[:,hinted_player.hard_unknowns == False]
             known_hints = hinted_player.hint_tracker[:,hinted_player.hard_unknowns == False]
             #cards with the same value (the other cards that will be targeted by the hint)

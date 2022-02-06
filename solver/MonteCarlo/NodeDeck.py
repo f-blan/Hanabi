@@ -10,6 +10,14 @@ import numpy as np
 #from solver.MonteCarlo.MCMove import MCMove
 
 class NodeDeck(FDeck):
+    """
+        Extension of the FDeck class that is compatible with the MCNode structure and procedures.
+
+        Differently from FDeck, we assume that this function can be used by a moving player that is not
+        our current agent. Therefore it uses the structure filtered_deck (which was unused in FDeck) to compute
+        statistics on what the moving player can observe from his point of view
+    """
+
     def __init__(self, main_player, n_players: int):
         super().__init__(None, n_players)
         self.turns_until_end = -1
@@ -23,6 +31,12 @@ class NodeDeck(FDeck):
         #self.cards_in_game= np.array(self.cards_in_game, dtype=np.float32)
 
     def RemoveCards(self, to_remove: np.ndarray):
+        """
+            This function removes a card from the "self.deck" data structure, which represents the card in the player's
+            hand and in the deck itself
+
+            This is called only for fully known cards. See RemoveHintedCard for more details on the replace_randomicity call
+        """
         #print("----------__REMOVAL------------------")
         #print(self.deck)
         super().RemoveCards(to_remove)
@@ -30,7 +44,7 @@ class NodeDeck(FDeck):
             print("------PRE EXCEPTION----")
             print(f"deck:\n{self.deck}\ncards in game:\n{self.cards_in_game}\nto_remove:\n{to_remove}\nrandom mask:\n{self.randomMask}")
 
-            #ad hoc fix
+            #ad hoc fix: this is basically a call to self.replace_randomicity()
             assert self.randomMask[to_remove[0],to_remove[1]] >= 1
             targets = np.logical_and(self.deck>=1, self.randomMask<=-1)
             assert np.any(targets)
@@ -52,19 +66,55 @@ class NodeDeck(FDeck):
         #print("------END REMOVAL------")
     
     def RemoveCardsFromGame(self, to_remove: np.ndarray):
+        """
+            Kept unchanged, we remove a card from the game when it is played/discarded (fully known cards only)
+        """
         return super().RemoveCardsFromGame(to_remove)
     
     def RemoveHardUnknownFromGame(self):
+        """
+            This function is merely here to allow the MCTS to reach deeper knowledge while keeping the endgame condition
+            accurate. Removing an hard unknown has no weight to statistics updates
+        """
         #it's meaningless updating the matrix. Statistics changes caused by using an hard unknown should have no impact
         self.n_cards_in_game-=1
         assert self.n_cards_in_game > 1
     
     def RemoveHardUnkown(self):
+        """
+            This function is merely here to allow the MCTS to reach deeper knowledge while keeping the endgame condition
+            accurate. Removing an hard unknown has no weight to statistics updates
+        """
         #same as RemoveHardUnknownFromGame
         self.n_cards_in_deck -= 1
         assert self.n_cards_in_game >= 0
     
     def RemoveHintedCard(self,  hint: np.ndarray):
+        """
+            This function is called when in the MCTS our agents discards or plays a card, we can distinguish two main cases:
+                - We have full knowledge of the cards thanks to hints. This can happen only thanks to hints gathered
+                    from the server, hints to the agent computed inside the MCTS never update the hints data structures
+                - We don't have full knowledge of this card since we don't have it even in the game state outside the MCTS.
+            
+            The first case in principle is handled normally (remove the card since we know what it s)
+
+            The second state instead is dealt with differently:
+                -From the hints we are given from the server state we understand what cards can the removed card can be
+                -This leads to partial, negative, and zero knowledge cases
+                -After computing this set of cards, we select one at random and remove it from the self.deck data structure
+                -we record in the structure self.RandomMask the fact that such card was selected as a victim and that all the
+                    other candidate cards instead escaped the victim selection process
+            
+            This procedure by itself can create some problems. Due to how the FDeck works, we can select as victim a card
+            that can later be identified as somewhere else (simplified ex. we can gather from hints that the agent has a red 
+            one in hand, but this red one was previously selected as a victim and therefore the self.deck doesn't contain 
+            any of them when the play/discard and therefore removal of the red card is considered in the MCTS -> exception).
+            To avoid this problem, whenever we encounter one of these conditions in any of the RemoveCards functions we 
+            do a call to the replace_randomicity function, which in short "goes back in time" and replace the victim with
+            another one that escaped the victim selection process, so that we can now call our Remove without launching any
+            exception (i.e. the self.deck contains a negative amount of cards for a given card type)
+
+        """
         cont = True
         #we may know something about the card we need to remove
         m = hint>=2
@@ -79,7 +129,8 @@ class NodeDeck(FDeck):
                 #some old debug prints
                 print("---PRE EXCEPTION---")
                 print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
-                    
+                
+                #this is basically a call to replace_randomicity
                 #assert self.randomMask[x,y] >= 1
                 targets = np.logical_and(self.deck>=1, self.randomMask<=-1)
                 assert np.any(targets)
@@ -185,6 +236,10 @@ class NodeDeck(FDeck):
         self.n_cards_in_game-=1
 
     def update_endgame_condition(self, main_player):
+        """
+            Function to keep track of which state of the endgame we are in
+        """
+
         if self.n_cards_in_deck - main_player.n_cards <= 0 and self.endgame == False:
             self.endgame = True
             self.turns_until_end = self.n_players
@@ -192,6 +247,15 @@ class NodeDeck(FDeck):
             self.turns_until_end -=1
 
     def update_expected_values(self, fireworks: np.ndarray,  main_player):
+        """
+            overridden function for compatibility. See FDeck
+
+            we want to estimate what the unknown cards of the current player is (it may be different from the agent)
+
+            To do it we first compute some statistics on the filtered deck, which is an estimate of what this player
+            thinks there is in the actual deck of still undrawn cards (i.e. self.deck but removed of an estimate of the
+            agent's cards)
+        """
         
         self.update_death_line(fireworks)
         
@@ -250,6 +314,14 @@ class NodeDeck(FDeck):
 
     
     def evaluate_known_cards(self, to_evaluate: np.ndarray, fireworks: np.ndarray, hard_unknowns: np.ndarray, n_cards:int):
+        """
+            This function is called to evaluate the cards of players that are not the agent and that are not
+            the current player in the current MCTS node
+
+            We first give statistical values to possible hard unknown cards and evaluate the rest with the
+            super() method
+        """
+        
         #we either know exactly these cards or they are hard unknowns
         regular_indexes = hard_unknowns == False
         arange = np.array([i for i in range(0, len(hard_unknowns))]) < n_cards
@@ -270,6 +342,16 @@ class NodeDeck(FDeck):
         return ret_p, ret_d
 
     def evaluate_unknown_cards(self, n_cards: int, fireworks: np.ndarray, hints: np.ndarray, hard_unknowns):
+        """
+            This function is called to evaluate the cards of the current player in the current MCTS node
+
+            The current player can both be the agent or another player, and we evaluate their cards based on their
+            hints
+
+            We first give statistical values to possible hard unknown cards and evaluate the rest with the
+            super() method
+        """
+        
         #called for cards that should be evaluated only through hints
         #hard_unknowns=hard_unknowns[0:n_cards]
         #hints = hints[0:n_cards]
@@ -292,6 +374,7 @@ class NodeDeck(FDeck):
     def clean_matrix(self, matrix: np.ndarray):
         """
             Take a matrix representing cards, take all values < 0 and distribute them among positive ones
+            Introduced because the filtered deck may contain negative values after being computed (it is a float matrix)
         """
         neg = matrix < 0
         if np.any(neg):
@@ -315,6 +398,14 @@ class NodeDeck(FDeck):
 
     
     def update_filtered_deck(self, main_player):
+        """
+            Computes the filtered_deck data structure starting from the self.deck data structure and the hints
+            given to the agent by the server.
+
+            filtered deck is a 5x5 matrix of float values, each cell represents the expected amount of cards of the 
+            given color and value that are present in the actual deck
+        """
+
         #get filtered deck (an estimate of the cards in the deck computed with agent's hints)
         filtered_deck = np.array(self.deck, dtype=np.float32)
         self.n_cards_in_filtered_deck = self.n_cards_in_deck
@@ -447,6 +538,9 @@ class NodeDeck(FDeck):
         self.filtered_deck = filtered_deck
 
     def replace_randomicity(self,m):
+        """
+            auxiliary function, see RemoveHintedCards
+        """
         x,y = m.nonzero()
 
         #assert np.any(self.randomMask[x,y] >=1)
