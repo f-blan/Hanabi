@@ -12,7 +12,7 @@ import math
 
 MAX_CHILDREN = 4
 MAX_DEPTH = 10
-MC_ITERATIONS = 30
+MC_ITERATIONS = 100
 D_FACTOR = 0.99 #discount factor for node evaluation
 VERBOSE = False
 PRINT_DEBUG = -1
