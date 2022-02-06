@@ -10,14 +10,14 @@ from solver.Naive.NSimulator import NSimulator
 
 import math 
 
-MAX_CHILDREN = 1
+MAX_CHILDREN = 4
 MAX_DEPTH = 10
-MC_ITERATIONS = 1
+MC_ITERATIONS = 30
 D_FACTOR = 0.99 #discount factor for node evaluation
 VERBOSE = False
 PRINT_DEBUG = -1
 FIREWORK_MULTIPLIER = 10
-SIMUL_PLAYOUT = True
+SIMUL_PLAYOUT = False
 SIMUL_ITERATIONS = 1
 
 class MCNode():
@@ -72,7 +72,9 @@ class MCNode():
         
         #MC parameters
         self.n_simulations = 1
-        self.score = self.MC_simulate()
+        self.score = 0
+        if self.is_root == False:
+            self.score = self.MC_simulate()
 
         self.children_scores = self.score
         #self.MC_score = 

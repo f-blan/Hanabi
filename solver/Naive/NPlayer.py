@@ -238,15 +238,44 @@ class NPlayer:
             #self.deck.remove_cards(drawn_card)
         return
 
-    def handle_hint(self, h_type, h_val):
-        indexes = self.cards[h_type, :] == h_val
+    def remove_card(self, cardId):
+        #erase the card
+        """
+        cardId = -1
 
-        if h_type == 0:
-            self.hint_value[indexes, h_val] = 1
+        if nplayer.name == self.main_player.name:
+            assert self.main_play >= 0
+            cardId = self.main_play
+            self.main_play = -1
         else:
-            self.hint_color[indexes, h_val] = 1
+            ids = nplayer.cardIds == card.id
+            cardId = argmax(ids)
+        """
+        #nplayer.cardHandIndex = cardId
+        self.cards[0, cardId] = -1
+        self.cards[1, cardId] = -1
 
-    def handle_draw_v2(self, played_id, drawnCard = None):
+        #erase hints
+        self.hint_value[cardId, :] = np.zeros(5)
+        self.hint_color[cardId, :] = np.zeros(5)
+
+    def handle_hint(self, h_type, h_val):
+        #print(h_type)
+        #print(h_val)
+        vec = np.zeros(5)-1
+        vec[h_val] = 1
+
+
+        indexes = self.cards[h_type, :] == h_val
+        
+        for i in range(0, self.cardsInHand):
+            if self.cards[h_type,i] == h_val:
+                if h_type == 0:
+                    self.hint_value[i, :] = vec
+                elif h_type == 1:
+                    self.hint_color[i, :] = vec
+        
+    def handle_draw_v2(self, played_id, drawnCard = None, drawHappened = False):
         """
             Like above, but drawnCard is a np.ndarray
         """
@@ -260,7 +289,7 @@ class NPlayer:
         self.hint_value[self.cardsInHand-1, :] = np.zeros(5)
         self.hint_color[self.cardsInHand-1, :] = np.zeros(5)
         
-        if drawnCard == None:
+        if drawHappened == False:
             #we don't know the new card or it simply was not drawn (deck has no cards)
             self.cards[0, self.cardsInHand-1] = -1
             self.cards[1, self.cardsInHand-1] = -1

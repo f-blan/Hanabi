@@ -15,7 +15,7 @@ from solver.Fuzzy.FSolver import FSolver
 from solver.MonteCarlo.MCSolver import MCSolver
 from threading import Semaphore
 
-PRINT_MINIMAL = False
+PRINT_MINIMAL = True
 
 if len(argv) < 4:
     print("You need the player name to start the game.")

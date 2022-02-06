@@ -16,5 +16,13 @@ class Move:
         self.h_type = type
         self.h_value = value
         self.h_player = player_n
+    
+    def ToKey(self):
+        if self.type == 0:
+            return f"d{self.card_n}"
+        if self.type == 1:
+            return f"p{self.card_n}"
+        if self.type == 2:
+            return f"h{self.h_type}{self.h_value}{self.h_player}"
 
     
