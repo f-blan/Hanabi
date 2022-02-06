@@ -40,10 +40,12 @@ class NodeDeck(FDeck):
     def RemoveHardUnknownFromGame(self):
         #it's meaningless updating the matrix. Statistics changes caused by using an hard unknown should have no impact
         self.n_cards_in_game-=1
+        assert self.n_cards_in_game > 1
     
     def RemoveHardUnkown(self):
         #same as RemoveHardUnknownFromGame
         self.n_cards_in_deck -= 1
+        assert self.n_cards_in_game >= 0
     
     def RemoveHintedCard(self,  hint: np.ndarray):
         cont = True
@@ -165,7 +167,12 @@ class NodeDeck(FDeck):
         self.n_cards_in_deck-=1
         self.n_cards_in_game-=1
 
-
+    def update_endgame_condition(self, main_player):
+        if self.n_cards_in_deck - main_player.n_cards <= 0 and self.endgame == False:
+            self.endgame = True
+            self.turns_until_end = self.n_players
+        elif self.endgame == True:
+            self.turns_until_end -=1
 
     def update_expected_values(self, fireworks: np.ndarray,  main_player):
         
@@ -177,11 +184,7 @@ class NodeDeck(FDeck):
         self.update_filtered_deck(main_player)
         self.filtered_deck = self.clean_matrix(self.filtered_deck)
 
-        if self.n_cards_in_filtered_deck == 0 and self.endgame == False:
-            self.endgame = True
-            self.turns_until_end = self.n_players
-        elif self.endgame == True:
-            self.turns_until_end -=1
+        
 
         if self.n_cards_in_filtered_deck <= 0:
             return 

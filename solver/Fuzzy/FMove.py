@@ -63,7 +63,7 @@ class FMove(Move):
         #playing makes other cards playable, while if you stole a play from someone they still gained a safe discard
         #hence why *0.75. The only case where a discard is better than a play is when there are no blue tokens
 
-        self.score = discardability*bt 
+        self.score = max(discardability*bt, 0.90) 
         return
 
     def EvaluateHint(self, hinted_player, blueTokens):
@@ -87,7 +87,7 @@ class FMove(Move):
         bt = 0#0.35 * (blueTokens*1.0)/8
         if blueTokens == 8:
             bt = 0.35
-        self.score = tot_gain - bt
+        self.score = max(tot_gain - bt, 0.99)
         return self.score
 
     def ToKey(self):

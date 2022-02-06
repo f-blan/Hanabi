@@ -112,7 +112,7 @@ class MCPlayer(FPlayer):
 
                     curmove.EvaluatePlay(self.playabilities[i], redTokens)
                     moves.add(curmove)
-                elif self.playabilities[i] >= 1:
+                elif self.playabilities[i] == 1:
                     #you are the agent. Play this card only if playability is 1 (i.e. you can reconstruct what the card is), so that
                     #we can compute fireworks for the next state
                     curmove = MCMove(1,self.order, False,cardHandIndex=i)
@@ -190,7 +190,7 @@ class MCPlayer(FPlayer):
             
             #dictionary to avoid giving two equivalent hints
             uq = {}
-            print(f"{p.cards}")
+            print(f"player:{p.order}{p.cards}")
             for j in range(0, hints_per_player[i]):
                 
                 if p_i >= len(max_play_i) and d_i >= len(max_disc_i):
@@ -270,6 +270,10 @@ class MCPlayer(FPlayer):
             
             #if value was not hinted yet, we hint it
             hvalue = player.cards[htype,card_i[i]]
+
+            if hvalue < 0 or hvalue > 4:
+                #ad hoc fix
+                return ret_j+1,None
             curmove = MCMove(2,self.order,True)
             curmove.define_hint(player, htype, hvalue)
             positions = list((player.cards[htype, :]==hvalue).nonzero()[0])

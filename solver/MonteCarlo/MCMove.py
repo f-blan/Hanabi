@@ -83,7 +83,7 @@ class MCMove(FMove):
             gain = (hinted_player.playabilities[same_value]+ hinted_player.discardabilities[same_value])*0.5
             tot_gain = np.sum(gain)
 
-        self.score = tot_gain - bt
+        self.score = max(tot_gain - bt, 0.99)
         return self.score
     
     def ToKey(self):

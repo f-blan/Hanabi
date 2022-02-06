@@ -37,17 +37,22 @@ class MCNode():
 
         if PRINT_DEBUG:
             print("--------------NODE GENERATED-----------------")
-            print(f"node with key {self.ToKey()} has been generated, To String is:")
+            print(f"node with key {self.ToKey()} has been generated, move is:")
+            if move != None:
+                print(move.ToString())
+        
+        ok = True
         if move != None:
             #we initialize also the move if specified
-            self.apply_move(move)
+            ok = self.apply_move(move)
         
-        self.deck.update_expected_values(self.fireworks,self.players[self.main_player_order])
-        for p in self.players:
-            if p.order == self.curr_player_order or p.order == self.main_player_order:
-                p.playabilities, p.discardabilities = self.deck.evaluate_unknown_cards(p.n_cards, self.fireworks,p.hints, p.hard_unknowns)
-            else:
-                p.playabilities, p.discardabilities = self.deck.evaluate_known_cards(p.cards,self.fireworks,p.hard_unknowns,p.n_cards)
+        if ok:        
+            self.deck.update_expected_values(self.fireworks,self.players[self.main_player_order])
+            for p in self.players:
+                if p.order == self.curr_player_order or p.order == self.main_player_order:
+                    p.playabilities, p.discardabilities = self.deck.evaluate_unknown_cards(p.n_cards, self.fireworks,p.hints, p.hard_unknowns)
+                else:
+                    p.playabilities, p.discardabilities = self.deck.evaluate_known_cards(p.cards,self.fireworks,p.hard_unknowns,p.n_cards)
         
         #MC parameters
         self.n_simulations = 1
@@ -63,6 +68,8 @@ class MCNode():
         
         self.expanded = False
         self.terminal = False 
+
+        self.deck.update_endgame_condition(self.players[self.main_player_order])
 
         #TODO: fix endgame check (DONE)
         if self.red_tokens >= 3 or (self.deck.endgame and self.deck.turns_until_end < 0):
@@ -140,12 +147,17 @@ class MCNode():
                     self.deck.RemoveCards(card)
                 else:
                     #we selected this move just because of playability but we don't know what it is exactly.
-                    #pick the card as any of the possible ones, then set status as terminal (we won't expand this node)
+                    #pick the card as any of the possible ones, update a random firework then set status as terminal (we won't expand this node)
                     x,y = np.unravel_index(np.argmax(hint), hint.shape)
                     card = np.array([[x], [y]])
-                    self.deck.RemoveCardsFromGame(card)
-                    self.deck.RemoveCards(card)
+                    #self.deck.RemoveCardsFromGame(card)
+                    #self.deck.RemoveCards(card)
                     self.terminal = True
+                    curr_player.handle_remove(move.cardHandIndex, True)
+                    assert np.any(self.fireworks<4)
+                    i = np.argmax(self.fireworks<4)
+                    self.fireworks[i] += 1
+                    return False
             
             if move.known_draw and move.drawHappened and move.playerOrder!=self.main_player_order:
                 self.deck.RemoveCards(move.drawn_card)
@@ -218,6 +230,7 @@ class MCNode():
         if PRINT_DEBUG:
             print("----------EXPANDING---------")
             print(self.ToKey())
+            print(self.ToString())
 
         moves = mcplayer.GetMoves( self.players, self.fireworks, self.deck, self.red_tokens, self.blue_tokens)
 
