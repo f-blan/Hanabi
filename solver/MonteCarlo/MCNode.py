@@ -11,10 +11,10 @@ import math
 
 MAX_CHILDREN = 3
 MAX_DEPTH = 10
-MC_ITERATIONS = 10
+MC_ITERATIONS = 100
 D_FACTOR = 0.9 #discount factor
 VERBOSE = False
-PRINT_DEBUG = True
+PRINT_DEBUG = -1
 
 class MCNode():
     def __init__(self, fireworks: np.ndarray, blue_tokens: int, red_tokens: int, players: list(), 
@@ -35,7 +35,7 @@ class MCNode():
         self.is_root = is_root
         self.parent = parent
 
-        if PRINT_DEBUG:
+        if PRINT_DEBUG>=3:
             print("--------------NODE GENERATED-----------------")
             print(f"node with key {self.ToKey()} has been generated, move is:")
             if move != None:
@@ -76,9 +76,12 @@ class MCNode():
             self.terminal = True
 
         #self.max_score = 8+3+len(players)*2*players[0].cardsInHand+25*4
-        if PRINT_DEBUG:
+        if PRINT_DEBUG>=3:
             print(self.ToString())
             print("--------------END GENERATION-----------------")
+
+        if self.depth >= MAX_DEPTH:
+            self.terminal == True
 
     def apply_move(self, move: MCMove):
         """
@@ -210,10 +213,10 @@ class MCNode():
             if self.deck.endgame == False or self.deck.turns_until_end > 0:
                 kn_contrib += p.get_score()
 
-        #add firework contribution: we assume that a play is worth 2 knowledge point + 3 coincidence points
+        #add firework contribution: we assume that a play is worth 2 knowledge point + 7 coincidence points
         #we also bias the evaluation to favor plays with lower value
         bias = np.array([1.0, 0.99, 0.98, 0.97, 0.96])
-        fw_points = 100*(self.fireworks+1) * bias[self.fireworks]
+        fw_points = 7*(self.fireworks+1) * bias[self.fireworks]
         fw_contrib = np.sum(fw_points)
 
         self.score = rt_contrib+bt_contrib+kn_contrib+fw_contrib
@@ -227,12 +230,17 @@ class MCNode():
     def MC_expand(self):
         mcplayer = self.players[self.curr_player_order]
 
-        if PRINT_DEBUG:
+        if PRINT_DEBUG>=1:
             print("----------EXPANDING---------")
             print(self.ToKey())
             print(self.ToString())
 
         moves = mcplayer.GetMoves( self.players, self.fireworks, self.deck, self.red_tokens, self.blue_tokens)
+
+        if PRINT_DEBUG >= 1:
+            print(f"moves are:")
+            for i in range(0, min(MAX_CHILDREN,len(moves))):
+                print(moves[i].ToKey())
 
         for i in range(0, min(MAX_CHILDREN, len(moves))):
             
@@ -271,7 +279,7 @@ class MCNode():
         return tmpnode
 
     def FindMove(self, iterations = MC_ITERATIONS):
-        if PRINT_DEBUG:
+        if PRINT_DEBUG>=0:
             print("-----FINDING MOVE-----")
             print(f"root is {self.ToKey()}")
         assert self.curr_player_order == self.main_player_order
@@ -280,11 +288,11 @@ class MCNode():
             #print(f"Selected: {node.ToString()}")
             if node == None or node.terminal:
                 print("You're asking a terminal node to find a move")
-                break
+                return self.children[0].move
             node.MC_expand()
 
         bestNode=self.GetBestNodeAVGScore()
-        if PRINT_DEBUG:
+        if PRINT_DEBUG>=0:
             print(f"Best move found is {bestNode.ToString()}")
             print("---------END FIND--------")
         return bestNode.move
@@ -316,7 +324,7 @@ class MCNode():
         maxscore= -100
         for i in range(0, len(self.children)):
             child = self.children[i]
-            if PRINT_DEBUG:
+            if PRINT_DEBUG>=0:
                 print(f"{child.ToString()}")
             c_score = child.children_scores/child.n_simulations
             if c_score > maxscore:
@@ -333,7 +341,11 @@ class MCNode():
         return move.ToKey() in self.childrenKeys
 
     def ToString(self):
-        str = f"NODE. player: {self.players[self.curr_player_order].name}, depth: {self.depth}, bt: {self.blue_tokens}, score: {self.score}, ch_score: {self.children_scores}, n_sim: {self.n_simulations}"
+        if self.parent == None:
+            str = f"NODE. player: {self.players[self.curr_player_order].name}, depth: {self.depth}, bt: {self.blue_tokens} score: {self.score}, ch_score: {self.children_scores}, n_sim: {self.n_simulations}"
+        else:
+            str = f"NODE. player: {self.players[self.curr_player_order].name}, depth: {self.depth}, bt: {self.blue_tokens},UTC:{self.UTCscore()} score: {self.score}, ch_score: {self.children_scores}, n_sim: {self.n_simulations}"
+        
         if self.move != None:
             str += f"\nmove: {self.move.ToString()}-fireworks: {self.fireworks}"
         if VERBOSE:

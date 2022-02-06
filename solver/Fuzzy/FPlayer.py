@@ -256,7 +256,7 @@ class FPlayer:
         ret_move = None
         
         #we choose here if we want to hint the value or the color
-        if player.hint_tracker[htype,card_i[i]] == False and f"h{player.order}{htype}{player.cards[htype,card_i[i]]}" not in uq:
+        if player.hint_tracker[htype,card_i[i]] == False and f"h_p{player.order}t{htype}v{player.cards[htype,card_i[i]]}" not in uq:
             
             #if value was not hinted yet, we hint it
             curmove = FMove(2)

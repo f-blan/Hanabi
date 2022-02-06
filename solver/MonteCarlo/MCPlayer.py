@@ -190,7 +190,7 @@ class MCPlayer(FPlayer):
             
             #dictionary to avoid giving two equivalent hints
             uq = {}
-            print(f"player:{p.order}{p.cards}")
+            #print(f"player:{p.order}{p.cards}")
             for j in range(0, hints_per_player[i]):
                 
                 if p_i >= len(max_play_i) and d_i >= len(max_disc_i):
@@ -258,7 +258,6 @@ class MCPlayer(FPlayer):
                 curmove.h_player=p.name
                 curmove.finalize_hint(p.order)
                 moves.add(curmove)
-                
         return moves
 
     def hint_define(self, card_i: np.ndarray, i: int,j: int, player, blueTokens: int,htype:int, uq, deck: NodeDeck):
@@ -266,7 +265,7 @@ class MCPlayer(FPlayer):
         ret_move = None
         
         #we choose here if we want to hint the value or the color
-        if player.hint_tracker[htype,card_i[i]] == False and f"h{player.order}{htype}{player.cards[htype,card_i[i]]}" not in uq:
+        if player.hint_tracker[htype,card_i[i]] == False and f"h_p{player.order}t{htype}v{player.cards[htype,card_i[i]]}" not in uq:
             
             #if value was not hinted yet, we hint it
             hvalue = player.cards[htype,card_i[i]]

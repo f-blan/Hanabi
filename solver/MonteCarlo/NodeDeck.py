@@ -28,7 +28,24 @@ class NodeDeck(FDeck):
         super().RemoveCards(to_remove)
         if np.any(self.deck<0):
             print("------PRE EXCEPTION----")
-            print(f"deck:\n{self.deck}\ncards in game:\n{self.cards_in_game}\nto_remove:\n{to_remove}")
+            print(f"deck:\n{self.deck}\ncards in game:\n{self.cards_in_game}\nto_remove:\n{to_remove}\nrandom mask:\n{self.randomMask}")
+
+            #ad hoc fix
+            assert self.randomMask[to_remove[0],to_remove[1]] >= 1
+            targets = np.logical_and(self.deck>=1, self.randomMask<=-1)
+            assert np.any(targets)
+            xr,yr = targets.nonzero()
+
+            index = randint(0, xr.shape[0])
+            x = xr[index]
+            y = yr[index]
+            self.randomMask[x,y] +=2
+
+            self.cards_in_game[x,y] -= 1
+            self.deck[x,y] -= 1
+            self.cards_in_game[to_remove[0], to_remove[1]]+=1
+            self.deck[to_remove[0], to_remove[1]]+=1
+            
         
         assert np.any(self.deck<0)==False
         #print(self.deck)
@@ -63,7 +80,7 @@ class NodeDeck(FDeck):
                 print("---PRE EXCEPTION---")
                 print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
                     
-                assert self.randomMask[x,y] >= 1
+                #assert self.randomMask[x,y] >= 1
                 targets = np.logical_and(self.deck>=1, self.randomMask<=-1)
                 assert np.any(targets)
                 xr,yr = targets.nonzero()
@@ -92,17 +109,19 @@ class NodeDeck(FDeck):
             
                 print("---PRE EXCEPTION---")
                 print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n {self.randomMask}")
+                #ad hoc fix: partial knowledge narrows the possibiities only to cards that have been removed to randomness. Replace this
+                #past random removal with another one
 
-            index = randint(0, x.shape[0])
-            x = x[index]
-            y = y[index]
-            self.randomMask[x,y]+=2
+                self.replace_randomicity(m)
+            else:
+                index = randint(0, x.shape[0])
+                x = x[index]
+                y = y[index]
+                self.randomMask[x,y]+=2
         
+                self.deck[x,y] -= 1
+                self.cards_in_game[x,y] -= 1
 
-            #to_remove = 1/x.shape[0]
-
-            self.deck[x,y] -= 1
-            self.cards_in_game[x,y] -= 1
             cont = False
         
         m = hint < 0
@@ -120,17 +139,16 @@ class NodeDeck(FDeck):
             if x.shape[0] == 0:
                 print("---PRE EXCEPTION---")
                 print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
-
-            index = randint(0, x.shape[0])
-            x = x[index]
-            y = y[index]
+                self.replace_randomicity(m)
+            else:
+                index = randint(0, x.shape[0])
+                x = x[index]
+                y = y[index]
             
-            self.randomMask[x,y]+=2
+                self.randomMask[x,y]+=2
 
-            #to_remove = 1/x.shape[0]
-
-            self.deck[x,y] -= 1
-            self.cards_in_game[x,y] -= 1
+                self.deck[x,y] -= 1
+                self.cards_in_game[x,y] -= 1
             cont = False
         
         if cont:
@@ -140,17 +158,16 @@ class NodeDeck(FDeck):
             if x.shape[0] == 0:
                 print("---PRE EXCEPTION---")
                 print(f"deck:\n{self.deck}\nhint:\n{hint}\nmask:\n{self.mask}\nrandomMask:\n{self.randomMask}")
-
-            index = randint(0, x.shape[0])
-            x = x[index]
-            y = y[index]
+                self.replace_randomicity(self.mask)
+            else:
+                index = randint(0, x.shape[0])
+                x = x[index]
+                y = y[index]
             
-            self.randomMask[x,y]+=2
+                self.randomMask[x,y]+=2
 
-            #to_remove = 1/x.shape[0]
-            
-            self.deck[x,y] -= 1
-            self.cards_in_game[x,y] -= 1
+                self.deck[x,y] -= 1
+                self.cards_in_game[x,y] -= 1
             cont = False
         
 
@@ -428,3 +445,22 @@ class NodeDeck(FDeck):
             self.n_cards_in_filtered_deck -=1
         
         self.filtered_deck = filtered_deck
+
+    def replace_randomicity(self,m):
+        x,y = m.nonzero()
+
+        #assert np.any(self.randomMask[x,y] >=1)
+        targets = np.logical_and(self.deck>=1, self.randomMask<=-1)
+        assert np.any(targets)
+        xr,yr = targets.nonzero()
+        
+        index = randint(0, xr.shape[0])
+        xr = xr[index]
+        yr = yr[index]
+        self.randomMask[x,y] =0
+
+        self.deck[xr,yr]-=1
+        self.cards_in_game[xr,yr]-=1
+        self.randomMask[xr,yr]+=2
+
+

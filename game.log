@@ -25941,3 +25941,2525 @@
 02/06/2022 01:06:17 AM WARNING: Player disconnected: cpu1
 02/06/2022 01:06:17 AM WARNING: Player disconnected: cpu5
 02/06/2022 01:06:17 AM INFO: Shutting down server
+02/06/2022 01:16:45 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:16:50 AM INFO: Connected by: ('127.0.0.1', 44280)
+02/06/2022 01:16:50 AM INFO: Player connected: cpu1
+02/06/2022 01:16:54 AM INFO: Connected by: ('127.0.0.1', 44282)
+02/06/2022 01:16:54 AM INFO: Player connected: io
+02/06/2022 01:16:57 AM INFO: Player ready: io
+02/06/2022 01:17:00 AM INFO: Player ready: cpu1
+02/06/2022 01:17:00 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:17:00 AM INFO: Ok, let's start the game!
+02/06/2022 01:17:00 AM INFO: Showing hand to: cpu1
+02/06/2022 01:17:01 AM INFO: Player cpu1 providing hint to io: cards with value 1 are in positions: [1, 2]
+02/06/2022 01:17:01 AM INFO: Showing hand to: cpu1
+02/06/2022 01:17:51 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:17:54 AM WARNING: Player disconnected: io
+02/06/2022 01:17:54 AM INFO: Shutting down server
+02/06/2022 01:17:56 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:18:01 AM INFO: Connected by: ('127.0.0.1', 44294)
+02/06/2022 01:18:01 AM INFO: Player connected: cpu1
+02/06/2022 01:18:03 AM INFO: Connected by: ('127.0.0.1', 44298)
+02/06/2022 01:18:03 AM INFO: Player connected: io
+02/06/2022 01:18:05 AM INFO: Player ready: io
+02/06/2022 01:18:09 AM INFO: Player ready: cpu1
+02/06/2022 01:18:09 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:18:09 AM INFO: Ok, let's start the game!
+02/06/2022 01:18:09 AM INFO: Showing hand to: cpu1
+02/06/2022 01:18:09 AM INFO: Player cpu1 providing hint to io: cards with value 1 are in positions: [0, 3]
+02/06/2022 01:18:09 AM INFO: Showing hand to: cpu1
+02/06/2022 01:23:11 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:23:14 AM WARNING: Player disconnected: io
+02/06/2022 01:23:14 AM INFO: Shutting down server
+02/06/2022 01:23:17 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:23:21 AM INFO: Connected by: ('127.0.0.1', 44330)
+02/06/2022 01:23:21 AM INFO: Player connected: cpu1
+02/06/2022 01:23:22 AM INFO: Player ready: cpu1
+02/06/2022 01:23:25 AM INFO: Connected by: ('127.0.0.1', 44332)
+02/06/2022 01:23:25 AM INFO: Player connected: io
+02/06/2022 01:23:26 AM INFO: Player ready: io
+02/06/2022 01:23:26 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:23:26 AM INFO: Ok, let's start the game!
+02/06/2022 01:23:26 AM INFO: Showing hand to: cpu1
+02/06/2022 01:26:34 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:26:39 AM WARNING: Player disconnected: io
+02/06/2022 01:26:39 AM INFO: Shutting down server
+02/06/2022 01:26:43 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:26:47 AM INFO: Connected by: ('127.0.0.1', 44392)
+02/06/2022 01:26:47 AM INFO: Player connected: cpu1
+02/06/2022 01:26:50 AM INFO: Connected by: ('127.0.0.1', 44394)
+02/06/2022 01:26:50 AM INFO: Player connected: io
+02/06/2022 01:26:53 AM INFO: Player ready: io
+02/06/2022 01:26:56 AM INFO: Player ready: cpu1
+02/06/2022 01:26:56 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:26:56 AM INFO: Ok, let's start the game!
+02/06/2022 01:26:56 AM INFO: Showing hand to: cpu1
+02/06/2022 01:26:56 AM INFO: Player cpu1 providing hint to io: cards with color green are in positions: [0, 2, 4]
+02/06/2022 01:26:56 AM INFO: Showing hand to: cpu1
+02/06/2022 01:31:14 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:31:17 AM WARNING: Player disconnected: io
+02/06/2022 01:31:17 AM INFO: Shutting down server
+02/06/2022 01:31:20 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:31:23 AM INFO: Connected by: ('127.0.0.1', 44422)
+02/06/2022 01:31:23 AM INFO: Player connected: cpu1
+02/06/2022 01:31:24 AM INFO: Player ready: cpu1
+02/06/2022 01:31:29 AM INFO: Connected by: ('127.0.0.1', 44428)
+02/06/2022 01:31:29 AM INFO: Player connected: io
+02/06/2022 01:31:30 AM INFO: Player ready: io
+02/06/2022 01:31:30 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:31:30 AM INFO: Ok, let's start the game!
+02/06/2022 01:31:30 AM INFO: Showing hand to: cpu1
+02/06/2022 01:31:31 AM INFO: Player cpu1 providing hint to io: cards with color green are in positions: [1, 2, 3, 4]
+02/06/2022 01:31:31 AM INFO: Showing hand to: cpu1
+02/06/2022 01:33:50 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:33:53 AM WARNING: Player disconnected: io
+02/06/2022 01:33:53 AM INFO: Shutting down server
+02/06/2022 01:34:04 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:34:07 AM INFO: Connected by: ('127.0.0.1', 44450)
+02/06/2022 01:34:07 AM INFO: Player connected: cpu1
+02/06/2022 01:34:11 AM INFO: Connected by: ('127.0.0.1', 44454)
+02/06/2022 01:34:11 AM INFO: Player connected: io
+02/06/2022 01:34:12 AM INFO: Player ready: io
+02/06/2022 01:34:15 AM INFO: Player ready: cpu1
+02/06/2022 01:34:15 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:34:15 AM INFO: Ok, let's start the game!
+02/06/2022 01:34:15 AM INFO: Showing hand to: cpu1
+02/06/2022 01:36:09 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:36:11 AM WARNING: Player disconnected: io
+02/06/2022 01:36:11 AM INFO: Shutting down server
+02/06/2022 01:36:14 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:36:29 AM INFO: Connected by: ('127.0.0.1', 44476)
+02/06/2022 01:36:29 AM INFO: Player connected: cpu1
+02/06/2022 01:36:30 AM INFO: Player ready: cpu1
+02/06/2022 01:36:33 AM INFO: Connected by: ('127.0.0.1', 44478)
+02/06/2022 01:36:33 AM INFO: Player connected: io
+02/06/2022 01:36:34 AM INFO: Player ready: io
+02/06/2022 01:36:34 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:36:34 AM INFO: Ok, let's start the game!
+02/06/2022 01:36:34 AM INFO: Showing hand to: cpu1
+02/06/2022 01:36:34 AM INFO: Player cpu1 providing hint to io: cards with value 1 are in positions: [1, 4]
+02/06/2022 01:36:34 AM INFO: Showing hand to: cpu1
+02/06/2022 01:37:09 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:37:12 AM WARNING: Player disconnected: io
+02/06/2022 01:37:12 AM INFO: Shutting down server
+02/06/2022 01:37:14 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:37:20 AM INFO: Connected by: ('127.0.0.1', 44486)
+02/06/2022 01:37:20 AM INFO: Player connected: cpu1
+02/06/2022 01:37:22 AM INFO: Player ready: cpu1
+02/06/2022 01:37:24 AM INFO: Connected by: ('127.0.0.1', 44492)
+02/06/2022 01:37:24 AM INFO: Player connected: io
+02/06/2022 01:37:27 AM INFO: Player ready: io
+02/06/2022 01:37:27 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:37:27 AM INFO: Ok, let's start the game!
+02/06/2022 01:37:27 AM INFO: Showing hand to: cpu1
+02/06/2022 01:37:27 AM INFO: Player cpu1 providing hint to io: cards with value 4 are in positions: [0, 2, 3]
+02/06/2022 01:37:27 AM INFO: Showing hand to: cpu1
+02/06/2022 01:44:05 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:44:11 AM WARNING: Player disconnected: io
+02/06/2022 01:44:11 AM INFO: Shutting down server
+02/06/2022 01:44:14 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:44:18 AM INFO: Connected by: ('127.0.0.1', 44548)
+02/06/2022 01:44:18 AM INFO: Player connected: cpu1
+02/06/2022 01:44:18 AM INFO: Player ready: cpu1
+02/06/2022 01:44:21 AM INFO: Connected by: ('127.0.0.1', 44550)
+02/06/2022 01:44:21 AM INFO: Player connected: io
+02/06/2022 01:44:23 AM INFO: Player ready: io
+02/06/2022 01:44:23 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:44:23 AM INFO: Ok, let's start the game!
+02/06/2022 01:44:23 AM INFO: Showing hand to: cpu1
+02/06/2022 01:44:23 AM INFO: Player cpu1 providing hint to io: cards with value 4 are in positions: [1, 2]
+02/06/2022 01:44:23 AM INFO: Showing hand to: cpu1
+02/06/2022 01:46:30 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:46:32 AM WARNING: Player disconnected: io
+02/06/2022 01:46:32 AM INFO: Shutting down server
+02/06/2022 01:46:37 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:46:40 AM INFO: Connected by: ('127.0.0.1', 44576)
+02/06/2022 01:46:40 AM INFO: Player connected: cpu1
+02/06/2022 01:46:40 AM INFO: Player ready: cpu1
+02/06/2022 01:46:46 AM INFO: Connected by: ('127.0.0.1', 44582)
+02/06/2022 01:46:46 AM INFO: Player connected: io
+02/06/2022 01:46:49 AM INFO: Player ready: io
+02/06/2022 01:46:49 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:46:49 AM INFO: Ok, let's start the game!
+02/06/2022 01:46:49 AM INFO: Showing hand to: cpu1
+02/06/2022 01:46:50 AM INFO: Player cpu1 providing hint to io: cards with value 1 are in positions: [1, 4]
+02/06/2022 01:46:50 AM INFO: Showing hand to: cpu1
+02/06/2022 01:50:55 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:50:58 AM WARNING: Player disconnected: io
+02/06/2022 01:50:58 AM INFO: Shutting down server
+02/06/2022 01:51:01 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:51:05 AM INFO: Connected by: ('127.0.0.1', 44612)
+02/06/2022 01:51:05 AM INFO: Player connected: cpu1
+02/06/2022 01:51:06 AM INFO: Player ready: cpu1
+02/06/2022 01:51:09 AM INFO: Connected by: ('127.0.0.1', 44618)
+02/06/2022 01:51:09 AM INFO: Player connected: io
+02/06/2022 01:51:14 AM INFO: Player ready: io
+02/06/2022 01:51:14 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:51:14 AM INFO: Ok, let's start the game!
+02/06/2022 01:51:14 AM INFO: Showing hand to: cpu1
+02/06/2022 01:51:14 AM INFO: Player cpu1 providing hint to io: cards with value 4 are in positions: [0, 3]
+02/06/2022 01:51:14 AM INFO: Showing hand to: cpu1
+02/06/2022 01:52:18 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:52:21 AM WARNING: Player disconnected: io
+02/06/2022 01:52:21 AM INFO: Shutting down server
+02/06/2022 01:52:23 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:52:28 AM INFO: Connected by: ('127.0.0.1', 44642)
+02/06/2022 01:52:28 AM INFO: Player connected: cpu1
+02/06/2022 01:52:28 AM INFO: Player ready: cpu1
+02/06/2022 01:52:31 AM INFO: Connected by: ('127.0.0.1', 44648)
+02/06/2022 01:52:31 AM INFO: Player connected: io
+02/06/2022 01:52:33 AM INFO: Player ready: io
+02/06/2022 01:52:33 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:52:33 AM INFO: Ok, let's start the game!
+02/06/2022 01:52:33 AM INFO: Showing hand to: cpu1
+02/06/2022 01:52:33 AM INFO: Player cpu1 providing hint to io: cards with value 2 are in positions: [0, 4]
+02/06/2022 01:52:33 AM INFO: Showing hand to: cpu1
+02/06/2022 01:53:06 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:53:15 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:53:19 AM INFO: Connected by: ('127.0.0.1', 44658)
+02/06/2022 01:53:19 AM INFO: Player connected: cpu1
+02/06/2022 01:53:19 AM INFO: Player ready: cpu1
+02/06/2022 01:53:24 AM INFO: Connected by: ('127.0.0.1', 44662)
+02/06/2022 01:53:24 AM INFO: Player connected: io
+02/06/2022 01:53:26 AM INFO: Player ready: io
+02/06/2022 01:53:26 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:53:26 AM INFO: Ok, let's start the game!
+02/06/2022 01:53:26 AM INFO: Showing hand to: cpu1
+02/06/2022 01:53:26 AM INFO: Player cpu1 providing hint to io: cards with value 1 are in positions: [2, 3, 4]
+02/06/2022 01:53:26 AM INFO: Showing hand to: cpu1
+02/06/2022 01:57:06 AM WARNING: Player disconnected: cpu1
+02/06/2022 01:57:10 AM WARNING: Player disconnected: io
+02/06/2022 01:57:10 AM INFO: Shutting down server
+02/06/2022 01:57:14 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 01:57:18 AM INFO: Connected by: ('127.0.0.1', 44686)
+02/06/2022 01:57:18 AM INFO: Player connected: cpu1
+02/06/2022 01:57:18 AM INFO: Player ready: cpu1
+02/06/2022 01:57:22 AM INFO: Connected by: ('127.0.0.1', 44688)
+02/06/2022 01:57:22 AM INFO: Player connected: io
+02/06/2022 01:57:24 AM INFO: Player ready: io
+02/06/2022 01:57:24 AM INFO: Game start! Between: ['cpu1', 'io']
+02/06/2022 01:57:24 AM INFO: Ok, let's start the game!
+02/06/2022 01:57:24 AM INFO: Showing hand to: cpu1
+02/06/2022 01:57:24 AM INFO: Player cpu1 providing hint to io: cards with value 3 are in positions: [1, 4]
+02/06/2022 01:57:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:01:29 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:08:23 AM WARNING: Player disconnected: io
+02/06/2022 02:08:23 AM INFO: Shutting down server
+02/06/2022 02:08:46 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:13:34 AM INFO: Connected by: ('127.0.0.1', 44766)
+02/06/2022 02:13:34 AM INFO: Player connected: cpu1
+02/06/2022 02:13:46 AM INFO: Connected by: ('127.0.0.1', 44770)
+02/06/2022 02:13:46 AM INFO: Player connected: cpu2
+02/06/2022 02:13:47 AM INFO: Player ready: cpu2
+02/06/2022 02:13:50 AM INFO: Player ready: cpu1
+02/06/2022 02:13:50 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:13:50 AM INFO: Ok, let's start the game!
+02/06/2022 02:13:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:50 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [0, 2]
+02/06/2022 02:13:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:51 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [0, 2, 3]
+02/06/2022 02:13:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:51 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:13:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:52 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [0, 2, 4]
+02/06/2022 02:13:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:52 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:13:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:52 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [0, 2]
+02/06/2022 02:13:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:53 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:13:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:53 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [1]
+02/06/2022 02:13:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:54 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [3]
+02/06/2022 02:13:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:54 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [3, 4]
+02/06/2022 02:13:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:54 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [1, 3]
+02/06/2022 02:13:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:55 AM INFO: Player: cpu2: card 48 discarded successfully
+02/06/2022 02:13:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:55 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [0]
+02/06/2022 02:13:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:55 AM INFO: Player: cpu2: card 22 discarded successfully
+02/06/2022 02:13:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:56 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 3]
+02/06/2022 02:13:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:56 AM INFO: Player: cpu2: card 45 discarded successfully
+02/06/2022 02:13:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:56 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2, 4]
+02/06/2022 02:13:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:57 AM INFO: Player: cpu2: card 43 discarded successfully
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:57 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2, 3]
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:57 AM INFO: Player: cpu2: card 9 discarded successfully
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:57 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [3]
+02/06/2022 02:13:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:58 AM INFO: Player: cpu2: card 1 discarded successfully
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:58 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 3]
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:58 AM INFO: Player: cpu2: card 33 discarded successfully
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:59 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [2, 3]
+02/06/2022 02:13:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:59 AM INFO: Player: cpu2: card 21 discarded successfully
+02/06/2022 02:13:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:13:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:59 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [4]
+02/06/2022 02:13:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:13:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:00 AM INFO: Player: cpu2: card 47 discarded successfully
+02/06/2022 02:14:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:00 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [3, 4]
+02/06/2022 02:14:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:00 AM INFO: Player: cpu2: card 6 discarded successfully
+02/06/2022 02:14:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:01 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [3]
+02/06/2022 02:14:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:01 AM INFO: Player: cpu2: card 37 discarded successfully
+02/06/2022 02:14:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:01 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 3]
+02/06/2022 02:14:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:02 AM INFO: Player: cpu2: card 30 discarded successfully
+02/06/2022 02:14:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:02 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [2, 3]
+02/06/2022 02:14:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:02 AM INFO: Player: cpu2: card 32 discarded successfully
+02/06/2022 02:14:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:03 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 2, 3]
+02/06/2022 02:14:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:03 AM INFO: Player: cpu2: card 28 discarded successfully
+02/06/2022 02:14:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:03 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [4]
+02/06/2022 02:14:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:04 AM INFO: Player: cpu2: card 40 discarded successfully
+02/06/2022 02:14:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:04 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [3]
+02/06/2022 02:14:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:04 AM INFO: Player: cpu2: card 42 discarded successfully
+02/06/2022 02:14:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:05 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3, 4]
+02/06/2022 02:14:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:05 AM INFO: Player: cpu2: card 2 discarded successfully
+02/06/2022 02:14:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:05 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 2]
+02/06/2022 02:14:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:06 AM INFO: Player: cpu2: card 23 discarded successfully
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:06 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3]
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:06 AM INFO: Player: cpu2: card 0 discarded successfully
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:06 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2]
+02/06/2022 02:14:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:07 AM INFO: Player: cpu2: card 44 discarded successfully
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:07 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [3, 4]
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:07 AM INFO: Player: cpu2: card 12 discarded successfully
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:07 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:08 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:14:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:08 AM INFO: Player: cpu2: card 35 discarded successfully
+02/06/2022 02:14:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:08 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [0, 2, 4]
+02/06/2022 02:14:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:08 AM INFO: Player: cpu2: card 16 discarded successfully
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:09 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [4]
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:09 AM INFO: Player: cpu2: card 8 discarded successfully
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:09 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [4]
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:10 AM INFO: Player: cpu2: card 11 discarded successfully
+02/06/2022 02:14:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:10 AM INFO: Player: cpu1: card 5 discarded successfully
+02/06/2022 02:14:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:10 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [2, 3, 4]
+02/06/2022 02:14:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:11 AM INFO: Player: cpu1: card 17 discarded successfully
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:11 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [3]
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:11 AM INFO: Player: cpu1: card 14 discarded successfully
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:11 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:12 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:12 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [2, 4]
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:12 AM INFO: Player: cpu1: card 7 discarded successfully
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:12 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [3]
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:13 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:13 AM INFO: Player: cpu2: card 24 discarded successfully
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:13 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2, 4]
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:13 AM INFO: Player: cpu2: card 20 discarded successfully
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:14 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [0, 2, 4]
+02/06/2022 02:14:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:14 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:14:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:14:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:14 AM INFO: Player: cpu1: card 31 discarded successfully
+02/06/2022 02:14:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:14:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:24:49 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:24:53 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:24:53 AM INFO: Shutting down server
+02/06/2022 02:25:02 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:25:06 AM INFO: Connected by: ('127.0.0.1', 44836)
+02/06/2022 02:25:06 AM INFO: Player connected: cpu1
+02/06/2022 02:25:07 AM INFO: Player ready: cpu1
+02/06/2022 02:25:11 AM INFO: Connected by: ('127.0.0.1', 44838)
+02/06/2022 02:25:11 AM INFO: Player connected: cpu2
+02/06/2022 02:25:11 AM INFO: Player ready: cpu2
+02/06/2022 02:25:11 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:25:11 AM INFO: Ok, let's start the game!
+02/06/2022 02:25:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:12 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [2, 3]
+02/06/2022 02:25:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:12 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [2, 4]
+02/06/2022 02:25:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:12 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [0, 1]
+02/06/2022 02:25:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:12 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1]
+02/06/2022 02:25:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:13 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [2]
+02/06/2022 02:25:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:13 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1]
+02/06/2022 02:25:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:13 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0]
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:14 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [2]
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:14 AM INFO: Player: cpu1: card 2 discarded successfully
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:14 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [2]
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:15 AM INFO: Player: cpu1: card 20 discarded successfully
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:15 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [3]
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:15 AM INFO: Player: cpu1: card 29 discarded successfully
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:15 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [1, 3, 4]
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:16 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:16 AM INFO: Player: cpu2: card 8 discarded successfully
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:16 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [1, 4]
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:16 AM INFO: Player: cpu2: card 5 discarded successfully
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:17 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [0, 3]
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:17 AM INFO: Player: cpu2: card 34 discarded successfully
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:17 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [3]
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:17 AM INFO: Player: cpu2: card 38 discarded successfully
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:18 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:18 AM INFO: Player: cpu2: card 31 discarded successfully
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:18 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [4]
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:18 AM INFO: Player: cpu2: card 0 discarded successfully
+02/06/2022 02:25:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:19 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [1, 3]
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:19 AM INFO: Player: cpu2: card 4 discarded successfully
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:19 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [2, 3]
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:19 AM INFO: Player: cpu2: card 15 discarded successfully
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:20 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [2, 3]
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:20 AM INFO: Player: cpu2: card 23 discarded successfully
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:20 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [3, 4]
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:20 AM INFO: Player: cpu2: card 10 discarded successfully
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:21 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:21 AM INFO: Player: cpu2: card 28 discarded successfully
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:21 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2, 3]
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:22 AM INFO: Player: cpu2: card 30 discarded successfully
+02/06/2022 02:25:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:22 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3, 4]
+02/06/2022 02:25:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:22 AM INFO: Player: cpu2: card 11 discarded successfully
+02/06/2022 02:25:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:23 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [2, 3, 4]
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:23 AM INFO: Player: cpu2: card 18 discarded successfully
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:23 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [3]
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:23 AM INFO: Player: cpu2: card 16 discarded successfully
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:24 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [4]
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:24 AM INFO: Player: cpu2: card 39 discarded successfully
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:24 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [0, 2, 4]
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:24 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:25:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:25 AM INFO: Player: cpu1: card 49 discarded successfully
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:25 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [1, 2, 4]
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:25 AM INFO: Player: cpu1: card 3 discarded successfully
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:25 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [1, 2, 4]
+02/06/2022 02:25:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:26 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:25:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:26 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:25:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:26 AM INFO: Player: cpu1: card 32 discarded successfully
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:27 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [2, 3, 4]
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:27 AM INFO: Player: cpu1: card 17 discarded successfully
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:27 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [3]
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:28 AM INFO: Player: cpu1: card 27 discarded successfully
+02/06/2022 02:25:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:28 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [3]
+02/06/2022 02:25:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:28 AM INFO: Player: cpu1: card 9 discarded successfully
+02/06/2022 02:25:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:29 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [2]
+02/06/2022 02:25:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:29 AM INFO: Player: cpu1: card 47 discarded successfully
+02/06/2022 02:25:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:29 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [3, 4]
+02/06/2022 02:25:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:30 AM INFO: Player: cpu1: card 44 discarded successfully
+02/06/2022 02:25:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:30 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [2]
+02/06/2022 02:25:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:30 AM INFO: Player: cpu1: card 36 discarded successfully
+02/06/2022 02:25:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:30 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [2, 3, 4]
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:31 AM INFO: Player: cpu1: card 33 discarded successfully
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:31 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [2, 3]
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:31 AM INFO: Player: cpu1: card 37 discarded successfully
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:32 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [3]
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:32 AM INFO: Player: cpu1: card 42 discarded successfully
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:32 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [0, 1, 2]
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:32 AM INFO: Player: cpu1: card 45 discarded successfully
+02/06/2022 02:25:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:33 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [2, 4]
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:33 AM INFO: Player: cpu1: card 46 discarded successfully
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:33 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [3, 4]
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:34 AM INFO: Player: cpu1: card 7 discarded successfully
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:34 AM INFO: Player: cpu2: card 19 discarded successfully
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:34 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 3]
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:34 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [0, 3]
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:25:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:28:44 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:28:47 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:28:47 AM INFO: Shutting down server
+02/06/2022 02:28:51 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:28:54 AM INFO: Connected by: ('127.0.0.1', 44858)
+02/06/2022 02:28:54 AM INFO: Player connected: cpu1
+02/06/2022 02:28:58 AM INFO: Player ready: cpu1
+02/06/2022 02:29:01 AM INFO: Connected by: ('127.0.0.1', 44860)
+02/06/2022 02:29:01 AM INFO: Player connected: cpu2
+02/06/2022 02:29:02 AM INFO: Player ready: cpu2
+02/06/2022 02:29:02 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:29:02 AM INFO: Ok, let's start the game!
+02/06/2022 02:29:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:02 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [0, 3]
+02/06/2022 02:29:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:02 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [0, 3]
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:03 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [0]
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:03 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [0, 1]
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:03 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2]
+02/06/2022 02:29:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:04 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1]
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:04 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:04 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [4]
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:05 AM INFO: Player: cpu1: card 6 discarded successfully
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:05 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [3]
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:05 AM INFO: Player: cpu1: card 12 discarded successfully
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:05 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [3]
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:06 AM INFO: Player: cpu1: card 22 discarded successfully
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:06 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [1, 3]
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:06 AM INFO: Player: cpu1: card 48 discarded successfully
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:06 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [3]
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:07 AM INFO: Player: cpu1: card 39 discarded successfully
+02/06/2022 02:29:07 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:07 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [2, 3]
+02/06/2022 02:29:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:07 AM INFO: Player: cpu1: card 35 discarded successfully
+02/06/2022 02:29:07 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:07 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:08 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:08 AM INFO: Player: cpu1: card 19 discarded successfully
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:08 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [4]
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:08 AM INFO: Player: cpu1: card 26 discarded successfully
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:08 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:09 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1, 2, 4]
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:09 AM INFO: Player: cpu1: card 25 discarded successfully
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:09 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [2]
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:09 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:10 AM INFO: Player: cpu2: card 5 discarded successfully
+02/06/2022 02:29:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:10 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [3]
+02/06/2022 02:29:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:10 AM INFO: Player: cpu2: card 11 discarded successfully
+02/06/2022 02:29:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:10 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 4]
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:11 AM INFO: Player: cpu2: card 33 discarded successfully
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:11 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [3, 4]
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:11 AM INFO: Player: cpu2: card 13 discarded successfully
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:11 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [4]
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:12 AM INFO: Player: cpu2: card 21 discarded successfully
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:12 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2, 4]
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:12 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:13 AM INFO: Player: cpu1: card 49 discarded successfully
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:13 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [2]
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:13 AM INFO: Player: cpu1: card 38 discarded successfully
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:13 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [3]
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:14 AM INFO: Player: cpu1: card 18 discarded successfully
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:14 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [1, 3]
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:14 AM INFO: Player: cpu1: card 31 discarded successfully
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:14 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [4]
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:15 AM INFO: Player: cpu1: card 17 discarded successfully
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:15 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [3, 4]
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:15 AM INFO: Player: cpu1: card 1 discarded successfully
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:15 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [3]
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:16 AM INFO: Player: cpu1: card 9 discarded successfully
+02/06/2022 02:29:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:16 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3]
+02/06/2022 02:29:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:16 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:29:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:17 AM INFO: Player: cpu2: card 4 discarded successfully
+02/06/2022 02:29:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:17 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [1, 2, 3]
+02/06/2022 02:29:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:17 AM INFO: Player: cpu2: card 44 discarded successfully
+02/06/2022 02:29:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:17 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3]
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:18 AM INFO: Player: cpu2: card 7 discarded successfully
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:18 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3, 4]
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:18 AM INFO: Player: cpu2: card 23 discarded successfully
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:19 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [2]
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:19 AM INFO: Player: cpu2: card 37 discarded successfully
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:19 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [0, 3]
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:19 AM INFO: Player: cpu2: card 15 discarded successfully
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:20 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2]
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:20 AM INFO: Player: cpu2: card 47 discarded successfully
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:20 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [0, 3, 4]
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:20 AM INFO: Player: cpu2: card 40 discarded successfully
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:21 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:29:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:21 AM INFO: Player: cpu2: card 34 discarded successfully
+02/06/2022 02:29:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:21 AM INFO: Player: cpu1: card 8 discarded successfully
+02/06/2022 02:29:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:29:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:22 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1, 2, 4]
+02/06/2022 02:29:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:29:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:46:55 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:46:58 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:46:58 AM INFO: Shutting down server
+02/06/2022 02:47:02 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:47:05 AM INFO: Connected by: ('127.0.0.1', 45098)
+02/06/2022 02:47:05 AM INFO: Player connected: cpu1
+02/06/2022 02:47:05 AM INFO: Player ready: cpu1
+02/06/2022 02:47:09 AM INFO: Connected by: ('127.0.0.1', 45100)
+02/06/2022 02:47:09 AM INFO: Player connected: cpu2
+02/06/2022 02:47:09 AM INFO: Player ready: cpu2
+02/06/2022 02:47:09 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:47:09 AM INFO: Ok, let's start the game!
+02/06/2022 02:47:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:09 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [1, 3]
+02/06/2022 02:47:09 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:09 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:10 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [1, 3]
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:10 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2, 3, 4]
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:10 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:10 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [1]
+02/06/2022 02:47:10 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:11 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:11 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:47:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:11 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:11 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:11 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:12 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2, 3]
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:12 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [0, 1]
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:12 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [0]
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:12 AM INFO: Player: cpu2: card 28 discarded successfully
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:12 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:13 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1]
+02/06/2022 02:47:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:13 AM INFO: Player: cpu2: card 36 discarded successfully
+02/06/2022 02:47:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:13 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [0, 3]
+02/06/2022 02:47:13 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:13 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:14 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:14 AM INFO: Player: cpu1: card 27 discarded successfully
+02/06/2022 02:47:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:14 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [2, 3]
+02/06/2022 02:47:14 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:14 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:14 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:15 AM INFO: Player: cpu2: card 48 discarded successfully
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:15 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2, 3]
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:15 AM INFO: Player: cpu2: card 6 discarded successfully
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:15 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:16 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [1, 3]
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:16 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:16 AM INFO: Player: cpu1: card 33 discarded successfully
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:16 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [2]
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:16 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:17 AM INFO: Player: cpu1: card 35 discarded successfully
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:17 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [0, 2, 4]
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:17 AM INFO: Player: cpu1: card 47 discarded successfully
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:17 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [3]
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:17 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:18 AM INFO: Player: cpu1: card 13 discarded successfully
+02/06/2022 02:47:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:18 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [0, 1, 3]
+02/06/2022 02:47:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:18 AM INFO: Player: cpu1: card 12 discarded successfully
+02/06/2022 02:47:18 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:18 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:19 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [1, 3, 4]
+02/06/2022 02:47:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:19 AM INFO: Player: cpu1: card 8 discarded successfully
+02/06/2022 02:47:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:19 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [3]
+02/06/2022 02:47:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:20 AM INFO: Player: cpu1: card 0 discarded successfully
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:20 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [0, 1, 2, 4]
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:20 AM INFO: Player: cpu1: card 40 discarded successfully
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:20 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [1, 3]
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:21 AM INFO: Player: cpu1: card 38 discarded successfully
+02/06/2022 02:47:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:21 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [3]
+02/06/2022 02:47:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:21 AM INFO: Player: cpu1: card 10 discarded successfully
+02/06/2022 02:47:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:22 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1]
+02/06/2022 02:47:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:22 AM INFO: Player: cpu1: card 31 discarded successfully
+02/06/2022 02:47:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:22 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [2, 3]
+02/06/2022 02:47:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:23 AM INFO: Player: cpu1: card 19 discarded successfully
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:23 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [2, 4]
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:23 AM INFO: Player: cpu1: card 43 discarded successfully
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:23 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [2, 3]
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:24 AM INFO: Player: cpu1: card 30 discarded successfully
+02/06/2022 02:47:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:24 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [0, 4]
+02/06/2022 02:47:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:24 AM INFO: Player: cpu1: card 49 discarded successfully
+02/06/2022 02:47:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:25 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [3, 4]
+02/06/2022 02:47:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:25 AM INFO: Player: cpu1: card 23 discarded successfully
+02/06/2022 02:47:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:25 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3]
+02/06/2022 02:47:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:26 AM INFO: Player: cpu1: card 45 discarded successfully
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:26 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [1, 2, 3]
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:26 AM INFO: Player: cpu1: card 42 discarded successfully
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:26 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [2, 3, 4]
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:27 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:27 AM INFO: Player: cpu2: card 34 discarded successfully
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:27 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:27 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3]
+02/06/2022 02:47:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:28 AM INFO: Player: cpu1: card 14 discarded successfully
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:28 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [4]
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:28 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:28 AM INFO: Player: cpu2: card 7 discarded successfully
+02/06/2022 02:47:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:29 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:29 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:29 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1, 2, 4]
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:47:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:30 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:47:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:47:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:23 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:48:25 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:48:25 AM INFO: Shutting down server
+02/06/2022 02:48:28 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:48:32 AM INFO: Connected by: ('127.0.0.1', 45126)
+02/06/2022 02:48:32 AM INFO: Player connected: cpu1
+02/06/2022 02:48:32 AM INFO: Player ready: cpu1
+02/06/2022 02:48:35 AM INFO: Connected by: ('127.0.0.1', 45128)
+02/06/2022 02:48:35 AM INFO: Player connected: cpu2
+02/06/2022 02:48:36 AM INFO: Player ready: cpu2
+02/06/2022 02:48:36 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:48:36 AM INFO: Ok, let's start the game!
+02/06/2022 02:48:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:36 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [1, 2]
+02/06/2022 02:48:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:36 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [0, 2, 3]
+02/06/2022 02:48:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:37 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:48:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:37 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1, 2, 3]
+02/06/2022 02:48:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:37 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:48:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:38 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [0]
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:38 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [0]
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:38 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [0]
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:38 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 4]
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:39 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [2]
+02/06/2022 02:48:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:39 AM INFO: Player: cpu1: card 4 discarded successfully
+02/06/2022 02:48:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:39 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [2, 3, 4]
+02/06/2022 02:48:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:40 AM INFO: Player: cpu1: card 8 discarded successfully
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:40 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [0, 4]
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:40 AM INFO: Player: cpu1: card 3 discarded successfully
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:40 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [0, 3]
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:41 AM INFO: Player: cpu1: card 48 discarded successfully
+02/06/2022 02:48:41 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:41 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:41 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3, 4]
+02/06/2022 02:48:41 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:41 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:41 AM INFO: Player: cpu1: card 26 discarded successfully
+02/06/2022 02:48:41 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:41 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:42 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [3]
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:42 AM INFO: Player: cpu1: card 20 discarded successfully
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:42 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1, 3, 4]
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:42 AM INFO: Player: cpu1: card 44 discarded successfully
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:43 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [1, 3]
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:43 AM INFO: Player: cpu1: card 25 discarded successfully
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:43 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [0, 2, 4]
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:43 AM INFO: Player: cpu1: card 31 discarded successfully
+02/06/2022 02:48:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:44 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [2, 3, 4]
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:44 AM INFO: Player: cpu1: card 0 discarded successfully
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:44 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [0, 3]
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:44 AM INFO: Player: cpu1: card 22 discarded successfully
+02/06/2022 02:48:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:45 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [0, 1, 3, 4]
+02/06/2022 02:48:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:45 AM INFO: Player: cpu1: card 32 discarded successfully
+02/06/2022 02:48:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:45 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [3, 4]
+02/06/2022 02:48:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:46 AM INFO: Player: cpu1: card 28 discarded successfully
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:46 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [4]
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:46 AM INFO: Player: cpu1: card 30 discarded successfully
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:46 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1, 4]
+02/06/2022 02:48:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:47 AM INFO: Player: cpu1: card 19 discarded successfully
+02/06/2022 02:48:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:47 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [2, 4]
+02/06/2022 02:48:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:47 AM INFO: Player: cpu1: card 5 discarded successfully
+02/06/2022 02:48:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:48 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [3]
+02/06/2022 02:48:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:48 AM INFO: Player: cpu1: card 1 discarded successfully
+02/06/2022 02:48:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:48 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [3, 4]
+02/06/2022 02:48:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:49 AM INFO: Player: cpu1: card 33 discarded successfully
+02/06/2022 02:48:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:49 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1, 2]
+02/06/2022 02:48:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:49 AM INFO: Player: cpu1: card 15 discarded successfully
+02/06/2022 02:48:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:49 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [2, 3]
+02/06/2022 02:48:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:50 AM INFO: Player: cpu1: card 36 discarded successfully
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:50 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [2]
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:50 AM INFO: Player: cpu1: card 46 discarded successfully
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:50 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [2, 3, 4]
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:51 AM INFO: Player: cpu1: card 12 discarded successfully
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:51 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [1, 4]
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:51 AM INFO: Player: cpu1: card 10 discarded successfully
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:52 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [3, 4]
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:52 AM INFO: Player: cpu1: card 23 discarded successfully
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:52 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [4]
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:52 AM INFO: Player: cpu1: card 43 discarded successfully
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:53 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [2, 4]
+02/06/2022 02:48:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:53 AM INFO: Player: cpu1: card 2 discarded successfully
+02/06/2022 02:48:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:53 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [3]
+02/06/2022 02:48:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:53 AM INFO: Player: cpu1: card 11 discarded successfully
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:54 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [0, 3]
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:54 AM INFO: Player: cpu1: card 18 discarded successfully
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:54 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:54 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [0]
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:55 AM INFO: Player: cpu2: card 45 discarded successfully
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:55 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2, 3]
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:55 AM INFO: Player: cpu2: card 16 discarded successfully
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:56 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3, 4]
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:56 AM INFO: Player: cpu2: card 35 discarded successfully
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:56 AM INFO: Player: cpu1: card 34 discarded successfully
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:56 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [1, 2, 3]
+02/06/2022 02:48:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:57 AM INFO: Player: cpu1: card 27 discarded successfully
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:57 AM INFO: Player: cpu2: card 37 discarded successfully
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:57 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 2, 3]
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:57 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [1, 4]
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:58 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:58 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [0, 2, 3, 4]
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:58 AM INFO: Player: cpu1: card 39 discarded successfully
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:59 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3]
+02/06/2022 02:48:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:48:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:59 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:48:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:48:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:25 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:49:28 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:49:28 AM INFO: Shutting down server
+02/06/2022 02:49:31 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:49:34 AM INFO: Connected by: ('127.0.0.1', 45142)
+02/06/2022 02:49:34 AM INFO: Player connected: cpu1
+02/06/2022 02:49:34 AM INFO: Player ready: cpu1
+02/06/2022 02:49:38 AM INFO: Connected by: ('127.0.0.1', 45144)
+02/06/2022 02:49:38 AM INFO: Player connected: cpu2
+02/06/2022 02:49:39 AM INFO: Player ready: cpu2
+02/06/2022 02:49:39 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:49:39 AM INFO: Ok, let's start the game!
+02/06/2022 02:49:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:39 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [0, 2]
+02/06/2022 02:49:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:39 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [0, 2, 4]
+02/06/2022 02:49:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:40 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [1, 2, 4]
+02/06/2022 02:49:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:40 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:49:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:40 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2, 3]
+02/06/2022 02:49:40 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:40 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:40 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:49:41 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:41 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:41 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0]
+02/06/2022 02:49:41 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:41 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:41 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:49:41 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:41 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:41 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:42 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [0, 1, 4]
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:42 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [2]
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:42 AM INFO: Player: cpu2: card 19 discarded successfully
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:42 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:43 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [2, 3]
+02/06/2022 02:49:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:43 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:43 AM INFO: Player: cpu2: card 13 discarded successfully
+02/06/2022 02:49:43 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:43 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3]
+02/06/2022 02:49:43 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:43 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:43 AM INFO: Player: cpu2: card 47 discarded successfully
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:44 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [3]
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:44 AM INFO: Player: cpu2: card 21 discarded successfully
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:44 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [3]
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:44 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:45 AM INFO: Player: cpu2: card 48 discarded successfully
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:45 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 2, 3, 4]
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:45 AM INFO: Player: cpu2: card 3 discarded successfully
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:45 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:46 AM INFO: Player: cpu2: card 40 discarded successfully
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:46 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [2, 3]
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:46 AM INFO: Player: cpu2: card 32 discarded successfully
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:46 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [3]
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:47 AM INFO: Player: cpu2: card 42 discarded successfully
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:47 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [0, 2]
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:47 AM INFO: Player: cpu2: card 41 discarded successfully
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:47 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2, 3]
+02/06/2022 02:49:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:48 AM INFO: Player: cpu2: card 7 discarded successfully
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:48 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 3]
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:48 AM INFO: Player: cpu2: card 2 discarded successfully
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:48 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:49:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:49 AM INFO: Player: cpu2: card 44 discarded successfully
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:49 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2, 3, 4]
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:49 AM INFO: Player: cpu2: card 12 discarded successfully
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:50 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [0, 3]
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:50 AM INFO: Player: cpu2: card 4 discarded successfully
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:50 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [1, 3, 4]
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:50 AM INFO: Player: cpu2: card 0 discarded successfully
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:51 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [4]
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:51 AM INFO: Player: cpu2: card 36 discarded successfully
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:51 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3, 4]
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:51 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:52 AM INFO: Player: cpu1: card 16 discarded successfully
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:52 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [1]
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:52 AM INFO: Player: cpu1: card 45 discarded successfully
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:52 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [4]
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:53 AM INFO: Player: cpu1: card 28 discarded successfully
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:53 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [3, 4]
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:53 AM INFO: Player: cpu1: card 43 discarded successfully
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:53 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [2, 4]
+02/06/2022 02:49:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:54 AM INFO: Player: cpu1: card 38 discarded successfully
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:54 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [4]
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:54 AM INFO: Player: cpu1: card 11 discarded successfully
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:55 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [4]
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:55 AM INFO: Player: cpu1: card 26 discarded successfully
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:55 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [1, 3]
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:55 AM INFO: Player: cpu1: card 10 discarded successfully
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:56 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3, 4]
+02/06/2022 02:49:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:49:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:56 AM INFO: Player: cpu1: card 31 discarded successfully
+02/06/2022 02:49:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:49:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:16 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:50:19 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:50:19 AM INFO: Shutting down server
+02/06/2022 02:50:23 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:50:38 AM INFO: Connected by: ('127.0.0.1', 45150)
+02/06/2022 02:50:38 AM INFO: Player connected: cpu1
+02/06/2022 02:50:42 AM INFO: Connected by: ('127.0.0.1', 45152)
+02/06/2022 02:50:42 AM INFO: Player connected: cpu2
+02/06/2022 02:50:42 AM INFO: Player ready: cpu2
+02/06/2022 02:50:45 AM INFO: Player ready: cpu1
+02/06/2022 02:50:45 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:50:45 AM INFO: Ok, let's start the game!
+02/06/2022 02:50:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:45 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [1, 3]
+02/06/2022 02:50:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:45 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:50:45 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:45 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:46 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [2, 4]
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:46 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [0]
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:46 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2]
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:46 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [0, 3, 4]
+02/06/2022 02:50:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:47 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:47 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1]
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:47 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3]
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:47 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [1, 2]
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:48 AM INFO: Player: cpu1: card 37 discarded successfully
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:48 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [2, 3]
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:48 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:48 AM INFO: Player: cpu2: card 49 discarded successfully
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:49 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [2]
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:49 AM INFO: Player: cpu2: card 11 discarded successfully
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:49 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [0, 2, 3, 4]
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:49 AM INFO: Player: cpu2: card 8 discarded successfully
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:50 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [2]
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:50 AM INFO: Player: cpu2: card 38 discarded successfully
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:50 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [0, 2, 3]
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:50 AM INFO: Player: cpu2: card 17 discarded successfully
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:51 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [2]
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:51 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:51 AM INFO: Player: cpu1: card 4 discarded successfully
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:51 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [3, 4]
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:52 AM INFO: Player: cpu1: card 7 discarded successfully
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:52 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [1, 2]
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:52 AM INFO: Player: cpu1: card 0 discarded successfully
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:52 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [2, 3]
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:53 AM INFO: Player: cpu1: card 27 discarded successfully
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:53 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [2, 3]
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:53 AM INFO: Player: cpu1: card 5 discarded successfully
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:53 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [2]
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:53 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:50:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:54 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:54 AM INFO: Player: cpu1: card 44 discarded successfully
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:54 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:54 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [1, 3]
+02/06/2022 02:50:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:55 AM INFO: Player: cpu2: card 41 discarded successfully
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:55 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [0, 3, 4]
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:55 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:55 AM INFO: Player: cpu1: card 25 discarded successfully
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:56 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [0, 1, 2, 4]
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:56 AM INFO: Player: cpu1: card 43 discarded successfully
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:56 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [1, 3]
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:56 AM INFO: Player: cpu1: card 16 discarded successfully
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:56 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [3]
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:56 AM INFO: Player: cpu1: card 42 discarded successfully
+02/06/2022 02:50:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:57 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3]
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:57 AM INFO: Player: cpu1: card 32 discarded successfully
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:57 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [0, 1, 3, 4]
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:57 AM INFO: Player: cpu1: card 21 discarded successfully
+02/06/2022 02:50:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:58 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3]
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:58 AM INFO: Player: cpu1: card 15 discarded successfully
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:58 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3]
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:58 AM INFO: Player: cpu1: card 30 discarded successfully
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:59 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [3]
+02/06/2022 02:50:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:59 AM INFO: Player: cpu1: card 14 discarded successfully
+02/06/2022 02:50:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:59 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [3]
+02/06/2022 02:50:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:50:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:50:59 AM INFO: Player: cpu1: card 39 discarded successfully
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:00 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [2]
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:00 AM INFO: Player: cpu1: card 35 discarded successfully
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:00 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [2, 4]
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:00 AM INFO: Player: cpu1: card 31 discarded successfully
+02/06/2022 02:51:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:01 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [1, 2, 4]
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:01 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:01 AM INFO: Player: cpu2: card 28 discarded successfully
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:01 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [3, 4]
+02/06/2022 02:51:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:02 AM INFO: Player: cpu2: card 47 discarded successfully
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:02 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [0]
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:02 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:02 AM INFO: Player: cpu1: card 48 discarded successfully
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:03 AM INFO: Player: cpu2: card 45 discarded successfully
+02/06/2022 02:51:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:03 AM INFO: Player: cpu1: card 34 discarded successfully
+02/06/2022 02:51:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:03 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [2]
+02/06/2022 02:51:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:03 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [0]
+02/06/2022 02:51:03 AM INFO: Game over, people.
+02/06/2022 02:51:03 AM INFO: Please, close the server now
+02/06/2022 02:51:03 AM INFO: Score: 10; message: Meh!
+02/06/2022 02:51:03 AM INFO: Game over
+02/06/2022 02:51:03 AM INFO: Game score: 10
+02/06/2022 02:51:03 AM INFO: Starting new game
+02/06/2022 02:51:03 AM INFO: Starting new game
+02/06/2022 02:51:03 AM INFO: Ok, let's start the game!
+02/06/2022 02:51:03 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:51:03 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:51:03 AM INFO: Shutting down server
+02/06/2022 02:51:11 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:51:15 AM INFO: Connected by: ('127.0.0.1', 45160)
+02/06/2022 02:51:15 AM INFO: Player connected: cpu1
+02/06/2022 02:51:15 AM INFO: Player ready: cpu1
+02/06/2022 02:51:19 AM INFO: Connected by: ('127.0.0.1', 45162)
+02/06/2022 02:51:19 AM INFO: Player connected: cpu2
+02/06/2022 02:51:19 AM INFO: Player ready: cpu2
+02/06/2022 02:51:19 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:51:19 AM INFO: Ok, let's start the game!
+02/06/2022 02:51:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:19 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [0, 1]
+02/06/2022 02:51:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:19 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [0, 3, 4]
+02/06/2022 02:51:19 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:19 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:20 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [1]
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:20 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [1, 2]
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:20 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [2]
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:20 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [0, 1]
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:20 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:21 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [2]
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:21 AM INFO: Player: cpu2: card 12 discarded successfully
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:21 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2]
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:21 AM INFO: Player: cpu2: card 27 discarded successfully
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:21 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:22 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2, 3]
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:22 AM INFO: Player: cpu2: card 24 discarded successfully
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:22 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [0, 3]
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:22 AM INFO: Player: cpu2: card 38 discarded successfully
+02/06/2022 02:51:22 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:23 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [1, 3]
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:23 AM INFO: Player: cpu2: card 1 discarded successfully
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:23 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [3]
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:23 AM INFO: Player: cpu2: card 31 discarded successfully
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:23 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:24 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [0]
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:24 AM INFO: Player: cpu2: card 18 discarded successfully
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:24 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1]
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:24 AM INFO: Player: cpu2: card 32 discarded successfully
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:24 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:25 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [3]
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:25 AM INFO: Player: cpu2: card 39 discarded successfully
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:25 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [2, 3]
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:25 AM INFO: Player: cpu2: card 45 discarded successfully
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:25 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:26 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [2, 4]
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:26 AM INFO: Player: cpu2: card 11 discarded successfully
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:26 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3]
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:26 AM INFO: Player: cpu2: card 20 discarded successfully
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:26 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:27 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2]
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:27 AM INFO: Player: cpu2: card 28 discarded successfully
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:27 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [2, 4]
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:27 AM INFO: Player: cpu2: card 23 discarded successfully
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:27 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:28 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [0, 2]
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:28 AM INFO: Player: cpu2: card 44 discarded successfully
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:28 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2]
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:28 AM INFO: Player: cpu2: card 2 discarded successfully
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:28 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3]
+02/06/2022 02:51:28 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:29 AM INFO: Player: cpu2: card 10 discarded successfully
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:29 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [0, 3]
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:29 AM INFO: Player: cpu2: card 49 discarded successfully
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:29 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [3, 4]
+02/06/2022 02:51:29 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:30 AM INFO: Player: cpu2: card 9 discarded successfully
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:30 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 3]
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:30 AM INFO: Player: cpu2: card 42 discarded successfully
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:30 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [1, 3, 4]
+02/06/2022 02:51:30 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:31 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:31 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [0, 4]
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:31 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:31 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:51:31 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:32 AM INFO: Player: cpu2: card 33 discarded successfully
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:32 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:32 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:32 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:32 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [0, 1]
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:33 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:33 AM INFO: Player: cpu1: card 29 discarded successfully
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:33 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:33 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:34 AM INFO: Player: cpu1: card 48 discarded successfully
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:34 AM INFO: Player cpu2 providing hint to cpu1: cards with color green are in positions: [2, 4]
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:34 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:34 AM INFO: Player: cpu2: card 30 discarded successfully
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:34 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:35 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [2, 3]
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:35 AM INFO: Player: cpu2: card 46 discarded successfully
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:35 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [2, 3]
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:35 AM INFO: Player: cpu2: card 13 discarded successfully
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:35 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:36 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [4]
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:36 AM INFO: Player: cpu2: card 16 discarded successfully
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:36 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [1, 3]
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:36 AM INFO: Player: cpu2: card 43 discarded successfully
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:36 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:37 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 2, 4]
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:37 AM INFO: Player: cpu2: card 34 discarded successfully
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:37 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [4]
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:37 AM INFO: Player: cpu2: card 40 discarded successfully
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:37 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:37 AM INFO: Player: cpu1: card 8 discarded successfully
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:38 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1, 2]
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:38 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:38 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:38 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:38 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [0, 2, 4]
+02/06/2022 02:51:39 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:39 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:39 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:39 AM INFO: Game over, people.
+02/06/2022 02:51:39 AM INFO: Please, close the server now
+02/06/2022 02:51:39 AM INFO: Score: 10; message: Meh!
+02/06/2022 02:51:39 AM INFO: Game over
+02/06/2022 02:51:39 AM INFO: Game score: 10
+02/06/2022 02:51:39 AM INFO: Starting new game
+02/06/2022 02:51:39 AM INFO: Starting new game
+02/06/2022 02:51:39 AM INFO: Ok, let's start the game!
+02/06/2022 02:51:39 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:51:39 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:51:39 AM INFO: Shutting down server
+02/06/2022 02:51:45 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:51:49 AM INFO: Connected by: ('127.0.0.1', 45164)
+02/06/2022 02:51:49 AM INFO: Player connected: cpu1
+02/06/2022 02:51:49 AM INFO: Player ready: cpu1
+02/06/2022 02:51:53 AM INFO: Connected by: ('127.0.0.1', 45166)
+02/06/2022 02:51:53 AM INFO: Player connected: cpu2
+02/06/2022 02:51:53 AM INFO: Player ready: cpu2
+02/06/2022 02:51:53 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:51:53 AM INFO: Ok, let's start the game!
+02/06/2022 02:51:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:53 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [0, 3]
+02/06/2022 02:51:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:53 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [1, 3]
+02/06/2022 02:51:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:54 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [0, 1, 2, 4]
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:54 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:54 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3]
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:54 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:55 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [0, 1, 3, 4]
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:55 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:55 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1, 3]
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:56 AM INFO: Player cpu2 providing hint to cpu1: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:56 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [1, 4]
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:56 AM INFO: Player: cpu2: card 8 discarded successfully
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:56 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [3]
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:57 AM INFO: Player: cpu2: card 6 discarded successfully
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:57 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [3]
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:57 AM INFO: Player: cpu2: card 4 discarded successfully
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:57 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [0, 1, 3, 4]
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:58 AM INFO: Player: cpu2: card 46 discarded successfully
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:58 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [1, 2]
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:58 AM INFO: Player: cpu2: card 29 discarded successfully
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:58 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [2]
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:59 AM INFO: Player: cpu2: card 26 discarded successfully
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:59 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [3]
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:59 AM INFO: Player: cpu2: card 34 discarded successfully
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:51:59 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2]
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:51:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:00 AM INFO: Player: cpu2: card 7 discarded successfully
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:00 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [2]
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:00 AM INFO: Player: cpu2: card 21 discarded successfully
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:00 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [0, 1, 3]
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:01 AM INFO: Player: cpu2: card 49 discarded successfully
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:01 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [2, 3]
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:01 AM INFO: Player: cpu2: card 25 discarded successfully
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:01 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [3, 4]
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:02 AM INFO: Player: cpu2: card 37 discarded successfully
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:02 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [1, 3, 4]
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:02 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:02 AM INFO: Player: cpu1: card 22 discarded successfully
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:52:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:32 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:53:35 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:53:35 AM INFO: Shutting down server
+02/06/2022 02:53:38 AM INFO: Hanabi server started on 127.0.0.1:1024
+02/06/2022 02:53:42 AM INFO: Connected by: ('127.0.0.1', 45188)
+02/06/2022 02:53:42 AM INFO: Player connected: cpu1
+02/06/2022 02:53:42 AM INFO: Player ready: cpu1
+02/06/2022 02:53:46 AM INFO: Connected by: ('127.0.0.1', 45190)
+02/06/2022 02:53:46 AM INFO: Player connected: cpu2
+02/06/2022 02:53:46 AM INFO: Player ready: cpu2
+02/06/2022 02:53:46 AM INFO: Game start! Between: ['cpu1', 'cpu2']
+02/06/2022 02:53:46 AM INFO: Ok, let's start the game!
+02/06/2022 02:53:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:46 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [0, 3]
+02/06/2022 02:53:46 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:46 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:47 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [1]
+02/06/2022 02:53:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:47 AM INFO: Player cpu1 providing hint to cpu2: cards with value 2 are in positions: [1]
+02/06/2022 02:53:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:47 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [1, 4]
+02/06/2022 02:53:47 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:47 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:47 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1]
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:48 AM INFO: Player cpu2 providing hint to cpu1: cards with value 3 are in positions: [2]
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:48 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [3]
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:48 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [2]
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:48 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:48 AM INFO: Player: cpu1: card 49 discarded successfully
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:49 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [3, 4]
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:49 AM INFO: Player: cpu1: card 0 discarded successfully
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:49 AM INFO: Player: cpu2: card 19 discarded successfully
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:49 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [0, 3, 4]
+02/06/2022 02:53:49 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:50 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:50 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [1, 4]
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:50 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:50 AM INFO: Player: cpu1: card 15 discarded successfully
+02/06/2022 02:53:50 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:51 AM INFO: Player: cpu2: card 45 discarded successfully
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:51 AM INFO: Player cpu1 providing hint to cpu2: cards with color red are in positions: [1, 3]
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:51 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:51 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:51 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:52 AM INFO: Player: cpu2: card 25 discarded successfully
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:52 AM INFO: Player cpu1 providing hint to cpu2: cards with color yellow are in positions: [3, 4]
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:52 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:52 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:52 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:53 AM INFO: Player: cpu2: card 30 discarded successfully
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:53 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [2, 4]
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:53 AM INFO: Player: cpu2: card 13 discarded successfully
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:53 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [2, 4]
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:53 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:54 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:54 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:54 AM INFO: Player: cpu2: card 4 discarded successfully
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:54 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1, 3]
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:54 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:55 AM INFO: Player: cpu2: card 6 discarded successfully
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:55 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [2, 4]
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:55 AM INFO: Player: cpu2: card 39 discarded successfully
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:55 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1, 3]
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:55 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:56 AM INFO: Player: cpu2: card 34 discarded successfully
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:56 AM INFO: Player cpu1 providing hint to cpu2: cards with value 4 are in positions: [0, 3]
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:56 AM INFO: Player: cpu2: card 17 discarded successfully
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:56 AM INFO: Player cpu1 providing hint to cpu2: cards with value 5 are in positions: [3]
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:56 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:57 AM INFO: Player: cpu2: card 37 discarded successfully
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:57 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [1, 3]
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:57 AM INFO: Player: cpu2: card 48 discarded successfully
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:57 AM INFO: Player cpu1 providing hint to cpu2: cards with color white are in positions: [1, 3]
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:57 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:58 AM INFO: Player: cpu2: card 24 discarded successfully
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:58 AM INFO: Player cpu1 providing hint to cpu2: cards with value 1 are in positions: [3, 4]
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:58 AM INFO: Player: cpu2: card 1 discarded successfully
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:58 AM INFO: Player cpu1 providing hint to cpu2: cards with color green are in positions: [0, 2, 3, 4]
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:58 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:59 AM INFO: Player: cpu2: card 29 discarded successfully
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:59 AM INFO: Player: cpu1: card 28 discarded successfully
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:59 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [0, 1]
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:59 AM INFO: Player: cpu1: card 40 discarded successfully
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu2
+02/06/2022 02:53:59 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:00 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [0, 2]
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:00 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:00 AM INFO: Player cpu2 providing hint to cpu1: cards with color yellow are in positions: [3, 4]
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:00 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:00 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:01 AM INFO: Player: cpu2: card 7 discarded successfully
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:01 AM INFO: Player cpu1 providing hint to cpu2: cards with value 3 are in positions: [1, 2, 3]
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:01 AM INFO: Player: cpu2: card 42 discarded successfully
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:01 AM INFO: Player cpu1 providing hint to cpu2: cards with color blue are in positions: [2]
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:01 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:02 AM INFO: cpu2: card played and correctly put on the table
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:02 AM INFO: Player: cpu1: card 10 discarded successfully
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:02 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [2, 4]
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:02 AM INFO: Player: cpu1: card 14 discarded successfully
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:02 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:03 AM INFO: Player cpu2 providing hint to cpu1: cards with value 5 are in positions: [0, 4]
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:03 AM INFO: Player: cpu1: card 47 discarded successfully
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:03 AM INFO: Player cpu2 providing hint to cpu1: cards with value 2 are in positions: [1]
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:03 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:54:03 AM INFO: yellow pile has been filled.
+02/06/2022 02:54:03 AM INFO: Giving 1 free note token.
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:03 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:04 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [0, 2, 3]
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:04 AM INFO: Player: cpu1: card 43 discarded successfully
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:04 AM INFO: Player cpu2 providing hint to cpu1: cards with color red are in positions: [2]
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:04 AM INFO: Player: cpu1: card 41 discarded successfully
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:04 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:05 AM INFO: Player cpu2 providing hint to cpu1: cards with color blue are in positions: [2, 3]
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:05 AM INFO: Player: cpu1: card 21 discarded successfully
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:05 AM INFO: Player cpu2 providing hint to cpu1: cards with color white are in positions: [3]
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:05 AM INFO: Player: cpu1: card 35 discarded successfully
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:05 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:05 AM INFO: Player cpu2 providing hint to cpu1: cards with value 4 are in positions: [1, 2]
+02/06/2022 02:54:06 AM INFO: Showing hand to: cpu1
+02/06/2022 02:54:06 AM INFO: Showing hand to: cpu2
+02/06/2022 02:54:06 AM INFO: cpu1: card played and correctly put on the table
+02/06/2022 02:54:06 AM INFO: Game over, people.
+02/06/2022 02:54:06 AM INFO: Please, close the server now
+02/06/2022 02:54:06 AM INFO: Score: 12; message: Good!
+02/06/2022 02:54:06 AM INFO: Game over
+02/06/2022 02:54:06 AM INFO: Game score: 12
+02/06/2022 02:54:06 AM INFO: Starting new game
+02/06/2022 02:54:06 AM INFO: Starting new game
+02/06/2022 02:54:06 AM INFO: Ok, let's start the game!
+02/06/2022 02:54:06 AM WARNING: Player disconnected: cpu1
+02/06/2022 02:54:06 AM WARNING: Player disconnected: cpu2
+02/06/2022 02:54:06 AM INFO: Shutting down server
+02/06/2022 02:54:11 AM INFO: Hanabi server started on 127.0.0.1:1024

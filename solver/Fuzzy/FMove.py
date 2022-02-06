@@ -47,7 +47,7 @@ class FMove(Move):
             self.score = 1
         else:
             rt = redTokens*1.0
-            self.score = playability - 0.5 * (rt)
+            self.score = max(0,playability - 0.5 * (rt))
 
 
         return self.score
