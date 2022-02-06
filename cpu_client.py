@@ -23,13 +23,13 @@ if len(argv) < 4:
     playerName = "s288265" # For debug
     ip = HOST
     port = PORT + 1
-    solver_name = "MCSolver"
+    solver_name = "default"
     solver = {}
 else:
     playerName = argv[3]
     ip = argv[1]
     port = int(argv[2])
-    solver_name = "MCSolver"
+    solver_name = "default"
     solver = {}
 if len(argv) == 5:
     solver_name = argv[4]
@@ -173,8 +173,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                     solver = MCSolver(data, players,playerName)
                     print(f"using MonteCarlo solver {solver}")
                 else:
-                    solver = NSolver(data, players,playerName)
-                    print(f"using naive solver {solver}")
+                    if len(players)<=3:
+                        solver = FSolver(data, players,playerName)
+                        print(f"using Fuzzy solver {solver}")
+                    else:
+                        solver = MCSolver(data, players,playerName)
+                        print(f"using MonteCarlo solver {solver}")
             elif gameStatus == "Update":
                 
                 solver.RecordMove(data, "draw")
