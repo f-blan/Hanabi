@@ -5,17 +5,20 @@ from solver.MonteCarlo.MCMove import MCMove
 from solver.MonteCarlo.MCPlayer import MCPlayer
 from solver.MonteCarlo.NodeDeck import NodeDeck
 from sortedcontainers import SortedList
+from solver.Naive.NSimulator import NSimulator
 #from cpu_client import players
 
 import math 
 
-MAX_CHILDREN = 5
+MAX_CHILDREN = 1
 MAX_DEPTH = 10
-MC_ITERATIONS = 30
+MC_ITERATIONS = 1
 D_FACTOR = 0.99 #discount factor for node evaluation
 VERBOSE = False
 PRINT_DEBUG = -1
 FIREWORK_MULTIPLIER = 10
+SIMUL_PLAYOUT = True
+SIMUL_ITERATIONS = 1
 
 class MCNode():
     """
@@ -228,6 +231,14 @@ class MCNode():
             this means that deeper nodes in the MCTS will generally have a higher score, so to balance exploration and
             exploitation a discount factor p^depth is multiplied to the score
         """
+        if SIMUL_PLAYOUT:
+            #alternative simulation with playouts
+            sim = NSimulator(self)
+            tot_score = sim.perform_playouts(SIMUL_ITERATIONS)
+            self.score = tot_score
+            self.n_simulations = SIMUL_ITERATIONS
+            return self.score
+
         #the basic unit of score is knowledge of 1 value (color or number) for 1 card and it's equal to 1
 
         #red token contribution: score is 0 with 3 red tokens, 
@@ -324,13 +335,16 @@ class MCNode():
             MCTS back propagation fucntion: whenever a node is generated and simulated, this is called.
             All of its ancestors are notified of its score and the n_simulations (used in UTC) parameter is increased
         """
+        to_add = 1
+        if SIMUL_PLAYOUT:
+            to_add = SIMUL_ITERATIONS
         tmpnode = self.parent
         while tmpnode.is_root == False:
             tmpnode.children_scores += self.score
-            tmpnode.n_simulations+=1
+            tmpnode.n_simulations+=to_add
             tmpnode = tmpnode.parent
         tmpnode.children_scores += self.score
-        tmpnode.n_simulations+=1
+        tmpnode.n_simulations+=to_add
         
 
     def MC_select(self):

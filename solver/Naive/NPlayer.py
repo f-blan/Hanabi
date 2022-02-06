@@ -5,7 +5,7 @@ from .. import Move
 from .. import utils
 
 class NPlayer:
-    def __init__(self, name, main, order, cardsInHand, cards=None):
+    def __init__(self, name, main, order, cardsInHand, cards=None, initCards = True):
         self.name = name
         self.main = main
         self.order = order
@@ -20,7 +20,7 @@ class NPlayer:
 
         self.hint_color = np.zeros((cardsInHand, 5), dtype=np.int16)
         self.hint_value = np.zeros((cardsInHand, 5), dtype=np.int16)
-        if main == False:
+        if main == False and initCards == True:
             i=0
             for c in cards:
                 self.cards[0][i] = utils.encode_value(c.value)
@@ -237,3 +237,78 @@ class NPlayer:
             self.cards[1, self.cardsInHand-1] = utils.encode_color(drawnCard.color)
             #self.deck.remove_cards(drawn_card)
         return
+
+    def handle_hint(self, h_type, h_val):
+        indexes = self.cards[h_type, :] == h_val
+
+        if h_type == 0:
+            self.hint_value[indexes, h_val] = 1
+        else:
+            self.hint_color[indexes, h_val] = 1
+
+    def handle_draw_v2(self, played_id, drawnCard = None):
+        """
+            Like above, but drawnCard is a np.ndarray
+        """
+        #cards below the played one are moved one index above: move them and their hints accordingly
+        for i in range(played_id+1, self.cardsInHand):
+            self.hint_color[i-1, :] = self.hint_color[i, :]
+            self.hint_value[i-1, :] = self.hint_value[i, :]
+            self.cards[:, i-1] = self.cards[:, i]
+        
+        #erase hints: player has no hints on the newly drawn card
+        self.hint_value[self.cardsInHand-1, :] = np.zeros(5)
+        self.hint_color[self.cardsInHand-1, :] = np.zeros(5)
+        
+        if drawnCard == None:
+            #we don't know the new card or it simply was not drawn (deck has no cards)
+            self.cards[0, self.cardsInHand-1] = -1
+            self.cards[1, self.cardsInHand-1] = -1
+        else:
+            #drawnCard is not none
+            self.cards[0, self.cardsInHand-1] = drawnCard[0]
+            self.cards[1, self.cardsInHand-1] = drawnCard[1]
+            #self.deck.remove_cards(drawn_card)
+        return
+
+    def GetMove(self, fireworks, blue_tokens, red_tokens, players):
+        """
+        Simple priority: 
+            safe play
+            safe discard
+            hint safe play
+            hint random
+            unsafe discard
+            unsafe play
+        """
+
+        move = self.GetSafePlay(fireworks)
+        if move != None:
+            self.main_play = move.card_n
+            return move
+        
+        if blue_tokens >0:
+            move = self.GetSafeDiscard(fireworks)
+            if move!=None:
+                self.main_play = move.card_n
+                return move
+        
+        if blue_tokens < 8:
+            move = self.GetSafeHint(fireworks, players)
+            if move != None:
+                return move
+
+            move = self.GetRandomHint(fireworks, players)
+            assert move != None
+            return move
+        
+        move = self.GetUnsafeDiscard(fireworks)
+        if move!= None:
+            self.main_play = move.card_n
+            return move
+
+        move=self.GetUnsafePlay(fireworks)
+        self.main_play = move.card_n
+        assert move != none
+        return move
+
