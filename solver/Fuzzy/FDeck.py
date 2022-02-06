@@ -148,8 +148,13 @@ class FDeck(Deck):
             #for the rest, compute their discardability through formula at the end of evaluate_known_cards()
             non_trivials = self.deck[non_trivial_indexes, i]
 
+            cards_in_game = self.cards_in_game[non_trivial_indexes, i]
+            non_finished_indexes = cards_in_game > 0
+            non_trivials=non_trivials[non_finished_indexes]
+            cards_in_game=cards_in_game[non_finished_indexes]
+
             #discardability of each card * number of cards of that kind
-            nt_discardabilities = self.discardability_fn(self.cards_in_game[non_trivial_indexes, i])*non_trivials
+            nt_discardabilities = self.discardability_fn(cards_in_game)*non_trivials
                         #(1- np.reciprocal(self.cards_in_game[arange>=needed_values[i], i]))*non_trivials
             tot_discardability += np.sum(nt_discardabilities)
         
@@ -183,8 +188,13 @@ class FDeck(Deck):
             #for the rest, compute their discardability through formula at the end of evaluate_known_cards()
             non_trivials = self.filtered_deck[non_trivial_indexes, i]
 
+            cards_in_game = self.cards_in_game[non_trivial_indexes, i]
+            non_finished_indexes = cards_in_game > 0
+            non_trivials=non_trivials[non_finished_indexes]
+            cards_in_game=cards_in_game[non_finished_indexes]
+
             #discardability of each card * number of cards of that kind
-            nt_discardabilities = self.discardability_fn(self.cards_in_game[non_trivial_indexes, i])*non_trivials
+            nt_discardabilities = self.discardability_fn(cards_in_game)*non_trivials
                     #1- np.reciprocal(self.cards_in_game[arange>=needed_values[i], i]))*non_trivials
             tot_discardability += np.sum(nt_discardabilities)
         

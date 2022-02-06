@@ -15,6 +15,7 @@ from solver.Fuzzy.FSolver import FSolver
 from solver.MonteCarlo.MCSolver import MCSolver
 from threading import Semaphore
 
+PRINT_MINIMAL = False
 
 if len(argv) < 4:
     print("You need the player name to start the game.")
@@ -76,7 +77,7 @@ def manage_solver():
             s.send(GameData.ClientGetGameStateRequest(playerName).serialize())
         elif gameStatus == "MyTurn":
             print("finding move")
-            #time.sleep(0.3)
+            time.sleep(0.2) #just to avoid too fast responses for other players to handle
             move = solver.FindMove()
         
             if move.type == 0:
@@ -178,7 +179,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 
                 solver.RecordMove(data, "draw")
             
-            print_state(solver,data)
+            if PRINT_MINIMAL == False:
+                print_state(solver,data)
             #change state to "MyTurn" or "OthersTurn"
             if data.currentPlayer == playerName:
                 gameStatus = gameStatuses[4]

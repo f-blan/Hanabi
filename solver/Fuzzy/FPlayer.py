@@ -11,7 +11,7 @@ from .. import utils
 from sortedcontainers import SortedList
 
 
-HINTS_COMPUTED = 10
+HINTS_COMPUTED = 15
 HINTS_VERBOSE = False
 
 class FPlayer:

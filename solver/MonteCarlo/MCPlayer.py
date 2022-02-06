@@ -89,8 +89,25 @@ class MCPlayer(FPlayer):
             #print("-----------END HANDLE----------------")
             return ret 
     
-    def get_score(self):
-        return self.base_knowledge + 1.2*np.sum(self.hint_tracker[0,:])+ np.sum(self.hint_tracker[1,:])
+    def set_expected_values(self, playabilities: np.ndarray, discardabilities: np.ndarray):
+        #cut the ranges in the case something went wrong with evaluation
+        high_indexes = playabilities > 1
+        playabilities[high_indexes] = 1
+        low_indexes = playabilities < 0
+        playabilities[low_indexes] = 0
+        self.playabilities = playabilities
+
+        high_indexes = discardabilities > 1
+        discardabilities[high_indexes] = 1
+        low_indexes = discardabilities<0
+        discardabilities[low_indexes] = 0
+        self.discardabilities = discardabilities
+
+    def get_score(self, deck: NodeDeck):
+        dhu=deck.discardability_rc
+        phu=deck.playability_rc
+        return self.base_knowledge*(phu+0.2*dhu) + 1.2*np.sum(self.hint_tracker[0,:]*(self.playabilities+0.2*self.discardabilities)) \
+                    + np.sum(self.hint_tracker[1,:]*(self.playabilities+0.2*self.discardabilities))
 
     def GetMoves(self, players: list(), fireworks: np.ndarray, deck: NodeDeck, redTokens: int, blueTokens: int):
         #Very similar to GetMoves of FPlayer, but takes into account hard unknowns and hints on hard unknown cards
@@ -289,3 +306,5 @@ class MCPlayer(FPlayer):
             ret_move = None
         
         return ret_j, ret_move
+
+    

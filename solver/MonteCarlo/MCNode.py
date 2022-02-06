@@ -9,12 +9,13 @@ from sortedcontainers import SortedList
 
 import math 
 
-MAX_CHILDREN = 3
+MAX_CHILDREN = 5
 MAX_DEPTH = 10
-MC_ITERATIONS = 100
-D_FACTOR = 0.9 #discount factor
+MC_ITERATIONS = 30
+D_FACTOR = 0.99 #discount factor
 VERBOSE = False
 PRINT_DEBUG = -1
+FIREWORK_MULTIPLIER = 10
 
 class MCNode():
     def __init__(self, fireworks: np.ndarray, blue_tokens: int, red_tokens: int, players: list(), 
@@ -35,6 +36,8 @@ class MCNode():
         self.is_root = is_root
         self.parent = parent
 
+        
+
         if PRINT_DEBUG>=3:
             print("--------------NODE GENERATED-----------------")
             print(f"node with key {self.ToKey()} has been generated, move is:")
@@ -50,9 +53,11 @@ class MCNode():
             self.deck.update_expected_values(self.fireworks,self.players[self.main_player_order])
             for p in self.players:
                 if p.order == self.curr_player_order or p.order == self.main_player_order:
-                    p.playabilities, p.discardabilities = self.deck.evaluate_unknown_cards(p.n_cards, self.fireworks,p.hints, p.hard_unknowns)
+                    playabilities, discardabilities = self.deck.evaluate_unknown_cards(p.n_cards, self.fireworks,p.hints, p.hard_unknowns)
+                    p.set_expected_values(playabilities,discardabilities)
                 else:
-                    p.playabilities, p.discardabilities = self.deck.evaluate_known_cards(p.cards,self.fireworks,p.hard_unknowns,p.n_cards)
+                    playabilities, discardabilities = self.deck.evaluate_known_cards(p.cards,self.fireworks,p.hard_unknowns,p.n_cards)
+                    p.set_expected_values(playabilities,discardabilities)
         
         #MC parameters
         self.n_simulations = 1
@@ -211,15 +216,18 @@ class MCNode():
         for p in self.players:
             #add only if we're not in end game or the player can still play
             if self.deck.endgame == False or self.deck.turns_until_end > 0:
-                kn_contrib += p.get_score()
+                kn_contrib += p.get_score(self.deck)
 
-        #add firework contribution: we assume that a play is worth 2 knowledge point + 7 coincidence points
+        #add firework contribution: we assume that a play is worth 2 knowledge point + some coincidence points
         #we also bias the evaluation to favor plays with lower value
         bias = np.array([1.0, 0.99, 0.98, 0.97, 0.96])
-        fw_points = 7*(self.fireworks+1) * bias[self.fireworks]
+        fw_points = FIREWORK_MULTIPLIER*(self.fireworks+1) * bias[self.fireworks]
         fw_contrib = np.sum(fw_points)
 
         self.score = rt_contrib+bt_contrib+kn_contrib+fw_contrib
+
+        #print(f"score evaluation: {rt_contrib}+{bt_contrib}+{kn_contrib}+{fw_contrib}")
+
         self.score = math.pow(D_FACTOR, self.depth)*self.score
 
         #TODO: take decision on score normalization
@@ -242,8 +250,14 @@ class MCNode():
             for i in range(0, min(MAX_CHILDREN,len(moves))):
                 print(moves[i].ToKey())
 
+        play_node = False #idea: if this node has one or more safe plays available, we only generate children for those moves
+        
         for i in range(0, min(MAX_CHILDREN, len(moves))):
-            
+            if moves[i].type == 1 and moves[i].score ==1 and play_node == False:
+                play_node == True
+            if moves[i] != 1 and play_node == True:
+                break
+
             child = MCNode(self.fireworks,self.blue_tokens,self.red_tokens,self.players,self.deck,self.curr_player_order,
                             self.main_player_order,self.MainDeck,self.top_card_index,False, move=moves[i], depth=self.depth+1,parent=self)
             #print(f"creating node for move: {moves[i].ToString()}. Child has score: {child.score}")
@@ -335,7 +349,7 @@ class MCNode():
 
     def UTCscore(self):
         #print(f"({self.children_scores}/{self.n_simulations})+ sqrt(2*log({self.parent.n_simulations}/{self.n_simulations}))")
-        return (self.children_scores/self.n_simulations) + math.sqrt(10*math.log(self.parent.n_simulations/self.n_simulations))
+        return (self.children_scores/self.n_simulations) + math.sqrt(100*math.log(self.parent.n_simulations/self.n_simulations))
     
     def has_child(self, move):
         return move.ToKey() in self.childrenKeys
